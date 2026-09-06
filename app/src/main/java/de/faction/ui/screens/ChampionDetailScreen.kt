@@ -48,11 +48,13 @@ import de.faction.domain.BuildPlanner
 import de.faction.domain.BuildStep
 import de.faction.domain.ScoreEngine
 import de.faction.ui.FactionViewModel
+import de.faction.ui.components.AreaRatingTile
 import de.faction.ui.components.ChampionSigil
 import de.faction.ui.components.FactionCard
 import de.faction.ui.components.SectionTitle
 import de.faction.ui.components.StepBadge
 import de.faction.ui.components.Tag
+import de.faction.ui.components.TraitStrip
 import de.faction.ui.theme.FactionColors
 
 private enum class DetailTab(val label: String) {
@@ -214,6 +216,19 @@ private fun LazyListScope.overviewContent(champion: Champion) {
         }
     }
     item {
+        Column(Modifier.padding(horizontal = 16.dp)) {
+            TraitStrip(
+                listOf(
+                    "Fraktion" to champion.faction,
+                    "Affinität" to champion.affinity.label,
+                    "Seltenheit" to champion.rarity.label,
+                    "Rolle" to champion.role.label,
+                ),
+            )
+            Spacer(Modifier.height(12.dp))
+        }
+    }
+    item {
         val scores = ScoreEngine.score(champion).perArea.values.sortedByDescending { it.score }
         Column(Modifier.padding(horizontal = 16.dp)) {
             FactionCard(Modifier.fillMaxWidth()) {
@@ -221,44 +236,32 @@ private fun LazyListScope.overviewContent(champion: Champion) {
                     SectionTitle("Wo diese Legende zählt")
                     Spacer(Modifier.height(4.dp))
                     Text(
-                        "Bewertet allein aus dem Kit — je Bereich getrennt, deshalb nur innerhalb einer Zeile vergleichbar.",
+                        "Bewertet allein aus dem Kit — je Bereich getrennt, deshalb nur innerhalb einer Kachel vergleichbar.",
                         style = MaterialTheme.typography.bodySmall,
                         color = FactionColors.TextSecondary,
                     )
                     Spacer(Modifier.height(12.dp))
-                    scores.forEach { area ->
+                    // Zwei Spalten: ein Raster im LazyColumn wäre verschachteltes
+                    // Scrollen — bei sechs festen Bereichen reichen Zeilen zu zweit.
+                    scores.chunked(2).forEach { row ->
                         Row(
-                            Modifier.fillMaxWidth().padding(vertical = 5.dp),
-                            verticalAlignment = Alignment.CenterVertically,
+                            Modifier.fillMaxWidth().padding(bottom = 8.dp),
+                            horizontalArrangement = Arrangement.spacedBy(8.dp),
                         ) {
-                            Text(
-                                area.area.label,
-                                style = MaterialTheme.typography.bodySmall,
-                                color = FactionColors.TextSecondary,
-                                modifier = Modifier.weight(1f),
-                            )
-                            Box(
-                                Modifier
-                                    .weight(2f)
-                                    .height(6.dp)
-                                    .clip(MaterialTheme.shapes.small)
-                                    .background(FactionColors.Night),
-                            ) {
-                                Box(
-                                    Modifier
-                                        .fillMaxWidth(area.score / 100f)
-                                        .height(6.dp)
-                                        .clip(MaterialTheme.shapes.small)
-                                        .background(FactionColors.Teal),
-                                )
+                            row.forEach { score ->
+                                AreaRatingTile(score, Modifier.weight(1f))
                             }
-                            Text(
-                                "  ${area.score}",
-                                style = MaterialTheme.typography.bodySmall,
-                                color = FactionColors.TextPrimary,
-                            )
+                            if (row.size == 1) Spacer(Modifier.weight(1f))
                         }
                     }
+                    Spacer(Modifier.height(4.dp))
+                    val best = scores.first()
+                    Text(
+                        best.reasons.firstOrNull()
+                            ?: "Für diese Legende liegt keine Begründung vor.",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = FactionColors.TextSecondary,
+                    )
                 }
             }
         }

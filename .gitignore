@@ -6,3 +6,7 @@ build/
 captures/
 .externalNativeBuild/
 .cxx/
+
+# Python-Zwischendateien des Generators
+__pycache__/
+*.pyc

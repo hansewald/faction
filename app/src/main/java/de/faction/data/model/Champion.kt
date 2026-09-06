@@ -25,35 +25,64 @@ enum class Role(val label: String) {
  * nicht auf fremden Tier-List-Noten.
  */
 enum class Utility(val label: String) {
+    // Schwächungen
     DECREASE_DEFENSE("Verteidigung senken"),
     DECREASE_ATTACK("Angriff senken"),
     DECREASE_SPEED("Tempo senken"),
     DECREASE_ACCURACY("Genauigkeit senken"),
+    DECREASE_CRIT_RATE("KritQuote senken"),
+    DECREASE_CRIT_DAMAGE("KritSchaden senken"),
     WEAKEN("Schwächen"),
-    HP_BURN("LP-Verbrennung"),
+    HEAL_REDUCTION("Heilungsminderung"),
+    BLOCK_BUFFS("Buffs blocken"),
+    REMOVE_BUFFS("Buffs entfernen"),
+    BLOCK_COOLDOWN("Fähigkeiten sperren"),
+    BLOCK_REVIVE("Wiederbelebung blocken"),
+    DECREASE_MAX_HP("Max-LP senken"),
+
+    // Schaden über Zeit
     POISON("Gift"),
     POISON_SENSITIVITY("Giftempfindlichkeit"),
+    HP_BURN("LP-Verbrennung"),
+    BOMB("Bombe"),
+
+    // Kontrolle
     STUN("Betäuben / Einfrieren"),
+    SLEEP("Schlaf"),
+    FEAR("Furcht"),
     PROVOKE("Provozieren"),
+    TURN_METER_DRAIN("Zugleiste leeren"),
+
+    // Erhalt
     HEAL("Heilen"),
+    CONTINUOUS_HEAL("Dauerheilung"),
     REVIVE("Wiederbeleben"),
     SHIELD("Schild"),
     CLEANSE("Debuffs entfernen"),
     BLOCK_DEBUFFS("Debuffs blocken"),
+    BLOCK_DAMAGE("Schaden blocken"),
+    UNKILLABLE("Unbesiegbar"),
+    VEIL("Schleier"),
+    ALLY_PROTECTION("Verbündeten-Schutz"),
+    STRENGTHEN("Stärkung"),
+    LEECH("Lebensentzug"),
+
+    // Verstärkung
     INCREASE_SPEED("Tempo erhöhen"),
     INCREASE_ATTACK("Angriff erhöhen"),
     INCREASE_DEFENSE("Verteidigung erhöhen"),
     INCREASE_CRIT_RATE("KritQuote erhöhen"),
+    INCREASE_CRIT_DAMAGE("KritSchaden erhöhen"),
     TURN_METER_BOOST("Zugleiste füllen"),
-    TURN_METER_DRAIN("Zugleiste leeren"),
-    COUNTERATTACK("Gegenangriff"),
-    ALLY_ATTACK("Verbündeten-Angriff"),
+
+    // Schaden und Zugfolge
     EXTRA_TURN("Extra-Zug"),
+    ALLY_ATTACK("Verbündeten-Angriff"),
+    COUNTERATTACK("Gegenangriff"),
+    REFLECT_DAMAGE("Schaden zurückwerfen"),
     IGNORE_DEFENSE("Verteidigung ignorieren"),
     AOE_DAMAGE("Flächenschaden"),
     SINGLE_TARGET_NUKE("Einzelziel-Burst"),
-    BLOCK_REVIVE("Wiederbelebung blocken"),
-    DECREASE_MAX_HP("Max-LP senken");
 }
 
 enum class Area(val label: String) {
@@ -81,4 +110,9 @@ data class Champion(
     val earlyGameCarry: Boolean = false,
     /** Aus der Kampagne farmbar — damit als Futter praktisch unbegrenzt verfügbar. */
     val campaignFarmable: Boolean = false,
+    /**
+     * Falsch, wenn für diese Legende keine Fähigkeiten vorliegen. Ohne Kit lässt sich
+     * nichts bewerten — solche Einträge dürfen nie als Futter empfohlen werden.
+     */
+    val dataComplete: Boolean = true,
 )

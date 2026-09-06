@@ -335,7 +335,13 @@ private fun LegendCard(
                 overflow = TextOverflow.Ellipsis,
             )
             Spacer(Modifier.height(6.dp))
-            Tag(champion.rarity.label, FactionColors.rarity(champion.rarity.label))
+            Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                Tag(champion.rarity.label, FactionColors.rarity(champion.rarity.label))
+                if (!champion.dataComplete) {
+                    // Ohne Kit-Daten waere jede Bewertung irrefuehrend.
+                    Tag("Daten fehlen", FactionColors.TextSecondary)
+                }
+            }
         }
     }
 }

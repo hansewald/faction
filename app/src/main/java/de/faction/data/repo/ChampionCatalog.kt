@@ -22,7 +22,7 @@ class ChampionCatalog(private val context: Context) {
 
     suspend fun load() = withContext(Dispatchers.IO) {
         if (champions.isNotEmpty()) return@withContext
-        val raw = context.assets.open("champions_seed.json").bufferedReader().use { it.readText() }
+        val raw = context.assets.open("champions.json").bufferedReader().use { it.readText() }
         champions = json.decodeFromString(raw)
         byId = champions.associateBy { it.id }
     }

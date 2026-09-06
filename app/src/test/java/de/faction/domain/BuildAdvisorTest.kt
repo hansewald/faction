@@ -20,6 +20,7 @@ class BuildAdvisorTest {
         utilities: Set<Utility> = emptySet(),
         faction: String = "Barbaren",
         role: Role = Role.ATTACK,
+        dataComplete: Boolean = true,
     ) = Champion(
         id = id,
         name = id,
@@ -28,6 +29,7 @@ class BuildAdvisorTest {
         affinity = Affinity.MAGIC,
         role = role,
         utilities = utilities,
+        dataComplete = dataComplete,
     )
 
     private fun entry(champion: Champion, instanceId: Long = 1, level: Int = 1, rank: Int = 1) =
@@ -118,5 +120,45 @@ class BuildAdvisorTest {
         val debufferScore = ScoreEngine.score(debuffer).perArea.getValue(Area.CLAN_BOSS).score
         val nukerScore = ScoreEngine.score(nuker).perArea.getValue(Area.CLAN_BOSS).score
         assertTrue("Debuffer sollte am Clanboss höher bewertet sein", debufferScore > nukerScore)
+    }
+
+    @Test
+    fun `champion without skill data is never marked as food`() {
+        // Gleiche Ausgangslage wie der Futter-Test, nur fehlen die Faehigkeitsdaten.
+        val unknown = champion("unknown", Rarity.COMMON, dataComplete = false)
+        val analysis = BuildAdvisor.analyze(listOf(entry(unknown)))
+        val recommendation = analysis.recommendations.single()
+
+        assertEquals(Verdict.KEEP, recommendation.verdict)
+        assertTrue(
+            "Die fehlende Datenlage muss in der Begruendung stehen",
+            recommendation.rationale.any { it.contains("keine Fähigkeitsdaten") },
+        )
+    }
+
+    @Test
+    fun `arena rewards turn meter control over sustain`() {
+        val controller = champion(
+            "controller",
+            Rarity.EPIC,
+            setOf(Utility.TURN_METER_DRAIN, Utility.REMOVE_BUFFS),
+        )
+        val healer = champion("healer", Rarity.EPIC, setOf(Utility.HEAL, Utility.CONTINUOUS_HEAL))
+        val controllerScore = ScoreEngine.score(controller).perArea.getValue(Area.ARENA).score
+        val healerScore = ScoreEngine.score(healer).perArea.getValue(Area.ARENA).score
+        assertTrue(
+            "Zugleisten-Kontrolle sollte in der Arena hoeher zaehlen als reines Heilen",
+            controllerScore > healerScore,
+        )
+    }
+
+    @Test
+    fun `clan boss ignores crowd control because it does not apply there`() {
+        val crowdControl = champion(
+            "cc",
+            Rarity.EPIC,
+            setOf(Utility.STUN, Utility.SLEEP, Utility.FEAR, Utility.PROVOKE),
+        )
+        assertEquals(0, ScoreEngine.score(crowdControl).perArea.getValue(Area.CLAN_BOSS).score)
     }
 }

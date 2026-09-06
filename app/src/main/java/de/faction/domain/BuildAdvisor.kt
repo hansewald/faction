@@ -136,6 +136,10 @@ object BuildAdvisor {
             rationale += "Aus der Kampagne nachfarmbar — kein Grund, diese Kopie zu behalten."
         }
 
+        if (!champion.dataComplete) {
+            rationale += "Für diese Legende liegen noch keine Fähigkeitsdaten vor — " +
+                "die Bewertung bleibt offen."
+        }
         rationale += "Bester Bereich: ${best.area.label} (${best.score}/100)."
         if (best.reasons.isNotEmpty()) {
             rationale += "Getragen von: ${best.reasons.joinToString()}."
@@ -166,6 +170,11 @@ object BuildAdvisor {
         // der Wiederbeschaffungsaufwand übersteigt jeden Futterwert.
         val protected = duplicates == 0 &&
             (champion.rarity == Rarity.LEGENDARY || champion.rarity == Rarity.EPIC)
+        // Ohne Faehigkeitsdaten laesst sich nichts bewerten. Eine solche Legende zu
+        // verfuettern waere ein Rat auf Basis fehlender Information, nicht auf Basis
+        // eines schwachen Kits.
+        if (!champion.dataComplete) return Verdict.KEEP
+
         if (entry.owned.locked) return if (bestScore >= USEFUL_THRESHOLD) Verdict.BUILD_LATER else Verdict.KEEP
 
         return when {

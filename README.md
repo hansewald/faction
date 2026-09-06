@@ -91,14 +91,32 @@ sie eine weitere Implementierung von `AccountSource`; der Rest der App bleibt un
 
 ## Datenbasis
 
-`app/src/main/assets/champions_seed.json` enthält 30 Champions als Startdatensatz. Die
-Felder `utilities` und `kitSummary` sind eigene Einordnungen der Kits, keine übernommenen
-Bewertungen. Für den vollständigen Champion-Bestand bieten sich als Sync-Quelle an:
+`app/src/main/assets/champions.json` enthält **570 Legenden** aus 14 Fraktionen,
+erzeugt von `tools/generate_champions.py` aus
+[PatPat1567/RaidShadowLegendsData](https://github.com/PatPat1567/RaidShadowLegendsData).
 
-- [Goctionni/raid-data](https://goctionni.github.io/raid-data/)
-- [PatPat1567/RaidShadowLegendsData](https://github.com/PatPat1567/RaidShadowLegendsData)
+Übernommen werden ausschließlich Fakten: Name, Fraktion, Seltenheit, Affinität, Rolle
+und die Frage, **welche Wirkungen ein Kit mitbringt**. Die Skill-Texte selbst werden
+nicht mitgeliefert — sie gehören Plarium. Der Generator liest sie nur, um daraus die
+`Utility`-Tags abzuleiten, mit denen die `ScoreEngine` arbeitet. Neu erzeugen:
 
-Vor der Übernahme jeweils die Lizenz der Quelle prüfen.
+```bash
+python tools/generate_champions.py <pfad-zum-datenrepo>
+```
+
+**Datenqualität, ehrlich benannt:**
+
+- **90 der 570 Legenden haben keine Fähigkeitsdaten** — die Quelle enthält für sie nur
+  Platzhalter. Sie tragen `dataComplete: false`, werden in der Liste als „Daten fehlen"
+  markiert und **nie** als Futter empfohlen: ein solches Urteil wäre ein Rat auf Basis
+  fehlender Information, nicht auf Basis eines schwachen Kits.
+- **Die Quelle hat Fehler.** Stichprobe: Coldheart steht dort als Selten/Dunkelelfen,
+  im Spiel ist sie Episch/Hochelfen. Vor einer Veröffentlichung braucht es einen
+  Abgleich gegen eine zweite Quelle.
+- Bei 10 Legenden mit Skilltext wird keine Wirkung erkannt; ihre Kits bestehen aus
+  Effekten, die das Modell bewusst nicht führt.
+
+Die 47 Wirkungen im Modell decken 3,5 Tags je Legende ab.
 
 ## Noch offen
 

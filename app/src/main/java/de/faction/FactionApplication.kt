@@ -2,6 +2,7 @@ package de.faction
 
 import android.app.Application
 import de.faction.data.local.GuideProgressStore
+import de.faction.data.local.PortraitStore
 import de.faction.data.local.RaidDatabase
 import de.faction.data.repo.ChampionCatalog
 import de.faction.data.repo.RosterRepository
@@ -22,14 +23,17 @@ class FactionApplication : Application() {
         private set
     lateinit var guideProgress: GuideProgressStore
         private set
+    lateinit var portraits: PortraitStore
+        private set
 
     override fun onCreate() {
         super.onCreate()
         catalog = ChampionCatalog(this)
         repository = RosterRepository(RaidDatabase.get(this).rosterDao(), catalog)
         guideProgress = GuideProgressStore(this)
+        portraits = PortraitStore(this)
         accountSources = listOf(
-            ScreenshotOcrSource(this, catalog),
+            ScreenshotOcrSource(this, catalog, portraits),
             ToolkitJsonSource(catalog),
         )
         CoroutineScope(SupervisorJob()).launch { catalog.load() }

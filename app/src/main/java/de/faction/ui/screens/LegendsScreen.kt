@@ -65,6 +65,7 @@ fun LegendsScreen(
     val filters by viewModel.filters.collectAsStateWithLifecycle()
     val legends by viewModel.legends.collectAsStateWithLifecycle()
     val owned by viewModel.ownedIds.collectAsStateWithLifecycle()
+    val portraits by viewModel.portraits.collectAsStateWithLifecycle()
     val review by viewModel.importReview.collectAsStateWithLifecycle()
 
     review?.let { ImportReviewDialog(it, viewModel) }
@@ -157,6 +158,7 @@ fun LegendsScreen(
                 LegendCard(
                     champion = champion,
                     isOwned = champion.id in owned,
+                    portraitPath = portraits[champion.id],
                     onToggleOwned = { viewModel.toggleOwned(champion.id) },
                     onClick = { onOpenChampion(champion.id) },
                 )
@@ -299,6 +301,7 @@ private fun <T> FilterDropdown(
 private fun LegendCard(
     champion: Champion,
     isOwned: Boolean,
+    portraitPath: String?,
     onToggleOwned: () -> Unit,
     onClick: () -> Unit,
 ) {
@@ -306,6 +309,7 @@ private fun LegendCard(
         Box {
             ChampionSigil(
                 champion = champion,
+                portraitPath = portraitPath,
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(150.dp),

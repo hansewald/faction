@@ -157,9 +157,22 @@ erkennbar, ohne den Text zu lesen.
 Der Pflichthinweis zur Abgrenzung von Plarium steht im News-Reiter der App, nicht nur
 im Store-Eintrag.
 
-**Falls doch echte Artworks gewünscht sind**, gibt es genau zwei saubere Wege: eine
-schriftliche Genehmigung von Plarium einholen, oder Bilder ausschließlich lokal vom
-Nutzer selbst hinzufügen lassen und niemals ausliefern.
+**Eigene Portraits statt Artworks.** Beim Screenshot-Import schneidet
+`TileGrid` die Kacheln aus dem Bild des Spielers und `PortraitStore` legt sie in
+`filesDir/portraits` ab. Wo ein Portrait vorliegt, zeigt `ChampionSigil` es statt des
+Wappens — auf dem Gerät des Spielers sieht der Kader damit aus wie im Spiel, ohne dass
+die App Bildmaterial ausliefert. Die Bilder stammen vom Spieler, bleiben lokal und sind
+nicht Teil des Builds.
+
+Das Raster wird aus den Positionen der erkannten Levelzahlen zurückgerechnet, in
+Vielfachen des Spaltenabstands — dadurch unabhängig von der Bildschirmauflösung
+(`TileGridTest`). Ein danebenliegender Zuschnitt fällt im Bestätigungsschritt auf, der
+jedes Bild neben dem Namen zeigt. In der Rasteransicht ohne Namen ist das Bild sogar
+das einzige Erkennungsmerkmal: die Zuordnung trifft dort der Spieler.
+
+**Falls echte Artworks ausgeliefert werden sollen**, braucht es eine schriftliche
+Genehmigung von Plarium. Liegt sie vor, ist das eine zweite Bildquelle neben dem
+Portrait des Spielers — `ChampionSigil` bleibt unverändert.
 
 ## Noch offen
 

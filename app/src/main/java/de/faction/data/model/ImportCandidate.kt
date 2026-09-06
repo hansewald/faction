@@ -19,6 +19,11 @@ data class ImportCandidate(
     /** 0..1. Unter [RELIABLE] ist der Vorschlag nicht vorausgewählt. */
     val confidence: Float,
     val source: ImportSource,
+    /**
+     * Die aus dem Screenshot ausgeschnittene Kachel, noch nicht übernommen. Sie ist im
+     * Bestätigungsschritt das Erkennungsmerkmal, wenn die Ansicht keine Namen zeigt.
+     */
+    val portraitPath: String? = null,
     val accepted: Boolean = championId != null && confidence >= RELIABLE,
 ) {
     /** Nur zugeordnete Vorschläge lassen sich übernehmen. */

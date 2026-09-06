@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import de.faction.FactionApplication
 import de.faction.data.local.GuideProgressStore
+import de.faction.data.local.PortraitStore
 import de.faction.data.model.Champion
 import de.faction.data.model.GuideContent
 import de.faction.data.model.ImportCandidate
@@ -57,6 +58,7 @@ data class ImportReview(
 class FactionViewModel(
     private val repository: RosterRepository,
     private val guideProgress: GuideProgressStore,
+    private val portraitStore: PortraitStore,
     val catalog: ChampionCatalog,
     val accountSources: List<AccountSource>,
 ) : ViewModel() {
@@ -79,6 +81,12 @@ class FactionViewModel(
     val importReview: StateFlow<ImportReview?> = _importReview.asStateFlow()
 
     val readChapters: StateFlow<Set<String>> = guideProgress.read
+
+    /**
+     * Championid -> Portraitdatei. Wo ein Eintrag fehlt, zeichnet die Oberfläche das
+     * Wappen. Die Bilder stammen vom Spieler und liegen nur auf diesem Gerät.
+     */
+    val portraits: StateFlow<Map<String, String>> = portraitStore.paths
 
     /** Anteil gelesener Guide-Kapitel, für die Fortschrittskarte auf dem Start-Reiter. */
     val guideProgressRatio: StateFlow<Float> = readChapters
@@ -199,9 +207,17 @@ class FactionViewModel(
     /** Übernimmt die bestätigten Vorschläge. [replace] ersetzt den bisherigen Kader. */
     fun confirmImport(replace: Boolean) {
         val review = _importReview.value ?: return
-        val champions = review.candidates.filter { it.accepted }.mapNotNull { it.toOwnedChampion() }
+        val accepted = review.candidates.filter { it.accepted }
+        val champions = accepted.mapNotNull { it.toOwnedChampion() }
         viewModelScope.launch {
             if (replace) repository.replaceAll(champions) else repository.add(champions)
+            // Erst mit der Bestätigung steht fest, welches Bild zu welcher Legende gehört.
+            accepted.forEach { candidate ->
+                val id = candidate.championId ?: return@forEach
+                val path = candidate.portraitPath ?: return@forEach
+                portraitStore.adopt(id, path)
+            }
+            portraitStore.clearStaging()
             _importReview.value = null
             _importState.value = ImportState(
                 message = "${champions.size} Legenden übernommen.",
@@ -211,6 +227,12 @@ class FactionViewModel(
 
     fun cancelImport() {
         _importReview.value = null
+        viewModelScope.launch { portraitStore.clearStaging() }
+    }
+
+    /** Nimmt einer Legende ihr Portrait wieder weg — zurück bleibt das Wappen. */
+    fun clearPortrait(championId: String) {
+        viewModelScope.launch { portraitStore.remove(championId) }
     }
 
     fun clearImportMessage() { _importState.value = ImportState() }
@@ -221,6 +243,7 @@ class FactionViewModel(
             override fun <T : ViewModel> create(modelClass: Class<T>): T = FactionViewModel(
                 app.repository,
                 app.guideProgress,
+                app.portraits,
                 app.catalog,
                 app.accountSources,
             ) as T

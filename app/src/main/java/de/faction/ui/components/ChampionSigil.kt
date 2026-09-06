@@ -1,38 +1,54 @@
 package de.faction.ui.components
 
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.produceState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ImageBitmap
+import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.Fill
 import androidx.compose.ui.graphics.drawscope.Stroke
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
+import de.faction.data.local.PortraitStore
 import de.faction.data.model.Affinity
 import de.faction.data.model.Champion
 import de.faction.ui.theme.FactionColors
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 /**
- * Das Wappen einer Legende — vollständig gezeichnet, ohne Bildmaterial.
+ * Das Bild einer Legende: das Portrait des Spielers, sonst ihr gezeichnetes Wappen.
  *
- * Champion-Artworks gehören Plarium und dürfen laut deren Nutzungsbedingungen nicht
- * ohne schriftliche Zustimmung reproduziert werden. Statt eines Platzhalters trägt
- * jede Legende deshalb ein eigenes Zeichen: Fraktionssymbol, Affinitätsfarbe und
- * Seltenheitsrahmen. Das ist zugleich informativ — man erkennt die Einordnung, ohne
- * den Text zu lesen.
+ * [portraitPath] zeigt auf eine Datei im privaten Verzeichnis der App — den Zuschnitt
+ * aus dem eigenen Screenshot des Spielers. Liegt keiner vor, trägt die Legende ihr
+ * eigenes Zeichen aus Fraktionssymbol, Affinitätsfarbe und Seltenheitsrahmen. Das ist
+ * zugleich informativ: man erkennt die Einordnung, ohne den Text zu lesen.
+ *
+ * Die App selbst bringt kein Bildmaterial aus dem Spiel mit. Champion-Artworks gehören
+ * Plarium und dürfen laut deren Nutzungsbedingungen ohne schriftliche Zustimmung nicht
+ * reproduziert werden; was hier erscheint, hat der Spieler selbst beigesteuert und
+ * verlässt sein Gerät nicht.
  */
 @Composable
-fun ChampionSigil(champion: Champion, modifier: Modifier = Modifier) {
+fun ChampionSigil(
+    champion: Champion,
+    modifier: Modifier = Modifier,
+    portraitPath: String? = null,
+) {
     val affinity = affinityColor(champion.affinity)
     val rarity = FactionColors.rarity(champion.rarity.label)
     val shape = RoundedCornerShape(12.dp)
@@ -50,11 +66,23 @@ fun ChampionSigil(champion: Champion, modifier: Modifier = Modifier) {
             )
             .border(1.dp, rarity.copy(alpha = 0.45f), shape),
     ) {
-        Canvas(Modifier.fillMaxSize()) {
-            val mark = factionMark(champion.faction)
-            val side = minOf(size.width, size.height) * 0.46f
-            val origin = Offset((size.width - side) / 2f, (size.height - side) / 2f)
-            drawMark(mark, origin, side, rarity.copy(alpha = 0.9f))
+        val portrait = rememberPortrait(portraitPath)
+        if (portrait != null) {
+            Image(
+                bitmap = portrait,
+                contentDescription = null,
+                modifier = Modifier.fillMaxSize(),
+                // Die Kachel ist annähernd quadratisch, die Fläche hier oft breiter:
+                // zuschneiden statt verzerren, das Gesicht sitzt in der oberen Hälfte.
+                contentScale = ContentScale.Crop,
+            )
+        } else {
+            Canvas(Modifier.fillMaxSize()) {
+                val mark = factionMark(champion.faction)
+                val side = minOf(size.width, size.height) * 0.46f
+                val origin = Offset((size.width - side) / 2f, (size.height - side) / 2f)
+                drawMark(mark, origin, side, rarity.copy(alpha = 0.9f))
+            }
         }
     }
 }
@@ -214,3 +242,41 @@ private fun DrawScope.drawMark(mark: Mark, origin: Offset, side: Float, color: C
 }
 
 private fun DrawScope.drawPath(path: Path, color: Color) = drawPath(path, color, style = Fill)
+
+/**
+ * Lädt ein Portrait von der Platte, sobald sich der Pfad ändert. Die Bilder sind
+ * Kachelgröße — ein Bildcache wäre hier mehr Aufwand als Nutzen.
+ */
+@Composable
+private fun rememberPortrait(path: String?): ImageBitmap? =
+    produceState<ImageBitmap?>(initialValue = null, key1 = path) {
+        value = path?.let {
+            withContext(Dispatchers.IO) { PortraitStore.decode(it)?.asImageBitmap() }
+        }
+    }.value
+
+/**
+ * Ein ausgeschnittenes Portrait für sich — im Bestätigungsschritt eines Imports das
+ * Erkennungsmerkmal, solange noch keine Legende zugeordnet ist. Fehlt der Zuschnitt,
+ * bleibt die Fläche leer statt einen Platzhalter vorzutäuschen.
+ */
+@Composable
+fun PortraitThumb(path: String?, modifier: Modifier = Modifier) {
+    val shape = RoundedCornerShape(8.dp)
+    val portrait = rememberPortrait(path)
+    Box(
+        modifier
+            .clip(shape)
+            .background(FactionColors.Night)
+            .border(1.dp, FactionColors.Border, shape),
+    ) {
+        if (portrait != null) {
+            Image(
+                bitmap = portrait,
+                contentDescription = null,
+                modifier = Modifier.fillMaxSize(),
+                contentScale = ContentScale.Crop,
+            )
+        }
+    }
+}

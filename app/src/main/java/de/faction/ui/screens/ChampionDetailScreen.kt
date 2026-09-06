@@ -75,6 +75,7 @@ fun ChampionDetailScreen(
 
     val owned by viewModel.ownedIds.collectAsStateWithLifecycle()
     val analysis by viewModel.analysis.collectAsStateWithLifecycle()
+    val portraits by viewModel.portraits.collectAsStateWithLifecycle()
     var tab by remember { mutableStateOf(DetailTab.BUILD) }
 
     // Vorbelegt mit der erkannten Phase des Accounts; der Spieler kann sie überschreiben,
@@ -89,6 +90,7 @@ fun ChampionDetailScreen(
             DetailHeader(
                 champion = champion,
                 isOwned = champion.id in owned,
+                portraitPath = portraits[champion.id],
                 onToggleOwned = { viewModel.toggleOwned(champion.id) },
             )
         }
@@ -116,10 +118,16 @@ fun ChampionDetailScreen(
 }
 
 @Composable
-private fun DetailHeader(champion: Champion, isOwned: Boolean, onToggleOwned: () -> Unit) {
+private fun DetailHeader(
+    champion: Champion,
+    isOwned: Boolean,
+    portraitPath: String?,
+    onToggleOwned: () -> Unit,
+) {
     Box {
         ChampionSigil(
             champion = champion,
+            portraitPath = portraitPath,
             modifier = Modifier
                 .fillMaxWidth()
                 .height(220.dp),

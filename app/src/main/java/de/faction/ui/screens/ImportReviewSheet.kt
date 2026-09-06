@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -44,6 +45,7 @@ import de.faction.data.model.Champion
 import de.faction.data.model.ImportCandidate
 import de.faction.ui.FactionViewModel
 import de.faction.ui.ImportReview
+import de.faction.ui.components.PortraitThumb
 import de.faction.ui.components.Tag
 import de.faction.ui.theme.FactionColors
 
@@ -212,6 +214,14 @@ private fun CandidateRow(
                 },
             )
         }
+
+        PortraitThumb(
+            path = candidate.portraitPath,
+            modifier = Modifier
+                .size(44.dp)
+                .clickable(onClick = onAssign),
+        )
+        Spacer(Modifier.width(10.dp))
 
         Column(
             Modifier

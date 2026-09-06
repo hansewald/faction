@@ -82,6 +82,18 @@ Champion oben steht.
   Plarium-Servern.
 - **Lesezeichen** auf jeder Legendenkarte — nimmt sie in "Meine Auswahl" auf.
 
+Jede Quelle liefert **Vorschläge** (`ImportCandidate`), keine fertigen Kadereinträge.
+Dazwischen liegt immer der Bestätigungsschritt:
+
+- Sichere Treffer (Namensschärfe ≥ 85 %) sind vorausgewählt, unsichere nicht.
+- Zeilen ohne Zuordnung lassen sich von Hand einer Legende zuweisen, statt sie zu
+  verwerfen. Rang und Level sind editierbar.
+- Erst „Übernehmen" schreibt in den Kader; „Kader ersetzen" ist eine bewusste Option.
+
+Der Zwischenschritt ist kein Komfort, sondern Korrektheit: eine falsch erkannte Legende
+zählt als abgedeckte Wirkung, verschiebt die Lückenberechnung und erzeugt damit eine
+falsche Aufbau-Empfehlung.
+
 Bewusst **nicht** enthalten ist ein Login mit Plarium-Zugangsdaten. Es gibt keinen
 offiziellen Endpunkt dafür, und die
 [Nutzungsbedingungen](https://company.plarium.com/en/terms/terms-of-use/) untersagen
@@ -124,7 +136,6 @@ Die 47 Wirkungen im Modell decken 3,5 Tags je Legende ab.
   Seltenheit. Die Artworks gehören Plarium und brauchen eine geklärte Quelle.
 - **Fähigkeiten im Detail**: Multiplikatoren und Abklingzeiten fehlen im Startdatensatz;
   der Reiter zeigt bisher nur die Wirkungen des Kits.
-- Bestätigungsschritt für OCR-Treffer, bevor sie in den Kader wandern
 - Sync des Champion-Katalogs statt reiner Seed-Datei
 - Artefakt-Sets als eigener Bereich
 - iOS-Portierung (dann teilen sich beide Plattformen nur die Regeln, nicht den Code)

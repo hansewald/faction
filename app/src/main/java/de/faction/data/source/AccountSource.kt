@@ -1,6 +1,6 @@
 package de.faction.data.source
 
-import de.faction.data.model.OwnedChampion
+import de.faction.data.model.ImportCandidate
 
 /**
  * Eine Quelle, aus der der Kader des Spielers in die App gelangt.
@@ -19,8 +19,13 @@ interface AccountSource {
     /** True, wenn die Quelle auf diesem Gerät gerade nutzbar ist. */
     suspend fun isAvailable(): Boolean
 
-    /** Liest den Kader ein. [input] ist quellenspezifisch (Dateiinhalt, Bildpfad, …). */
-    suspend fun load(input: SourceInput): Result<List<OwnedChampion>>
+    /**
+     * Liest den Kader ein. [input] ist quellenspezifisch (Dateiinhalt, Bildpfad, …).
+     *
+     * Ergebnis sind *Vorschläge*, keine fertigen Kadereinträge: was übernommen wird,
+     * entscheidet der Spieler im Bestätigungsschritt.
+     */
+    suspend fun load(input: SourceInput): Result<List<ImportCandidate>>
 }
 
 sealed interface SourceInput {

@@ -65,6 +65,9 @@ fun LegendsScreen(
     val filters by viewModel.filters.collectAsStateWithLifecycle()
     val legends by viewModel.legends.collectAsStateWithLifecycle()
     val owned by viewModel.ownedIds.collectAsStateWithLifecycle()
+    val review by viewModel.importReview.collectAsStateWithLifecycle()
+
+    review?.let { ImportReviewDialog(it, viewModel) }
 
     Column(modifier.fillMaxSize()) {
         Column(Modifier.padding(horizontal = 16.dp)) {
@@ -171,7 +174,7 @@ private fun ImportRow(viewModel: FactionViewModel) {
     val importState by viewModel.importState.collectAsStateWithLifecycle()
     val ocrSource = remember(viewModel) { viewModel.accountSources.first { it.id == "screenshot-ocr" } }
     val pickImage = rememberLauncherForActivityResult(ActivityResultContracts.GetContent()) { uri ->
-        uri?.let { viewModel.import(ocrSource, SourceInput.Image(it.toString()), replace = false) }
+        uri?.let { viewModel.import(ocrSource, SourceInput.Image(it.toString())) }
     }
 
     Column {

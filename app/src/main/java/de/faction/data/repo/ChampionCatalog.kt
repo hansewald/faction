@@ -13,6 +13,9 @@ import kotlin.math.min
  * Stammdaten aller bekannten Champions. Wird beim Start aus den Assets geladen und
  * später durch einen Sync mit der Community-Datenbank ergänzt.
  */
+/** Ein Namenstreffer mit seiner Schärfe zwischen 0 und 1. */
+data class NameMatch(val champion: Champion, val similarity: Float)
+
 class ChampionCatalog(private val context: Context) {
 
     private val json = Json { ignoreUnknownKeys = true }
@@ -40,17 +43,18 @@ class ChampionCatalog(private val context: Context) {
     }
 
     /**
-     * Toleranter Namenstreffer für OCR-Ergebnisse. Gibt nur zurück, was ähnlich genug
-     * ist — lieber kein Treffer als ein falscher Champion im Kader.
+     * Bester Namenstreffer samt Trefferschärfe, für OCR-Ergebnisse.
+     *
+     * Die Schärfe wird mitgegeben statt verworfen: der Bestätigungsschritt entscheidet
+     * damit, welche Vorschläge vorausgewählt werden und welche der Spieler prüfen muss.
      */
-    fun fuzzyFindByName(name: String, minSimilarity: Float = 0.72f): Champion? {
+    fun matchByName(name: String, minSimilarity: Float = 0.6f): NameMatch? {
         val needle = name.normalizeName()
         if (needle.length < 3) return null
         return champions
-            .map { it to similarity(needle, it.name.normalizeName()) }
-            .maxByOrNull { it.second }
-            ?.takeIf { it.second >= minSimilarity }
-            ?.first
+            .map { NameMatch(it, similarity(needle, it.name.normalizeName())) }
+            .maxByOrNull { it.similarity }
+            ?.takeIf { it.similarity >= minSimilarity }
     }
 
     private fun String.normalizeName(): String = lowercase(Locale.GERMAN)

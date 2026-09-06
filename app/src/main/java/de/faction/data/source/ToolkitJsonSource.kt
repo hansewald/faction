@@ -1,7 +1,7 @@
 package de.faction.data.source
 
+import de.faction.data.model.ImportCandidate
 import de.faction.data.model.ImportSource
-import de.faction.data.model.OwnedChampion
 import de.faction.data.repo.ChampionCatalog
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -38,7 +38,7 @@ class ToolkitJsonSource(private val catalog: ChampionCatalog) : AccountSource {
         val locked: Boolean = false,
     )
 
-    override suspend fun load(input: SourceInput): Result<List<OwnedChampion>> {
+    override suspend fun load(input: SourceInput): Result<List<ImportCandidate>> {
         val content = (input as? SourceInput.FileContent)?.json
             ?: return Result.failure(IllegalArgumentException("Für diesen Import wird eine JSON-Datei benötigt."))
 
@@ -47,16 +47,17 @@ class ToolkitJsonSource(private val catalog: ChampionCatalog) : AccountSource {
             if (export.champions.isEmpty()) {
                 error("Die Datei enthält keine Champions. Stammt sie wirklich aus dem Toolkit-Export?")
             }
-            export.champions.mapNotNull { raw ->
-                val champion = catalog.findByName(raw.name) ?: return@mapNotNull null
-                OwnedChampion(
-                    championId = champion.id,
+            export.champions.map { raw ->
+                // Der Export nennt exakte Namen; ein fehlender Treffer heisst, dass die
+                // Legende im Katalog fehlt - dann bleibt der Vorschlag unzugeordnet.
+                val champion = catalog.findByName(raw.name)
+                ImportCandidate(
+                    rawLabel = raw.name,
+                    championId = champion?.id,
                     level = raw.level.coerceIn(1, 60),
                     ascension = raw.ascendLevel.coerceIn(0, 6),
                     rank = raw.rank.coerceIn(1, 6),
-                    awakeningLevel = raw.awakenLevel.coerceIn(0, 6),
-                    power = raw.power,
-                    locked = raw.locked,
+                    confidence = if (champion != null) 1f else 0f,
                     source = ImportSource.TOOLKIT_JSON,
                 )
             }

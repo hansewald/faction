@@ -45,12 +45,14 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import de.faction.data.model.Champion
 import de.faction.domain.AccountStage
 import de.faction.domain.BuildPlanner
+import de.faction.domain.MasteryPlanner
 import de.faction.domain.BuildStep
 import de.faction.domain.ScoreEngine
 import de.faction.ui.FactionViewModel
 import de.faction.ui.components.AreaRatingTile
 import de.faction.ui.components.ChampionSigil
 import de.faction.ui.components.FactionCard
+import de.faction.ui.components.MasteryGrid
 import de.faction.ui.components.SectionTitle
 import de.faction.ui.components.StepBadge
 import de.faction.ui.components.Tag
@@ -297,8 +299,35 @@ private fun LazyListScope.buildContent(
     }
 
     item {
+        val masteries = MasteryPlanner.plan(champion, plan.area)
         Column(Modifier.padding(horizontal = 16.dp)) {
             Spacer(Modifier.height(6.dp))
+            FactionCard(Modifier.fillMaxWidth()) {
+                Column {
+                    Column(Modifier.padding(16.dp)) {
+                        SectionTitle("Meisterschaften")
+                        Spacer(Modifier.height(4.dp))
+                        Text(
+                            "Empfohlen ist genau eine Meisterschaft je Stufe. Der zweite Baum ist " +
+                                masteries.secondary.label + ".",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = FactionColors.TextSecondary,
+                        )
+                    }
+                    MasteryGrid(masteries)
+                    Column(Modifier.padding(16.dp)) {
+                        masteries.reasons.forEach { reason ->
+                            Text(
+                                reason,
+                                style = MaterialTheme.typography.bodySmall,
+                                color = FactionColors.TextSecondary,
+                                modifier = Modifier.padding(bottom = 6.dp),
+                            )
+                        }
+                    }
+                }
+            }
+            Spacer(Modifier.height(12.dp))
             FactionCard(Modifier.fillMaxWidth()) {
                 Column(Modifier.padding(16.dp)) {
                     Text(

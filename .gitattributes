@@ -1,0 +1,13 @@
+# Zeilenenden im Repository normalisieren.
+* text=auto eol=lf
+
+# Das Start-Skript braucht LF, sonst schlaegt es auf Unix fehl.
+gradlew text eol=lf
+gradlew.bat text eol=crlf
+
+# Binaerdateien unangetastet lassen.
+*.jar binary
+*.apk binary
+*.png binary
+*.jpg binary
+*.webp binary

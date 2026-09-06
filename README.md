@@ -174,10 +174,34 @@ das einzige Erkennungsmerkmal: die Zuordnung trifft dort der Spieler.
 Genehmigung von Plarium. Liegt sie vor, ist das eine zweite Bildquelle neben dem
 Portrait des Spielers — `ChampionSigil` bleibt unverändert.
 
+## Katalog aktuell halten
+
+Neue Legenden erscheinen laufend. Ein Katalog, der nur beim Erscheinen mitgeliefert
+wird, veraltet zwischen zwei Store-Updates — deshalb der Abgleich im News-Reiter.
+
+`CatalogUpdater` lädt einen versionierten Feed:
+
+```json
+{ "version": 2, "released": "2026-09-07", "champions": [ … ] }
+```
+
+Ist die Version höher als der lokale Stand, wird er übernommen und die Liste sofort
+aktualisiert; neue Legenden werden namentlich gemeldet. Eine leere, unlesbare oder
+ältere Antwort lässt den bisherigen Bestand unangetastet. `ChampionCatalog` lädt
+danach den heruntergeladenen Stand und fällt auf die mitgelieferte Datei zurück, wenn
+dieser unlesbar ist — lieber ein älterer Katalog als gar keiner.
+
+Die Feed-Adresse steht in `CatalogUpdater.DEFAULT_FEED_URL` und ist bewusst leer:
+sie muss auf einen Bestand zeigen, über den du verfügen darfst.
+
 ## Noch offen
 
 - **Fähigkeiten im Detail**: Multiplikatoren und Abklingzeiten fehlen im Startdatensatz;
-  der Reiter zeigt bisher nur die Wirkungen des Kits.
-- Sync des Champion-Katalogs statt reiner Seed-Datei
+  der Reiter zeigt bisher nur die Wirkungen des Kits. Bis dahin verlinkt die Detailseite
+  ins RaidWiki, statt fremde Inhalte selbst auszuliefern.
+- **Basiswerte** (LP, Angriff, Verteidigung, Tempo, Krit) stehen nicht im Katalog.
+- **Feed-Adresse eintragen**: `CatalogUpdater.DEFAULT_FEED_URL` ist leer. Sie muss auf
+  einen Bestand zeigen, über den du verfügen darfst — etwa eine mit
+  `tools/generate_champions.py` erzeugte Datei in deinem eigenen Speicher.
 - Artefakt-Sets als eigener Bereich
 - iOS-Portierung (dann teilen sich beide Plattformen nur die Regeln, nicht den Code)

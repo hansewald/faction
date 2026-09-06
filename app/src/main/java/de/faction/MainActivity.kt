@@ -141,7 +141,7 @@ private fun FactionApp(app: FactionApplication) {
             }
             composable(Tab.QUESTS.route) { QuestsScreen() }
             composable(Tab.GUIDE.route) { GuideScreen(viewModel) }
-            composable(Tab.NEWS.route) { NewsScreen() }
+            composable(Tab.NEWS.route) { NewsScreen(viewModel) }
             composable(Routes.CHAMPION_DETAIL) { entry ->
                 val championId = entry.arguments?.getString("championId").orEmpty()
                 ChampionDetailScreen(championId = championId, viewModel = viewModel)

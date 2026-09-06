@@ -4,6 +4,7 @@ import android.app.Application
 import de.faction.data.local.GuideProgressStore
 import de.faction.data.local.PortraitStore
 import de.faction.data.local.RaidDatabase
+import de.faction.data.repo.CatalogUpdater
 import de.faction.data.repo.ChampionCatalog
 import de.faction.data.repo.RosterRepository
 import de.faction.data.source.AccountSource
@@ -25,6 +26,8 @@ class FactionApplication : Application() {
         private set
     lateinit var portraits: PortraitStore
         private set
+    lateinit var catalogUpdater: CatalogUpdater
+        private set
 
     override fun onCreate() {
         super.onCreate()
@@ -32,6 +35,7 @@ class FactionApplication : Application() {
         repository = RosterRepository(RaidDatabase.get(this).rosterDao(), catalog)
         guideProgress = GuideProgressStore(this)
         portraits = PortraitStore(this)
+        catalogUpdater = CatalogUpdater(this, catalog)
         accountSources = listOf(
             ScreenshotOcrSource(this, catalog, portraits),
             ToolkitJsonSource(catalog),

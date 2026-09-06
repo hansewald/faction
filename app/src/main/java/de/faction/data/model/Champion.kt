@@ -115,4 +115,19 @@ data class Champion(
      * nichts bewerten — solche Einträge dürfen nie als Futter empfohlen werden.
      */
     val dataComplete: Boolean = true,
-)
+) {
+    /**
+     * Adresse der Legende im RaidWiki, zum Nachschlagen von Werten und Fähigkeiten.
+     *
+     * Die App verlinkt dorthin, statt fremde Inhalte selbst auszuliefern: was dort
+     * steht, gehört den Betreibern und Plarium. Der Namensteil folgt deren Muster —
+     * Kleinschreibung, Leerzeichen als Bindestrich, Sonderzeichen entfallen.
+     */
+    val wikiUrl: String
+        get() {
+            val slug = name.lowercase()
+                .replace(Regex("[^a-z0-9]+"), "-")
+                .trim('-')
+            return "https://raidwiki.com/champion/" + slug
+        }
+}

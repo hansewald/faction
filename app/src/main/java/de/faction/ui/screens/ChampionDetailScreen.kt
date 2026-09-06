@@ -42,6 +42,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.compose.material3.TextButton
+import androidx.compose.ui.platform.LocalUriHandler
 import de.faction.data.model.Champion
 import de.faction.domain.AccountStage
 import de.faction.domain.BuildPlanner
@@ -218,6 +220,7 @@ private fun LazyListScope.overviewContent(champion: Champion) {
         }
     }
     item {
+        val uriHandler = LocalUriHandler.current
         Column(Modifier.padding(horizontal = 16.dp)) {
             TraitStrip(
                 listOf(
@@ -227,7 +230,17 @@ private fun LazyListScope.overviewContent(champion: Champion) {
                     "Rolle" to champion.role.label,
                 ),
             )
-            Spacer(Modifier.height(12.dp))
+            Spacer(Modifier.height(8.dp))
+            // Basiswerte und Faehigkeiten im Wortlaut liegen nicht in unserem Katalog.
+            // Statt sie zu kopieren, fuehrt die App dorthin, wo sie gepflegt werden.
+            TextButton(onClick = { uriHandler.openUri(champion.wikiUrl) }) {
+                Text(
+                    "Werte und Fähigkeiten im RaidWiki nachschlagen",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = FactionColors.Teal,
+                )
+            }
+            Spacer(Modifier.height(8.dp))
         }
     }
     item {

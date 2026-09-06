@@ -12,6 +12,8 @@ import de.faction.data.model.ImportCandidate
 import de.faction.data.model.OwnedChampion
 import de.faction.data.model.Rarity
 import de.faction.data.model.Role
+import de.faction.data.repo.CatalogUpdate
+import de.faction.data.repo.CatalogUpdater
 import de.faction.data.repo.ChampionCatalog
 import de.faction.data.repo.RosterRepository
 import de.faction.data.source.AccountSource
@@ -61,7 +63,35 @@ class FactionViewModel(
     private val portraitStore: PortraitStore,
     val catalog: ChampionCatalog,
     val accountSources: List<AccountSource>,
+    private val catalogUpdater: CatalogUpdater,
 ) : ViewModel() {
+
+    private val _catalogUpdate = MutableStateFlow<CatalogUpdate?>(null)
+
+    /** Ergebnis des letzten Katalog-Abgleichs. `null`, solange keiner lief. */
+    val catalogUpdate: StateFlow<CatalogUpdate?> = _catalogUpdate.asStateFlow()
+
+    private val _catalogChecking = MutableStateFlow(false)
+    val catalogChecking: StateFlow<Boolean> = _catalogChecking.asStateFlow()
+
+    /** Die Version des lokalen Katalogs — 0, solange nur die mitgelieferte Datei vorliegt. */
+    fun catalogVersion(): Int = catalogUpdater.localVersion()
+
+    /**
+     * Gleicht den Katalog mit dem Feed ab. Neue Legenden stehen danach sofort in der
+     * Liste, ohne dass die App neu gestartet werden muss.
+     */
+    fun checkCatalog() {
+        if (_catalogChecking.value) return
+        viewModelScope.launch {
+            _catalogChecking.value = true
+            _catalogUpdate.value = catalogUpdater.check()
+            // Der Katalog treibt die gefilterte Liste an; ohne dieses Signal bliebe sie stehen.
+            _catalogReady.value = false
+            _catalogReady.value = true
+            _catalogChecking.value = false
+        }
+    }
 
     private val _catalogReady = MutableStateFlow(false)
 
@@ -246,6 +276,7 @@ class FactionViewModel(
                 app.portraits,
                 app.catalog,
                 app.accountSources,
+                app.catalogUpdater,
             ) as T
         }
     }

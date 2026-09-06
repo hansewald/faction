@@ -5,6 +5,7 @@ import de.faction.data.model.Champion
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.json.Json
+import java.io.File
 import java.util.Locale
 import kotlin.math.max
 import kotlin.math.min
@@ -23,11 +24,36 @@ class ChampionCatalog(private val context: Context) {
     private var champions: List<Champion> = emptyList()
     private var byId: Map<String, Champion> = emptyMap()
 
+    /**
+     * Lädt den Katalog: bevorzugt den heruntergeladenen Stand, sonst die mitgelieferte
+     * Datei. Ist der Download unlesbar, fällt die App still auf die Assets zurück —
+     * lieber ein älterer Katalog als gar keiner.
+     */
     suspend fun load() = withContext(Dispatchers.IO) {
         if (champions.isNotEmpty()) return@withContext
-        val raw = context.assets.open("champions.json").bufferedReader().use { it.readText() }
-        champions = json.decodeFromString(raw)
-        byId = champions.associateBy { it.id }
+        val downloaded = File(context.filesDir, CatalogUpdater.FILE_NAME)
+            .takeIf { it.isFile }
+            ?.let { file -> runCatching { parseFeed(file.readText()) }.getOrNull() }
+        publish(downloaded ?: parseSeed())
+    }
+
+    /** Übernimmt einen frisch geladenen Stand, ohne die App neu zu starten. */
+    fun replaceWith(updated: List<Champion>) = publish(updated)
+
+    private fun parseSeed(): List<Champion> =
+        context.assets.open("champions.json").bufferedReader().use { json.decodeFromString(it.readText()) }
+
+    /**
+     * Der Feed trägt eine Version, die mitgelieferte Datei ist eine nackte Liste.
+     * Beides wird gelesen — die Seed-Datei soll nicht umgeschrieben werden müssen.
+     */
+    private fun parseFeed(raw: String): List<Champion> =
+        runCatching { json.decodeFromString<CatalogFeed>(raw).champions }
+            .getOrElse { json.decodeFromString<List<Champion>>(raw) }
+
+    private fun publish(list: List<Champion>) {
+        champions = list
+        byId = list.associateBy { it.id }
     }
 
     fun all(): List<Champion> = champions

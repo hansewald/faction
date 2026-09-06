@@ -22,6 +22,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.unit.dp
 import de.faction.ui.components.FactionCard
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.runtime.getValue
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import de.faction.data.repo.CatalogUpdate
+import de.faction.ui.FactionViewModel
 import de.faction.ui.theme.FactionColors
 
 private data class NewsSource(val title: String, val description: String, val url: String)
@@ -49,8 +55,10 @@ private val sources = listOf(
 )
 
 @Composable
-fun NewsScreen(modifier: Modifier = Modifier) {
+fun NewsScreen(viewModel: FactionViewModel, modifier: Modifier = Modifier) {
     val uriHandler = LocalUriHandler.current
+    val update by viewModel.catalogUpdate.collectAsStateWithLifecycle()
+    val checking by viewModel.catalogChecking.collectAsStateWithLifecycle()
 
     LazyColumn(
         modifier = modifier.fillMaxSize(),
@@ -71,6 +79,14 @@ fun NewsScreen(modifier: Modifier = Modifier) {
                 )
                 Spacer(Modifier.height(4.dp))
             }
+        }
+        item {
+            CatalogUpdateCard(
+                version = viewModel.catalogVersion(),
+                checking = checking,
+                update = update,
+                onCheck = viewModel::checkCatalog,
+            )
         }
         items(sources, key = { it.url }) { source ->
             FactionCard(Modifier.fillMaxWidth(), onClick = { uriHandler.openUri(source.url) }) {
@@ -131,4 +147,82 @@ private fun Disclaimer() {
             )
         }
     }
+}
+
+/**
+ * Der Katalog-Abgleich.
+ *
+ * Neue Legenden erscheinen laufend; ohne Abgleich veraltet der Katalog zwischen zwei
+ * Store-Updates. Die Karte sagt offen, welcher Stand lokal liegt und was der letzte
+ * Abgleich ergeben hat — auch, wenn er fehlgeschlagen ist. Ein stiller Sync, der
+ * nichts meldet, wäre hier das Schlechteste: dann steht eine fehlende Legende da wie
+ * eine, die es nicht gibt.
+ */
+@Composable
+private fun CatalogUpdateCard(
+    version: Int,
+    checking: Boolean,
+    update: CatalogUpdate?,
+    onCheck: () -> Unit,
+) {
+    FactionCard(Modifier.fillMaxWidth()) {
+        Column(Modifier.padding(16.dp)) {
+            Text(
+                "Champion-Katalog",
+                style = MaterialTheme.typography.titleMedium,
+                color = FactionColors.TextPrimary,
+            )
+            Text(
+                if (version == 0) {
+                    "Mitgelieferter Stand — noch nie abgeglichen."
+                } else {
+                    "Stand $version"
+                },
+                style = MaterialTheme.typography.bodySmall,
+                color = FactionColors.TextSecondary,
+            )
+            Spacer(Modifier.height(10.dp))
+
+            when (update) {
+                null -> Unit
+                is CatalogUpdate.UpToDate -> UpdateNote(
+                    "Der Katalog ist auf dem neuesten Stand.",
+                    FactionColors.TextSecondary,
+                )
+                is CatalogUpdate.Failed -> UpdateNote(update.reason, FactionColors.food)
+                is CatalogUpdate.Applied -> Column {
+                    UpdateNote(
+                        "Stand ${update.version} übernommen · ${update.totalChampions} Legenden.",
+                        FactionColors.Teal,
+                    )
+                    if (update.addedChampions.isNotEmpty()) {
+                        Spacer(Modifier.height(4.dp))
+                        Text(
+                            "Neu: " + update.addedChampions.joinToString(", "),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = FactionColors.TextSecondary,
+                        )
+                    }
+                }
+            }
+
+            Spacer(Modifier.height(10.dp))
+            Button(
+                onClick = onCheck,
+                enabled = !checking,
+                modifier = Modifier.fillMaxWidth(),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = FactionColors.Surface,
+                    contentColor = FactionColors.TextPrimary,
+                ),
+            ) {
+                Text(if (checking) "Wird abgeglichen …" else "Auf neue Legenden prüfen")
+            }
+        }
+    }
+}
+
+@Composable
+private fun UpdateNote(text: String, color: androidx.compose.ui.graphics.Color) {
+    Text(text, style = MaterialTheme.typography.bodySmall, color = color)
 }

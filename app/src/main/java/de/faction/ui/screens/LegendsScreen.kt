@@ -42,7 +42,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -51,6 +50,7 @@ import de.faction.data.model.Rarity
 import de.faction.data.model.Role
 import de.faction.data.source.SourceInput
 import de.faction.ui.FactionViewModel
+import de.faction.ui.components.ChampionSigil
 import de.faction.ui.components.FactionCard
 import de.faction.ui.components.SectionTitle
 import de.faction.ui.components.Tag
@@ -304,19 +304,11 @@ private fun LegendCard(
 ) {
     FactionCard(onClick = onClick) {
         Box {
-            // Platzhalter fuer das Championbild.
-            Box(
-                Modifier
+            ChampionSigil(
+                champion = champion,
+                modifier = Modifier
                     .fillMaxWidth()
-                    .height(150.dp)
-                    .background(
-                        Brush.verticalGradient(
-                            listOf(
-                                FactionColors.rarity(champion.rarity.label).copy(alpha = 0.28f),
-                                FactionColors.Night,
-                            ),
-                        ),
-                    ),
+                    .height(150.dp),
             )
             IconButton(
                 onClick = onToggleOwned,

@@ -95,5 +95,40 @@ fun NewsScreen(modifier: Modifier = Modifier) {
                 }
             }
         }
+
+        item { Disclaimer() }
+    }
+}
+
+/**
+ * Pflichthinweis für eine inoffizielle Fan-App: die Abgrenzung zum Rechteinhaber muss
+ * in der App stehen, nicht nur im Store-Eintrag.
+ */
+@Composable
+private fun Disclaimer() {
+    Spacer(Modifier.height(8.dp))
+    FactionCard(Modifier.fillMaxWidth()) {
+        Column(Modifier.padding(16.dp)) {
+            Text(
+                "Rechtliches",
+                style = MaterialTheme.typography.titleMedium,
+                color = FactionColors.TextPrimary,
+            )
+            Spacer(Modifier.height(8.dp))
+            Text(
+                "FACTION ist eine inoffizielle Fan-App und steht in keiner Verbindung zu " +
+                    "Plarium Global Ltd. RAID: Shadow Legends sowie alle Namen von Legenden, " +
+                    "Fraktionen und Spielinhalten sind Marken oder Eigentum von Plarium.",
+                style = MaterialTheme.typography.bodySmall,
+                color = FactionColors.TextSecondary,
+            )
+            Spacer(Modifier.height(8.dp))
+            Text(
+                "Diese App enthält kein Bildmaterial aus dem Spiel. Die Wappen der Legenden " +
+                    "sind eigene Zeichnungen aus Fraktion, Affinität und Seltenheit.",
+                style = MaterialTheme.typography.bodySmall,
+                color = FactionColors.TextSecondary,
+            )
+        }
     }
 }

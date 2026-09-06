@@ -39,7 +39,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -49,6 +48,7 @@ import de.faction.domain.BuildPlanner
 import de.faction.domain.BuildStep
 import de.faction.domain.ScoreEngine
 import de.faction.ui.FactionViewModel
+import de.faction.ui.components.ChampionSigil
 import de.faction.ui.components.FactionCard
 import de.faction.ui.components.SectionTitle
 import de.faction.ui.components.StepBadge
@@ -118,18 +118,11 @@ fun ChampionDetailScreen(
 @Composable
 private fun DetailHeader(champion: Champion, isOwned: Boolean, onToggleOwned: () -> Unit) {
     Box {
-        Box(
-            Modifier
+        ChampionSigil(
+            champion = champion,
+            modifier = Modifier
                 .fillMaxWidth()
-                .height(220.dp)
-                .background(
-                    Brush.verticalGradient(
-                        listOf(
-                            FactionColors.rarity(champion.rarity.label).copy(alpha = 0.3f),
-                            FactionColors.Night,
-                        ),
-                    ),
-                ),
+                .height(220.dp),
         )
         IconButton(onClick = onToggleOwned, modifier = Modifier.align(Alignment.TopEnd)) {
             Icon(

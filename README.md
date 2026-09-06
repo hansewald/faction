@@ -130,10 +130,39 @@ python tools/generate_champions.py <pfad-zum-datenrepo>
 
 Die 47 Wirkungen im Modell decken 3,5 Tags je Legende ab.
 
+## Bildmaterial — geprüft und entschieden
+
+**Die App enthält kein Bildmaterial aus dem Spiel, und das bleibt so.** Grundlage:
+
+- [Nutzungsbedingungen](https://company.plarium.com/en/terms/terms-of-use/), Abschnitt 11:
+  alle Rechte an Charakteren und Grafiken liegen bei Plarium; Dritte dürfen sie nicht
+  „use, download, upload, print, display, reproduce" — Marken und Logos nur mit
+  vorheriger schriftlicher Zustimmung.
+- [Video Guidelines](https://company.plarium.com/en/terms/video-guidelines/): erlauben
+  Gameplay-Material **ausschließlich auf Video- und Streamingplattformen**, monetarisiert
+  nur über deren Partnerprogramme. Apps, Websites und Software sind nicht erfasst; eine
+  Lizenz für Artwork außerhalb von Video wird nicht erteilt.
+- Das [Presskit](https://company.plarium.com/en/presskit/raid-shadow-legends/) enthält
+  vier Champion-Bilder, richtet sich an Presse und nennt keine Lizenzbedingungen.
+
+Community-Datenbanken liefern zwar extrahierte Artworks — daran ändert sich die
+Rechtslage aber nicht: wer sie ausliefert, verbreitet Plariums Material.
+
+**Stattdessen: `ChampionSigil`.** Jede Legende bekommt ein selbst gezeichnetes Wappen
+aus einem Fraktionszeichen (14 eigene Symbole), der Affinitätsfarbe als Verlauf und
+einem Rahmen in der Seltenheitsfarbe. Vollständig als Vektor im Code, keine Assets,
+kein Ladevorgang — und nebenbei informativ: Fraktion, Affinität und Seltenheit sind
+erkennbar, ohne den Text zu lesen.
+
+Der Pflichthinweis zur Abgrenzung von Plarium steht im News-Reiter der App, nicht nur
+im Store-Eintrag.
+
+**Falls doch echte Artworks gewünscht sind**, gibt es genau zwei saubere Wege: eine
+schriftliche Genehmigung von Plarium einholen, oder Bilder ausschließlich lokal vom
+Nutzer selbst hinzufügen lassen und niemals ausliefern.
+
 ## Noch offen
 
-- **Bildmaterial**: Champion- und Kapitelbilder sind derzeit Farbverläufe nach
-  Seltenheit. Die Artworks gehören Plarium und brauchen eine geklärte Quelle.
 - **Fähigkeiten im Detail**: Multiplikatoren und Abklingzeiten fehlen im Startdatensatz;
   der Reiter zeigt bisher nur die Wirkungen des Kits.
 - Sync des Champion-Katalogs statt reiner Seed-Datei

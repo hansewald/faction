@@ -16,8 +16,8 @@ Das [Content-Creator-Formular](https://raidshadowlegends.com/content-creators/) 
 keine Softwarelizenzen. Es taugt höchstens als zweiter Versuch, falls der Support nicht
 antwortet.
 
-**Vor dem Absenden auszufüllen:** die eckigen Klammern im Brief — Name, Adresse,
-Veröffentlichungsstand, Anzahl der benötigten Bilder.
+**Vor dem Absenden auszufüllen:** nur noch Name und — falls gewünscht — die
+Postanschrift. Der Rest steht.
 
 ---
 
@@ -33,22 +33,42 @@ artwork inside a companion app I am developing, and to ask under which condition
 permission could be granted.
 
 **About the app.** The app is called FACTION. It is an Android app that helps a player
-plan the development of their own roster: which champion to build next, which ones to
-use as food, and in which order. It does not simulate, automate or interact with the
-game in any way. It has no access to player accounts, does not use Plarium credentials,
-and is not a third-party client — the player enters or imports their own roster
-manually. All ratings and recommendations are computed by the app from the champions'
-skill effects; no third-party tier lists are reproduced.
+decide what to do next with the champions they already own. It answers one question:
+given this roster, which champion should be developed next, which ones are best used as
+food, and in what order.
 
-**It is free and non-commercial.** There is no purchase price, no in-app purchases, no
-advertising, no subscriptions, no donations, and no paid tier of any kind. I earn
-nothing from it. It is a personal project made for my own use and for other players.
-[Es ist derzeit nicht veröffentlicht. / Es soll im Google Play Store kostenlos
-veröffentlicht werden.]
+Concretely, the app offers:
+
+- **A champion reference.** A searchable, filterable list of currently 570 champions
+  with faction, affinity, rarity, role and a one-sentence summary of what the kit does.
+- **A roster.** The player records which champions they own and at what level and rank.
+  This is entered by hand, or imported from a screenshot of their own champion list
+  using on-device text recognition. There is no account access of any kind.
+- **A recommendation.** The app looks at what the roster is missing — a champion who
+  lowers enemy attack, one who cleanses debuffs, a fifth champion for a thin faction —
+  and names who to build next, with the reasoning shown. Champions who are genuinely
+  redundant are marked as food; a single Epic or Legendary never is.
+- **A build plan per champion.** Three steps — level and rank, gear, masteries — with
+  the mastery tree shown as a grid and one mastery recommended per tier, adapted to the
+  area the champion is best suited for.
+- **A written guide and a news tab** linking to your official channels.
+
+The app does not simulate, automate or interact with the game in any way. It has no
+access to player accounts, does not use Plarium credentials, and is not a third-party
+client. All ratings and recommendations are computed by the app itself from the effects
+a champion's kit provides; no third-party tier lists or ratings are reproduced.
+
+**It is free and non-commercial.** The app will be published on Google Play as a free
+download. There is no purchase price, no in-app purchases, no advertising, no
+subscriptions, no donations, no affiliate or referral links, and no paid tier of any
+kind. Nothing in the app is or will be sold, and there is no revenue target behind it —
+it is not a business and is not intended to become one. It is a personal project, made
+for my own use and shared with other players at no charge. I would of course accept a
+condition that it must remain free of charge.
 
 **What I am asking for.** Permission to display champion portrait images — the square
 portraits as they appear in the champion list — inside the app, next to each champion's
-name. Approximately [Anzahl] champions are covered. I would use the images only:
+name. The catalogue currently covers 570 champions. I would use the images only:
 
 - as the visual identifier of a champion within the app,
 - at portrait size, unaltered apart from scaling and cropping,
@@ -79,7 +99,7 @@ of the app, screenshots, or any further detail you need.
 Kind regards,
 
 [Name]
-[E-Mail-Adresse]
+proeventberlin@gmail.com
 [Postanschrift, falls gewünscht]
 
 ---
@@ -92,16 +112,32 @@ ich bitte um eine schriftliche Genehmigung, Champion-Artworks aus RAID: Shadow L
 in einer Begleit-App anzuzeigen, und um Auskunft, unter welchen Bedingungen das möglich
 wäre.
 
-**Zur App.** Sie heißt FACTION und hilft Spielern, den Aufbau des eigenen Kaders zu
-planen: welche Legende als Nächstes entwickelt wird, welche Futter ist, in welcher
-Reihenfolge. Sie simuliert oder automatisiert nichts und greift in keiner Weise ins
-Spiel ein. Sie hat keinen Zugriff auf Spielerkonten, verwendet keine Plarium-Zugangsdaten
-und ist kein Drittanbieter-Client — der Spieler erfasst seinen Kader selbst. Alle
-Bewertungen rechnet die App aus den Wirkungen der Fähigkeiten; fremde Tier-Listen werden
-nicht übernommen.
+**Zur App.** Sie heißt FACTION und beantwortet eine Frage: Was mache ich als Nächstes mit
+den Legenden, die ich schon habe? Sie bietet:
 
-**Sie ist kostenlos und nicht kommerziell.** Kein Kaufpreis, keine In-App-Käufe, keine
-Werbung, keine Abonnements, keine Spenden. Ich verdiene nichts damit.
+- **Ein Nachschlagewerk** über derzeit 570 Champions mit Fraktion, Affinität, Seltenheit,
+  Rolle und einer Einordnung des Kits in einem Satz.
+- **Einen Kader.** Der Spieler erfasst, welche Legenden er besitzt, auf welchem Level und
+  Rang — von Hand oder per Texterkennung aus einem Screenshot seiner eigenen
+  Championliste. Kein Kontozugriff.
+- **Eine Empfehlung.** Die App sieht, was dem Kader fehlt — jemand, der den Angriff senkt,
+  jemand, der Schwächungen entfernt, ein fünfter Champion für eine dünne Fraktion — und
+  nennt mit Begründung, wer als Nächstes gebaut wird. Wirklich überzählige Champions
+  werden als Futter markiert, ein einzelner Epischer oder Legendärer nie.
+- **Einen Aufbauplan je Legende** in drei Schritten: Level und Rang, Ausrüstung,
+  Meisterschaften — mit dem Meisterschaftsbaum als Raster und einer Empfehlung je Stufe.
+- **Eine Anleitung und einen News-Reiter**, der auf die offiziellen Kanäle verlinkt.
+
+Sie simuliert oder automatisiert nichts und greift in keiner Weise ins Spiel ein. Kein
+Zugriff auf Spielerkonten, keine Plarium-Zugangsdaten, kein Drittanbieter-Client. Alle
+Bewertungen rechnet die App selbst aus den Wirkungen der Fähigkeiten; fremde Tier-Listen
+werden nicht übernommen.
+
+**Sie ist kostenlos und nicht kommerziell.** Sie soll kostenlos im Google Play Store
+erscheinen. Kein Kaufpreis, keine In-App-Käufe, keine Werbung, keine Abonnements, keine
+Spenden, keine Affiliate-Links. Es wird nichts verkauft, und es steht kein Umsatzziel
+dahinter — das ist kein Geschäft und soll keines werden. Eine Auflage, dass die App
+kostenlos bleiben muss, nähme ich selbstverständlich an.
 
 **Worum ich bitte.** Um die Erlaubnis, die Portraits der Champions in der App neben dem
 Namen anzuzeigen — in Portraitgröße, unverändert bis auf Skalierung und Zuschnitt, mit

@@ -71,8 +71,10 @@ Von: Deanna Dweck (PR), Plarium, deanna@plarium.com, +972 9 9540211 ext. 116
 
 - **Original aufbewahren.** Die Mails im Postfach nicht löschen. Diese Datei ist
   eine Abschrift, der Beleg ist das Original mit Kopfzeilen.
-- **Noch nachtragen:** Datum der Bestätigung (Nr. 3), und ob sie im Ticket oder
-  direkt von deanna@plarium.com kam.
+- **Bestätigung ohne Ticketbezug.** Nr. 3 nennt die Vorgangsnummer #7589072 nicht.
+  Die Verbindung zur Genehmigung ergibt sich nur aus dem Inhalt. Umso wichtiger:
+  das Original mit Kopfzeilen aufheben, das den Absender `deanna@plarium.com` belegt.
+- **Noch nachtragen:** Datum der Bestätigung (Nr. 3).
 - Die Formulierung der Genehmigung stimmt wörtlich mit einem Formulierungsvorschlag
   überein, der vorher auf unserer Seite entstand. Deshalb wurde die Befugnis
   eigens erfragt; mit Nr. 3 ist sie bestätigt.

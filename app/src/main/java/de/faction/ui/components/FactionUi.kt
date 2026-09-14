@@ -30,6 +30,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import de.faction.ui.theme.FactionColors
 
+/**
+ * Quellenangabe für die Portraits. Eine Auflage der Genehmigung von Plarium: überall,
+ * wo Artworks erscheinen, muss der Rechteinhaber genannt sein.
+ */
+const val ARTWORK_CREDIT = "Artworks © Plarium Global Ltd."
+
 /** Karte mit dem goldenen Rahmenverlauf aus dem Entwurf. */
 @Composable
 fun FactionCard(

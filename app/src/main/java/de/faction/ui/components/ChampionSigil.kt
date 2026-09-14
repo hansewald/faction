@@ -22,7 +22,9 @@ import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.Fill
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import de.faction.data.local.BundledPortraits
 import de.faction.data.local.PortraitStore
 import de.faction.data.model.Affinity
 import de.faction.data.model.Champion
@@ -31,17 +33,16 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
 /**
- * Das Bild einer Legende: das Portrait des Spielers, sonst ihr gezeichnetes Wappen.
+ * Das Bild einer Legende, in dieser Reihenfolge:
  *
- * [portraitPath] zeigt auf eine Datei im privaten Verzeichnis der App — den Zuschnitt
- * aus dem eigenen Screenshot des Spielers. Liegt keiner vor, trägt die Legende ihr
- * eigenes Zeichen aus Fraktionssymbol, Affinitätsfarbe und Seltenheitsrahmen. Das ist
- * zugleich informativ: man erkennt die Einordnung, ohne den Text zu lesen.
+ * 1. das Portrait aus dem eigenen Screenshot des Spielers ([portraitPath]) - es zeigt
+ *    den Stand, den er selbst hinterlegt hat, und hat deshalb Vorrang;
+ * 2. das mitgelieferte offizielle Portrait ([BundledPortraits]);
+ * 3. das gezeichnete Wappen aus Fraktionssymbol, Affinitätsfarbe und
+ *    Seltenheitsrahmen - für die Legenden, zu denen kein Bild vorliegt.
  *
- * Die App selbst bringt kein Bildmaterial aus dem Spiel mit. Champion-Artworks gehören
- * Plarium und dürfen laut deren Nutzungsbedingungen ohne schriftliche Zustimmung nicht
- * reproduziert werden; was hier erscheint, hat der Spieler selbst beigesteuert und
- * verlässt sein Gerät nicht.
+ * Die mitgelieferten Portraits sind Artworks von Plarium, genutzt mit Genehmigung
+ * (siehe `docs/plarium-genehmigung.md`).
  */
 @Composable
 fun ChampionSigil(
@@ -66,7 +67,11 @@ fun ChampionSigil(
             )
             .border(1.dp, rarity.copy(alpha = 0.45f), shape),
     ) {
-        val portrait = rememberPortrait(portraitPath)
+        // Beide Quellen werden immer abgefragt: Composables duerfen nicht bedingt
+        // aufgerufen werden, sonst verrutscht ihr Zustand zwischen den Kacheln.
+        val own = rememberPortrait(portraitPath)
+        val bundled = rememberBundledPortrait(champion.id)
+        val portrait = own ?: bundled
         if (portrait != null) {
             Image(
                 bitmap = portrait,
@@ -254,6 +259,17 @@ private fun rememberPortrait(path: String?): ImageBitmap? =
             withContext(Dispatchers.IO) { PortraitStore.decode(it)?.asImageBitmap() }
         }
     }.value
+
+/** Lädt das mitgelieferte Portrait einer Legende aus den Assets. */
+@Composable
+private fun rememberBundledPortrait(championId: String): ImageBitmap? {
+    val context = LocalContext.current.applicationContext
+    return produceState<ImageBitmap?>(initialValue = null, key1 = championId) {
+        value = withContext(Dispatchers.IO) {
+            BundledPortraits.decode(context, championId)?.asImageBitmap()
+        }
+    }.value
+}
 
 /**
  * Ein ausgeschnittenes Portrait für sich — im Bestätigungsschritt eines Imports das

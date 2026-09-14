@@ -50,6 +50,7 @@ import de.faction.data.model.Rarity
 import de.faction.data.model.Role
 import de.faction.data.source.SourceInput
 import de.faction.ui.FactionViewModel
+import de.faction.ui.components.ARTWORK_CREDIT
 import de.faction.ui.components.ChampionSigil
 import de.faction.ui.components.FactionCard
 import de.faction.ui.components.SectionTitle
@@ -81,6 +82,11 @@ fun LegendsScreen(
                 "Verstehen. Vergleichen. Aufbauen.",
                 style = MaterialTheme.typography.bodyMedium,
                 color = FactionColors.TextSecondary,
+            )
+            Text(
+                ARTWORK_CREDIT,
+                style = MaterialTheme.typography.labelSmall,
+                color = FactionColors.TextSecondary.copy(alpha = 0.7f),
             )
             Spacer(Modifier.height(12.dp))
 

@@ -21,6 +21,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.unit.dp
+import de.faction.ui.components.ARTWORK_CREDIT
 import de.faction.ui.components.FactionCard
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -117,8 +118,9 @@ fun NewsScreen(viewModel: FactionViewModel, modifier: Modifier = Modifier) {
 }
 
 /**
- * Pflichthinweis für eine inoffizielle Fan-App: die Abgrenzung zum Rechteinhaber muss
- * in der App stehen, nicht nur im Store-Eintrag.
+ * Pflichthinweis und Erfüllung zweier Auflagen aus der Genehmigung von Plarium
+ * (`docs/plarium-genehmigung.md`): Artworks werden Plarium zugeschrieben, und die App
+ * weist sich als inoffiziell aus. Beides muss in der App stehen, nicht nur im Store.
  */
 @Composable
 private fun Disclaimer() {
@@ -132,16 +134,26 @@ private fun Disclaimer() {
             )
             Spacer(Modifier.height(8.dp))
             Text(
-                "FACTION ist eine inoffizielle Fan-App und steht in keiner Verbindung zu " +
-                    "Plarium Global Ltd. RAID: Shadow Legends sowie alle Namen von Legenden, " +
-                    "Fraktionen und Spielinhalten sind Marken oder Eigentum von Plarium.",
+                "FACTION ist ein inoffizielles Fanprojekt. Es steht in keiner Verbindung " +
+                    "zu Plarium Global Ltd. und wird von Plarium weder unterstützt noch " +
+                    "empfohlen.",
                 style = MaterialTheme.typography.bodySmall,
                 color = FactionColors.TextSecondary,
             )
             Spacer(Modifier.height(8.dp))
             Text(
-                "Diese App enthält kein Bildmaterial aus dem Spiel. Die Wappen der Legenden " +
-                    "sind eigene Zeichnungen aus Fraktion, Affinität und Seltenheit.",
+                ARTWORK_CREDIT + " RAID: Shadow Legends sowie alle Namen von Legenden, " +
+                    "Fraktionen und Spielinhalten sind Marken oder Eigentum von Plarium und " +
+                    "den jeweiligen Rechteinhabern. Die Portraits werden mit Genehmigung von " +
+                    "Plarium verwendet.",
+                style = MaterialTheme.typography.bodySmall,
+                color = FactionColors.TextSecondary,
+            )
+            Spacer(Modifier.height(8.dp))
+            Text(
+                "FACTION ist und bleibt kostenlos: keine Werbung, keine Käufe, keine Abos, " +
+                    "keine Spenden. Legenden ohne Portrait tragen ein selbst gezeichnetes " +
+                    "Wappen aus Fraktion, Affinität und Seltenheit.",
                 style = MaterialTheme.typography.bodySmall,
                 color = FactionColors.TextSecondary,
             )

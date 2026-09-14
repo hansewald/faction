@@ -130,49 +130,34 @@ python tools/generate_champions.py <pfad-zum-datenrepo>
 
 Die 47 Wirkungen im Modell decken 3,5 Tags je Legende ab.
 
-## Bildmaterial — geprüft und entschieden
+## Bildmaterial
 
-**Die App enthält kein Bildmaterial aus dem Spiel, und das bleibt so.** Grundlage:
+**FACTION zeigt die offiziellen Champion-Portraits mit Genehmigung von Plarium.**
+Die Genehmigung, die Bestätigung durch das Legal Department und die Auflagen stehen in
+[`docs/plarium-genehmigung.md`](docs/plarium-genehmigung.md).
 
-- [Nutzungsbedingungen](https://company.plarium.com/en/terms/terms-of-use/), Abschnitt 11:
-  alle Rechte an Charakteren und Grafiken liegen bei Plarium; Dritte dürfen sie nicht
-  „use, download, upload, print, display, reproduce" — Marken und Logos nur mit
-  vorheriger schriftlicher Zustimmung.
-- [Video Guidelines](https://company.plarium.com/en/terms/video-guidelines/): erlauben
-  Gameplay-Material **ausschließlich auf Video- und Streamingplattformen**, monetarisiert
-  nur über deren Partnerprogramme. Apps, Websites und Software sind nicht erfasst; eine
-  Lizenz für Artwork außerhalb von Video wird nicht erteilt.
-- Das [Presskit](https://company.plarium.com/en/presskit/raid-shadow-legends/) enthält
-  vier Champion-Bilder, richtet sich an Presse und nennt keine Lizenzbedingungen.
+> **Die App muss kostenlos bleiben und darf keinerlei Einnahmen erzielen** — keine
+> Werbung, keine Käufe, keine Abos, keine Spenden, keine Affiliate-Links. Jede dieser
+> Änderungen beendet die Genehmigung. Das gilt auch für einen einzelnen Spendenlink.
 
-Community-Datenbanken liefern zwar extrahierte Artworks — daran ändert sich die
-Rechtslage aber nicht: wer sie ausliefert, verbreitet Plariums Material.
+Welches Bild eine Legende zeigt, in dieser Reihenfolge:
 
-**Stattdessen: `ChampionSigil`.** Jede Legende bekommt ein selbst gezeichnetes Wappen
-aus einem Fraktionszeichen (14 eigene Symbole), der Affinitätsfarbe als Verlauf und
-einem Rahmen in der Seltenheitsfarbe. Vollständig als Vektor im Code, keine Assets,
-kein Ladevorgang — und nebenbei informativ: Fraktion, Affinität und Seltenheit sind
-erkennbar, ohne den Text zu lesen.
+1. das Portrait aus dem eigenen Screenshot des Spielers (`PortraitStore`, bleibt auf
+   dem Gerät),
+2. das mitgelieferte Portrait (`BundledPortraits`, 550 Bilder, 3,7 MB als WebP in
+   `assets/portraits`),
+3. das selbst gezeichnete Wappen (`ChampionSigil`) — für 20 Legenden, deren
+   Quelldatei in der Community-Datenbank beschädigt ist.
 
-Der Pflichthinweis zur Abgrenzung von Plarium steht im News-Reiter der App, nicht nur
-im Store-Eintrag.
+Neu erzeugen:
 
-**Eigene Portraits statt Artworks.** Beim Screenshot-Import schneidet
-`TileGrid` die Kacheln aus dem Bild des Spielers und `PortraitStore` legt sie in
-`filesDir/portraits` ab. Wo ein Portrait vorliegt, zeigt `ChampionSigil` es statt des
-Wappens — auf dem Gerät des Spielers sieht der Kader damit aus wie im Spiel, ohne dass
-die App Bildmaterial ausliefert. Die Bilder stammen vom Spieler, bleiben lokal und sind
-nicht Teil des Builds.
+```bash
+python tools/generate_portraits.py <pfad-zum-datenrepo>
+```
 
-Das Raster wird aus den Positionen der erkannten Levelzahlen zurückgerechnet, in
-Vielfachen des Spaltenabstands — dadurch unabhängig von der Bildschirmauflösung
-(`TileGridTest`). Ein danebenliegender Zuschnitt fällt im Bestätigungsschritt auf, der
-jedes Bild neben dem Namen zeigt. In der Rasteransicht ohne Namen ist das Bild sogar
-das einzige Erkennungsmerkmal: die Zuordnung trifft dort der Spieler.
-
-**Falls echte Artworks ausgeliefert werden sollen**, braucht es eine schriftliche
-Genehmigung von Plarium. Liegt sie vor, ist das eine zweite Bildquelle neben dem
-Portrait des Spielers — `ChampionSigil` bleibt unverändert.
+Die Auflagen „Plarium als Rechteinhaber nennen" und „als inoffiziell kennzeichnen"
+sind in der App umgesetzt: Quellenangabe im Legenden-Reiter und im Detailkopf, voller
+Hinweis im News-Reiter.
 
 ## Katalog aktuell halten
 

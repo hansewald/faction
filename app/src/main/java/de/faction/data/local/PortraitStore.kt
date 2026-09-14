@@ -13,12 +13,10 @@ import java.io.File
 /**
  * Die Portraits des eigenen Kaders — Bilder, die der Spieler selbst beisteuert.
  *
- * Ausgeliefert wird davon nichts: die Bilder stammen aus dem Screenshot des Spielers,
- * liegen in seinem privaten App-Verzeichnis und verlassen das Gerät nicht. Die App
- * selbst enthält weiterhin kein Bildmaterial aus dem Spiel (siehe [ChampionSigil]),
- * denn dessen Rechte liegen bei Plarium.
- *
- * Fehlt zu einer Legende ein Bild, zeichnet die Oberfläche wie bisher das Wappen.
+ * Die Bilder stammen aus dem Screenshot des Spielers, liegen in seinem privaten
+ * App-Verzeichnis und verlassen das Gerät nicht. Sie haben Vorrang vor den
+ * mitgelieferten Portraits ([BundledPortraits]); fehlt beides, zeichnet die
+ * Oberfläche das Wappen (siehe [de.faction.ui.components.ChampionSigil]).
  */
 class PortraitStore(context: Context) {
 

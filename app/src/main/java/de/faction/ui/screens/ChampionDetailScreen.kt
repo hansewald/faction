@@ -38,6 +38,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import de.faction.ui.components.ARTWORK_CREDIT
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -137,6 +140,26 @@ private fun DetailHeader(
             modifier = Modifier
                 .fillMaxWidth()
                 .height(220.dp),
+        )
+        // Name und Einordnung stehen auf dem Bild. Auf einem Portrait sind sie ohne
+        // Abdunklung nicht lesbar, beim Wappen stoert der Verlauf nicht.
+        Box(
+            Modifier
+                .matchParentSize()
+                .background(
+                    Brush.verticalGradient(
+                        0.45f to Color.Transparent,
+                        1f to FactionColors.Night.copy(alpha = 0.92f),
+                    ),
+                ),
+        )
+        Text(
+            ARTWORK_CREDIT,
+            style = MaterialTheme.typography.labelSmall,
+            color = FactionColors.TextSecondary,
+            modifier = Modifier
+                .align(Alignment.BottomEnd)
+                .padding(end = 12.dp, bottom = 8.dp),
         )
         IconButton(onClick = onToggleOwned, modifier = Modifier.align(Alignment.TopEnd)) {
             Icon(

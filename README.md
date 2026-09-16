@@ -212,4 +212,6 @@ Namen anzuzeigen. `ArtifactSetContentTest` sichert das zusätzlich ab.
 - **Feed-Adresse eintragen**: `CatalogUpdater.DEFAULT_FEED_URL` ist leer. Sie muss auf
   einen Bestand zeigen, über den du verfügen darfst — etwa eine mit
   `tools/generate_champions.py` erzeugte Datei in deinem eigenen Speicher.
-- iOS-Portierung (dann teilen sich beide Plattformen nur die Regeln, nicht den Code)
+- iOS-Portierung — bewusst nicht umgesetzt, auf dieser Maschine mangels Xcode/macOS
+  auch nicht überprüfbar. Optionen und Aufwandsschätzung in
+  [`docs/ios-portierung.md`](docs/ios-portierung.md).

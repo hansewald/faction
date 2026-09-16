@@ -20,6 +20,8 @@ enum class Tab(val route: String, val label: String, val icon: ImageVector) {
 object Routes {
     /** Detailseite einer Legende, erreichbar aus dem Legenden-Reiter. */
     const val CHAMPION_DETAIL = "legends/{championId}"
+    /** Nachschlagewerk der Artefakt-Sets, erreichbar vom Start-Reiter. */
+    const val ARTIFACTS = "artifacts"
 
     fun championDetail(championId: String) = "legends/$championId"
 }

@@ -42,6 +42,7 @@ import androidx.navigation.compose.rememberNavController
 import de.faction.ui.FactionViewModel
 import de.faction.ui.nav.Routes
 import de.faction.ui.nav.Tab
+import de.faction.ui.screens.ArtifactsScreen
 import de.faction.ui.screens.ChampionDetailScreen
 import de.faction.ui.screens.GuideScreen
 import de.faction.ui.screens.LegendsScreen
@@ -71,20 +72,22 @@ private fun FactionApp(app: FactionApplication) {
     val viewModel: FactionViewModel = viewModel(factory = FactionViewModel.factory(app))
 
     val isDetail = route?.startsWith("legends/") == true
+    val isArtifacts = route == Routes.ARTIFACTS
+    val hasBackButton = isDetail || isArtifacts
 
     Scaffold(
         containerColor = FactionColors.Night,
         topBar = {
             TopAppBar(
                 title = {
-                    if (isDetail) {
-                        Text("Helden-Details", style = androidx.compose.material3.MaterialTheme.typography.titleMedium)
-                    } else {
-                        Wordmark()
+                    when {
+                        isDetail -> Text("Helden-Details", style = androidx.compose.material3.MaterialTheme.typography.titleMedium)
+                        isArtifacts -> Text("Artefakte", style = androidx.compose.material3.MaterialTheme.typography.titleMedium)
+                        else -> Wordmark()
                     }
                 },
                 navigationIcon = {
-                    if (isDetail) {
+                    if (hasBackButton) {
                         IconButton(onClick = { navController.popBackStack() }) {
                             Icon(
                                 Icons.AutoMirrored.Filled.ArrowBack,
@@ -131,6 +134,7 @@ private fun FactionApp(app: FactionApplication) {
                     onOpenLegends = { navController.switchTab(Tab.LEGENDS) },
                     onOpenQuests = { navController.switchTab(Tab.QUESTS) },
                     onOpenNews = { navController.switchTab(Tab.NEWS) },
+                    onOpenArtifacts = { navController.navigate(Routes.ARTIFACTS) },
                 )
             }
             composable(Tab.LEGENDS.route) {
@@ -146,6 +150,7 @@ private fun FactionApp(app: FactionApplication) {
                 val championId = entry.arguments?.getString("championId").orEmpty()
                 ChampionDetailScreen(championId = championId, viewModel = viewModel)
             }
+            composable(Routes.ARTIFACTS) { ArtifactsScreen() }
         }
     }
 }

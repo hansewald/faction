@@ -1,6 +1,7 @@
 package de.faction.domain
 
 import de.faction.data.model.Area
+import de.faction.data.model.ArtifactSetContent
 import de.faction.data.model.Champion
 import de.faction.data.model.Rarity
 import de.faction.data.model.Utility
@@ -78,6 +79,14 @@ object BuildPlanner {
         )
     }
 
+    /**
+     * Löst eine Set-Kennung zum deutschen Namen auf. Bricht absichtlich hart ab, wenn
+     * die Kennung nicht existiert — ein Tippfehler hier soll beim nächsten Testlauf
+     * auffallen, nicht als falscher Name in der App landen.
+     */
+    private fun setName(id: String): String =
+        ArtifactSetContent.sets.first { it.id == id }.name
+
     private fun gearStep(
         champion: Champion,
         area: Area,
@@ -87,11 +96,16 @@ object BuildPlanner {
         val details = mutableListOf<String>()
         details += when {
             setsSupport && !setsDebuffer ->
-                "Tempo-Set als Grundlage. ${champion.name} wirkt hier Effekte, keinen Schaden — jede zusätzliche Runde zählt doppelt."
+                "${setName("speed")} als Grundlage. ${champion.name} wirkt hier Effekte, keinen Schaden — " +
+                    "jede zusätzliche Runde zählt doppelt. Sobald zwei volle Sets tragbar sind, ergänzt " +
+                    "${setName("resistance")} das Überleben gegen gegnerische Debuffs."
             setsDebuffer ->
-                "Tempo-Set plus Genauigkeit. Ohne genügend Genauigkeit widerstehen Gegner den Debuffs, und das Kit wirkt gar nicht."
+                "${setName("speed")} plus ${setName("accuracy")}. Ohne genügend Genauigkeit widerstehen " +
+                    "Gegner den Debuffs, und das Kit wirkt gar nicht."
             else ->
-                "Kritischer Treffer und kritischer Schaden als Grundlage, sobald die Kritquote verlässlich hoch genug ist."
+                "${setName("critical-rate")} plus ${setName("critical-damage")}, sobald die Krit. Rate " +
+                    "verlässlich hoch genug ist. Bis dahin trägt ${setName("fatal")} allein schon beides in " +
+                    "einem einzigen Set."
         }
         details += "Hauptwerte: Stiefel auf Tempo. Für ${area.label} auf den Ringen und Amuletten das, was ${champion.role.label} braucht."
         details += "Nebenwerte schlagen Sets. Ein 5-Sterne-Teil mit Tempo ist mehr wert als ein vollständiges Set ohne."

@@ -51,6 +51,7 @@ fun StartScreen(
     onOpenLegends: () -> Unit,
     onOpenQuests: () -> Unit,
     onOpenNews: () -> Unit,
+    onOpenArtifacts: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val progress by viewModel.guideProgressRatio.collectAsStateWithLifecycle()
@@ -114,9 +115,9 @@ fun StartScreen(
                 )
                 DiscoveryTile(
                     icon = Icons.Filled.AutoAwesome,
-                    title = "Builds",
-                    subtitle = "Helden entwickeln",
-                    onClick = onOpenLegends,
+                    title = "Artefakte",
+                    subtitle = "Sets verstehen",
+                    onClick = onOpenArtifacts,
                     modifier = Modifier.weight(1f),
                 )
             }

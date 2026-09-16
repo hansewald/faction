@@ -29,13 +29,13 @@ Benötigt JDK 17 und Android SDK 35.
 
 | Paket | Inhalt |
 | --- | --- |
-| `data.model` | Champion, Kader, Wirkungen (`Utility`), Bereiche (`Area`) |
+| `data.model` | Champion, Kader, Wirkungen (`Utility`), Bereiche (`Area`), Artefakt-Sets (`ArtifactSet`) |
 | `data.source` | Importquellen hinter dem Interface `AccountSource` |
 | `data.local` | Room-Datenbank für den erfassten Kader |
 | `data.repo` | Champion-Katalog und Kader-Repository |
 | `domain` | `ScoreEngine` (Kit-Bewertung), `BuildPlanner` (Aufbauplan), `BuildAdvisor` (Empfehlungen) |
 | `ui.components` | Wiederverwendete Bausteine: Goldrahmen-Karte, Tags, Schrittmarken |
-| `ui.screens` | Start, Legenden, Helden-Details, Quests, Anleitung, News |
+| `ui.screens` | Start, Legenden, Helden-Details, Artefakte, Quests, Anleitung, News |
 | `ui.theme` | FACTION-Palette (nur dunkel), Typografie, Formen |
 
 ## Wie die Bewertung funktioniert
@@ -186,6 +186,24 @@ dieser unlesbar ist — lieber ein älterer Katalog als gar keiner.
 Die Feed-Adresse steht in `CatalogUpdater.DEFAULT_FEED_URL` und ist bewusst leer:
 sie muss auf einen Bestand zeigen, über den du verfügen darfst.
 
+## Artefakte
+
+`ArtifactSetContent.kt` führt 51 Sets mit zwei oder vier Teilen: Name, Wirkung,
+grobe Kategorie. Erreichbar über die Artefakte-Kachel auf dem Start-Reiter.
+
+Die Werte sind gegen zwei unabhängige Quellen geprüft, nicht aus einer heruntergeladenen
+Rohdatendatei erzeugt — Vorgehen und eine gefundene Abweichung (Retaliation: 2 oder 4
+Teile, je nach Quelle unterschiedlich alt) stehen in
+[`docs/artefakt-sets-quellen.md`](docs/artefakt-sets-quellen.md). Bewusst **nicht**
+enthalten sind die "Variable"-Sets mit 1 oder bis zu 9 Teilen (Merciless, Slayer, Stone
+Skin und ähnliche): für ihre Zwischenstufen fand sich keine belastbare Quelle, und eine
+geratene Zahl wäre schlechter als eine fehlende.
+
+Der Aufbauplan einer Legende nennt bereits konkrete Sets statt allgemeiner Begriffe —
+`BuildPlanner.gearStep()` löst dafür Set-Kennungen gegen `ArtifactSetContent` auf und
+bricht absichtlich hart ab, wenn eine Kennung nicht existiert, statt einen falschen
+Namen anzuzeigen. `ArtifactSetContentTest` sichert das zusätzlich ab.
+
 ## Noch offen
 
 - **Fähigkeiten im Detail**: Multiplikatoren und Abklingzeiten fehlen im Startdatensatz;
@@ -194,5 +212,4 @@ sie muss auf einen Bestand zeigen, über den du verfügen darfst.
 - **Feed-Adresse eintragen**: `CatalogUpdater.DEFAULT_FEED_URL` ist leer. Sie muss auf
   einen Bestand zeigen, über den du verfügen darfst — etwa eine mit
   `tools/generate_champions.py` erzeugte Datei in deinem eigenen Speicher.
-- Artefakt-Sets als eigener Bereich
 - iOS-Portierung (dann teilen sich beide Plattformen nur die Regeln, nicht den Code)

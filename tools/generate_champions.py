@@ -5,9 +5,17 @@ Quelle: https://github.com/PatPat1567/RaidShadowLegendsData (Stammdaten und
 Skill-Beschreibungen, aus dem Spiel extrahiert).
 
 Bewusst uebernommen werden nur *Fakten*: Name, Fraktion, Seltenheit, Affinitaet,
-Rolle sowie die Frage, welche Wirkungen ein Kit mitbringt. Die Skill-Texte selbst
-werden nicht mitgeliefert - sie gehoeren Plarium. Aus ihnen werden lediglich die
-Utility-Tags abgeleitet, auf denen die Bewertung in ScoreEngine.kt arbeitet.
+Rolle, die sechs verlaesslichen Basiswerte (LP, Angriff, Verteidigung, Tempo,
+Widerstand, Genauigkeit) sowie die Frage, welche Wirkungen ein Kit mitbringt. Die
+Skill-Texte selbst werden nicht mitgeliefert - sie gehoeren Plarium. Aus ihnen
+werden lediglich die Utility-Tags abgeleitet, auf denen die Bewertung in
+ScoreEngine.kt arbeitet.
+
+Die Quelle fuehrt zusaetzlich Krit-Rate und Krit-Schaden, aber verlaesslich sind
+sie nicht: das Feld "crate" enthaelt in 555 von 558 Faellen den Text "RATE" oder
+"Rate" statt einer Zahl, und "cdmg" traegt bei 456 von 530 Champions denselben
+Wert "15" - ein Platzhalter, kein gemessener Wert. Beide Felder werden deshalb
+nicht uebernommen.
 
 Aufruf:
     python tools/generate_champions.py <pfad-zum-datenrepo> [ziel.json]
@@ -159,6 +167,33 @@ def load_lenient(path: str):
         return json.loads(re.sub(r",(\s*[\]}])", r"\1", raw))
 
 
+# Nur diese sechs Felder sind ueber den Bestand hinweg numerisch stimmig (siehe
+# Modulkommentar). "crate" und "cdmg" fehlen hier bewusst.
+_STAT_FIELDS = {
+    "hp": "hp", "atk": "attack", "def": "defense",
+    "spd": "speed", "resist": "resistance", "acc": "accuracy",
+}
+
+
+def parse_stats(detail: dict) -> dict[str, int] | None:
+    """Liest die Basiswerte, wenn alle sechs Felder eine echte Zahl enthalten.
+
+    Die Quelle liefert entweder den vollstaendigen Satz oder gar keinen - ein
+    Mittelding (etwa nur "hp" ohne den Rest) kam bei keinem der 558 gepruesten
+    Champions vor. Deshalb alles oder nichts, statt einzelne Felder zu raten.
+    """
+    raw = detail.get("stats")
+    if not raw:
+        return None
+    out: dict[str, int] = {}
+    for source_key, target_key in _STAT_FIELDS.items():
+        value = str(raw.get(source_key, "")).replace(",", "").strip()
+        if not re.fullmatch(r"\d+", value):
+            return None
+        out[target_key] = int(value)
+    return out
+
+
 def derive_utilities(skills: list[dict]) -> tuple[set[str], Counter]:
     """Leitet die Utility-Tags aus den Skillbeschreibungen ab."""
     found: set[str] = set()
@@ -249,10 +284,13 @@ def main() -> int:
             role = "ATTACK"
 
         detail_path = os.path.join(details_dir, name.replace(" ", "_") + ".json")
-        skills = []
+        skills: list[dict] = []
+        stats: dict[str, int] | None = None
         if os.path.exists(detail_path):
             try:
-                skills = load_lenient(detail_path).get("skills") or []
+                detail = load_lenient(detail_path)
+                skills = detail.get("skills") or []
+                stats = parse_stats(detail)
             except Exception as exc:  # pragma: no cover - defekte Rohdatei
                 skipped.append(f"{name}: Detaildatei unlesbar ({exc})")
 
@@ -277,6 +315,7 @@ def main() -> int:
             "earlyGameCarry": name in EARLY_GAME_CARRIES,
             "campaignFarmable": name in CAMPAIGN_FARMABLE,
             "dataComplete": data_complete,
+            "stats": stats,
         }
 
         champion_id = entry["id"]
@@ -299,9 +338,11 @@ def main() -> int:
         fh.write("\n")
 
     no_utilities = sum(1 for c in champions if not c["utilities"] and c["dataComplete"])
+    with_stats = sum(1 for c in champions if c["stats"] is not None)
     print(f"{len(champions)} Legenden geschrieben nach {target}")
     print(f"  ohne Fähigkeitsdaten: {incomplete}")
     print(f"  mit Fähigkeiten, aber ohne erkannte Wirkung: {no_utilities}")
+    print(f"  mit Basiswerten: {with_stats}")
     if skipped:
         print(f"  übersprungen: {len(skipped)}")
         for s in skipped[:10]:

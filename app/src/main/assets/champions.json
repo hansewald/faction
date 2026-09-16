@@ -10,7 +10,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "akoth-the-seared",
@@ -23,7 +24,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "alaric-the-hooded",
@@ -36,7 +38,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "amarantine-skeleton",
@@ -54,7 +57,15 @@
   "kitSummary": "Erhöht Verteidigung, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17505,
+   "attack": 683,
+   "defense": 1178,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "aox-the-rememberer",
@@ -67,7 +78,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "archmage-hellmut",
@@ -80,7 +92,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "avir-the-alchemage",
@@ -99,7 +112,15 @@
   "kitSummary": "Senkt Angriff, heilt, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16680,
+   "attack": 881,
+   "defense": 1035,
+   "speed": 102,
+   "resistance": 30,
+   "accuracy": 10
+  }
  },
  {
   "id": "baerdal-fellhammer",
@@ -116,7 +137,15 @@
   "kitSummary": "Schildet, kontert, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18330,
+   "attack": 1398,
+   "defense": 683,
+   "speed": 94,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "balthus-drauglord",
@@ -129,7 +158,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "baroth-the-bloodsoaked",
@@ -149,7 +179,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, heilt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20475,
+   "attack": 826,
+   "defense": 1112,
+   "speed": 98,
+   "resistance": 45,
+   "accuracy": 0
+  }
  },
  {
   "id": "basileus-roanas",
@@ -169,7 +207,15 @@
   "kitSummary": "Blockt Schaden, schildet, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15525,
+   "attack": 1542,
+   "defense": 1002,
+   "speed": 101,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "battle-sister",
@@ -185,7 +231,15 @@
   "kitSummary": "Leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14205,
+   "attack": 1090,
+   "defense": 716,
+   "speed": 101,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "beast-wrestler",
@@ -200,7 +254,15 @@
   "kitSummary": "Betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15525,
+   "attack": 1233,
+   "defense": 760,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "bergoth-the-malformed",
@@ -213,7 +275,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "big-un",
@@ -226,7 +289,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "black-knight",
@@ -245,7 +309,15 @@
   "kitSummary": "Heilt dauerhaft, macht unbesiegbar, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 22470,
+   "attack": 914,
+   "defense": 1167,
+   "speed": 100,
+   "resistance": 57,
+   "accuracy": 50
+  }
  },
  {
   "id": "blind-seer",
@@ -263,7 +335,15 @@
   "kitSummary": "Belebt wieder, blockt Debuffs, blockt Schaden.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18165,
+   "attack": 1322,
+   "defense": 1035,
+   "speed": 115,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "bone-knight",
@@ -281,7 +361,15 @@
   "kitSummary": "Schwächt, trifft alle Gegner, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14370,
+   "attack": 1090,
+   "defense": 980,
+   "speed": 93,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "brakus-the-shifter",
@@ -300,7 +388,15 @@
   "kitSummary": "Schwächt, heilt, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19815,
+   "attack": 1465,
+   "defense": 793,
+   "speed": 101,
+   "resistance": 63,
+   "accuracy": 40
+  }
  },
  {
   "id": "captain-temila",
@@ -318,7 +414,15 @@
   "kitSummary": "Heilt, heilt dauerhaft, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18895,
+   "attack": 936,
+   "defense": 1112,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "catacomb-councilor",
@@ -335,7 +439,15 @@
   "kitSummary": "Heilt, erhöht Angriff, löst Verbündeten-Angriffe aus.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14040,
+   "attack": 1454,
+   "defense": 914,
+   "speed": 92,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "chancellor-yasmin",
@@ -348,7 +460,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "cillian-the-lucky",
@@ -370,7 +483,15 @@
   "kitSummary": "Blockt Schaden, erhöht Angriff, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13215,
+   "attack": 1432,
+   "defense": 1266,
+   "speed": 98,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "coffin-smasher",
@@ -386,7 +507,15 @@
   "kitSummary": "Senkt Angriff, entzündet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 21135,
+   "attack": 683,
+   "defense": 936,
+   "speed": 92,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "corpse-collector",
@@ -406,7 +535,15 @@
   "kitSummary": "Trifft alle Gegner, vergiftet, entzieht Leben.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17175,
+   "attack": 1167,
+   "defense": 991,
+   "speed": 106,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "corpulent-cadaver",
@@ -423,7 +560,15 @@
   "kitSummary": "Schildet, provoziert, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20640,
+   "attack": 617,
+   "defense": 1035,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "countess-lix",
@@ -436,7 +581,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "crimson-helm",
@@ -455,7 +601,15 @@
   "kitSummary": "Senkt Angriff, belebt wieder, blockt Schaden.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15690,
+   "attack": 727,
+   "defense": 1531,
+   "speed": 85,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "crimson-slayer",
@@ -472,7 +626,15 @@
   "kitSummary": "Trifft alle Gegner, schläfert ein, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13710,
+   "attack": 1134,
+   "defense": 980,
+   "speed": 96,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "crowned-druid",
@@ -485,7 +647,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "crypt-witch",
@@ -502,7 +665,15 @@
   "kitSummary": "Senkt Verteidigung, blockt Schaden, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14865,
+   "attack": 1421,
+   "defense": 892,
+   "speed": 98,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "crypt-king-graal",
@@ -515,7 +686,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "dark-athel",
@@ -535,7 +707,15 @@
   "kitSummary": "Senkt Verteidigung, heilt, erhöht Tempo.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13710,
+   "attack": 1465,
+   "defense": 925,
+   "speed": 100,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "dark-elhain",
@@ -556,7 +736,15 @@
   "kitSummary": "Erhöht Angriff, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17010,
+   "attack": 1365,
+   "defense": 804,
+   "speed": 94,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "deacon-armstrong",
@@ -569,7 +757,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "dead-crusader",
@@ -585,7 +774,15 @@
   "kitSummary": "Trifft alle Gegner, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13380,
+   "attack": 826,
+   "defense": 1035,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "death-hound",
@@ -602,7 +799,15 @@
   "kitSummary": "Blockt Schaden, schildet, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 10740,
+   "attack": 914,
+   "defense": 573,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "defiled-sinner",
@@ -619,7 +824,15 @@
   "kitSummary": "Senkt Verteidigung, erhöht Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17670,
+   "attack": 1222,
+   "defense": 903,
+   "speed": 94,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "dhukk-the-pierced",
@@ -632,7 +845,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "dolor-lorekeeper",
@@ -650,7 +864,15 @@
   "kitSummary": "Heilt dauerhaft, blockt Debuffs, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16845,
+   "attack": 1035,
+   "defense": 870,
+   "speed": 98,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "drexthar-bloodtwin",
@@ -668,7 +890,15 @@
   "kitSummary": "Heilt, trifft alle Gegner, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18990,
+   "attack": 914,
+   "defense": 1398,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 50
+  }
  },
  {
   "id": "drokgul-the-gaunt",
@@ -687,7 +917,15 @@
   "kitSummary": "Blockt Schaden, schildet, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 22965,
+   "attack": 991,
+   "defense": 1057,
+   "speed": 107,
+   "resistance": 40,
+   "accuracy": 0
+  }
  },
  {
   "id": "drowned-bloatwraith",
@@ -707,7 +945,15 @@
   "kitSummary": "Senkt Verteidigung, heilt, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13545,
+   "attack": 1387,
+   "defense": 738,
+   "speed": 100,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "duchess-lilitu",
@@ -727,7 +973,15 @@
   "kitSummary": "Heilt dauerhaft, belebt wieder, blockt Debuffs.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 22470,
+   "attack": 793,
+   "defense": 1288,
+   "speed": 103,
+   "resistance": 50,
+   "accuracy": 50
+  }
  },
  {
   "id": "elder-skarg",
@@ -749,7 +1003,15 @@
   "kitSummary": "Blockt Schaden, schildet, erhöht Tempo.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16185,
+   "attack": 1630,
+   "defense": 870,
+   "speed": 105,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "fahrakin-the-fat",
@@ -762,7 +1024,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "fang-cleric",
@@ -780,7 +1043,15 @@
   "kitSummary": "Heilt dauerhaft, belebt wieder, macht unbesiegbar.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18330,
+   "attack": 903,
+   "defense": 1178,
+   "speed": 105,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "fodbor-the-bard",
@@ -793,7 +1064,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "fortress-goon",
@@ -812,7 +1084,15 @@
   "kitSummary": "Heilt, erhöht Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15525,
+   "attack": 859,
+   "defense": 1134,
+   "speed": 90,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "frontline-warrior",
@@ -828,7 +1108,15 @@
   "kitSummary": "Nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12885,
+   "attack": 595,
+   "defense": 1299,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "frozen-banshee",
@@ -844,7 +1132,15 @@
   "kitSummary": "Vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14700,
+   "attack": 1046,
+   "defense": 1002,
+   "speed": 99,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "gala-longbraids",
@@ -862,7 +1158,15 @@
   "kitSummary": "Heilt, schildet, ignoriert Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18165,
+   "attack": 1432,
+   "defense": 661,
+   "speed": 97,
+   "resistance": 60,
+   "accuracy": 60
+  }
  },
  {
   "id": "gerhard-the-stone",
@@ -875,7 +1179,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "ghoulish-ranger",
@@ -892,7 +1197,15 @@
   "kitSummary": "Entzündet, entzieht Leben.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12390,
+   "attack": 1443,
+   "defense": 760,
+   "speed": 95,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "ghrush-the-mangler",
@@ -911,7 +1224,15 @@
   "kitSummary": "Senkt Angriff, heilt dauerhaft, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19320,
+   "attack": 694,
+   "defense": 1321,
+   "speed": 94,
+   "resistance": 45,
+   "accuracy": 0
+  }
  },
  {
   "id": "gloril-brutebane",
@@ -928,7 +1249,15 @@
   "kitSummary": "Senkt Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16185,
+   "attack": 1244,
+   "defense": 705,
+   "speed": 90,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "godseeker-aniri",
@@ -941,7 +1270,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "golden-reaper",
@@ -959,7 +1289,15 @@
   "kitSummary": "Senkt Angriff, leert die Zugleiste, erhöht Tempo.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18495,
+   "attack": 1134,
+   "defense": 936,
+   "speed": 111,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "gomlok-skyhide",
@@ -972,7 +1310,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "gravechill-killer",
@@ -989,7 +1328,15 @@
   "kitSummary": "Senkt Verteidigung, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13545,
+   "attack": 1233,
+   "defense": 892,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "grizzled-jarl",
@@ -1008,7 +1355,15 @@
   "kitSummary": "Senkt Angriff, blockt Debuffs, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18825,
+   "attack": 760,
+   "defense": 1288,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 75
+  }
  },
  {
   "id": "grohak-the-bloodied",
@@ -1024,7 +1379,15 @@
   "kitSummary": "Trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15690,
+   "attack": 1487,
+   "defense": 1046,
+   "speed": 96,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "grunch-killjoy",
@@ -1037,7 +1400,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "gurgoh-the-augur",
@@ -1054,7 +1418,15 @@
   "kitSummary": "Betäubt, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16020,
+   "attack": 1465,
+   "defense": 1046,
+   "speed": 92,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "gurptuk-moss-beard",
@@ -1067,7 +1439,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "haarken-greatblade",
@@ -1080,7 +1453,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "hakkorhn-smashlord",
@@ -1099,7 +1473,15 @@
   "kitSummary": "Heilt, reinigt Debuffs, blockt Debuffs.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 23790,
+   "attack": 848,
+   "defense": 1145,
+   "speed": 99,
+   "resistance": 50,
+   "accuracy": 50
+  }
  },
  {
   "id": "harvest-jack",
@@ -1123,7 +1505,15 @@
   "kitSummary": "Senkt Angriff, heilt dauerhaft, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 26925,
+   "attack": 859,
+   "defense": 925,
+   "speed": 102,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "hatchet-slinger",
@@ -1140,7 +1530,15 @@
   "kitSummary": "Macht unbesiegbar, betäubt, ignoriert Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 10575,
+   "attack": 1321,
+   "defense": 1002,
+   "speed": 93,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "head-taker",
@@ -1153,7 +1551,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14535,
+   "attack": 980,
+   "defense": 804,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "high-khatun",
@@ -1170,7 +1576,15 @@
   "kitSummary": "Erhöht Tempo, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16350,
+   "attack": 1024,
+   "defense": 1189,
+   "speed": 104,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "hill-nomad",
@@ -1189,7 +1603,15 @@
   "kitSummary": "Senkt Angriff, heilt dauerhaft, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13875,
+   "attack": 1145,
+   "defense": 958,
+   "speed": 103,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "honor-guard",
@@ -1206,7 +1628,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15525,
+   "attack": 760,
+   "defense": 1233,
+   "speed": 99,
+   "resistance": 50,
+   "accuracy": 55
+  }
  },
  {
   "id": "hound-spawn",
@@ -1224,7 +1654,15 @@
   "kitSummary": "Senkt Verteidigung, blockt Schaden, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13050,
+   "attack": 1398,
+   "defense": 760,
+   "speed": 93,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "icebound-prospector",
@@ -1237,7 +1675,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "infernal-baroness",
@@ -1255,7 +1694,15 @@
   "kitSummary": "Senkt Angriff, heilt, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17670,
+   "attack": 914,
+   "defense": 1211,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "inithwe-bloodtwin",
@@ -1272,7 +1719,15 @@
   "kitSummary": "Heilt, trifft alle Gegner, entzieht Leben.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14370,
+   "attack": 1729,
+   "defense": 892,
+   "speed": 99,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "inquisitor-shamael",
@@ -1285,7 +1740,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "iron-brago",
@@ -1298,7 +1754,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "kantra-the-cyclone",
@@ -1321,7 +1778,15 @@
   "kitSummary": "Senkt Angriff, schwächt, heilt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18330,
+   "attack": 815,
+   "defense": 1542,
+   "speed": 99,
+   "resistance": 40,
+   "accuracy": 20
+  }
  },
  {
   "id": "king-garog",
@@ -1334,7 +1799,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "klodd-beastfeeder",
@@ -1347,7 +1813,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "kreela-witch-arm",
@@ -1360,7 +1827,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "krisk-the-ageless",
@@ -1384,7 +1852,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, heilt dauerhaft.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19485,
+   "attack": 760,
+   "defense": 1520,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 50
+  }
  },
  {
   "id": "kurzad-deepheart",
@@ -1397,7 +1873,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "lady-etessa",
@@ -1413,7 +1890,15 @@
   "kitSummary": "Betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13215,
+   "attack": 1387,
+   "defense": 1035,
+   "speed": 99,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "lanakis-the-chosen",
@@ -1432,7 +1917,15 @@
   "kitSummary": "Heilt dauerhaft, erhöht Angriff, löst Verbündeten-Angriffe aus.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20145,
+   "attack": 1255,
+   "defense": 980,
+   "speed": 108,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "line-infantry",
@@ -1447,7 +1940,15 @@
   "kitSummary": "Provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13380,
+   "attack": 738,
+   "defense": 1123,
+   "speed": 87,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "little-miss-annie",
@@ -1467,7 +1968,15 @@
   "kitSummary": "Heilt, schildet, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17835,
+   "attack": 1597,
+   "defense": 793,
+   "speed": 102,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "lodric-falconheart",
@@ -1480,7 +1989,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "lord-champfort",
@@ -1500,7 +2010,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 22305,
+   "attack": 1079,
+   "defense": 1013,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "lord-shazar",
@@ -1520,7 +2038,15 @@
   "kitSummary": "Blockt Debuffs, erhöht Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15690,
+   "attack": 1343,
+   "defense": 1189,
+   "speed": 101,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "lordly-legionary",
@@ -1539,7 +2065,15 @@
   "kitSummary": "Heilt dauerhaft, leert die Zugleiste, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15030,
+   "attack": 1354,
+   "defense": 947,
+   "speed": 96,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "lugan-the-steadfast",
@@ -1559,7 +2093,15 @@
   "kitSummary": "Heilt, schildet, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 22140,
+   "attack": 1013,
+   "defense": 1090,
+   "speed": 103,
+   "resistance": 63,
+   "accuracy": 40
+  }
  },
  {
   "id": "lydia-the-deathsiren",
@@ -1586,7 +2128,15 @@
   "kitSummary": "Senkt Verteidigung, schwächt, belebt wieder.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20805,
+   "attack": 903,
+   "defense": 1288,
+   "speed": 110,
+   "resistance": 40,
+   "accuracy": 0
+  }
  },
  {
   "id": "madame-serris",
@@ -1607,7 +2157,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, blockt Debuffs.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19650,
+   "attack": 826,
+   "defense": 1167,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "masked-fearmonger",
@@ -1627,7 +2185,15 @@
   "kitSummary": "Belebt wieder, blockt Debuffs, leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13215,
+   "attack": 1398,
+   "defense": 1024,
+   "speed": 97,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "master-butcher",
@@ -1645,7 +2211,15 @@
   "kitSummary": "Heilt, erhöht Angriff, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18495,
+   "attack": 848,
+   "defense": 947,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "maulie-tankard",
@@ -1663,7 +2237,15 @@
   "kitSummary": "Blockt Schaden, provoziert, entzündet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18495,
+   "attack": 881,
+   "defense": 1465,
+   "speed": 107,
+   "resistance": 50,
+   "accuracy": 80
+  }
  },
  {
   "id": "mausoleum-mage",
@@ -1683,7 +2265,15 @@
   "kitSummary": "Heilt, reinigt Debuffs, blockt Debuffs.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19485,
+   "attack": 1057,
+   "defense": 947,
+   "speed": 104,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "melga-steelgirdle",
@@ -1696,7 +2286,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "miscreated-monster",
@@ -1718,7 +2309,15 @@
   "kitSummary": "Senkt Verteidigung, heilt, heilt dauerhaft.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 22965,
+   "attack": 958,
+   "defense": 815,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "mistress-of-hymns",
@@ -1735,7 +2334,15 @@
   "kitSummary": "Heilt, heilt dauerhaft.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18990,
+   "attack": 1024,
+   "defense": 1013,
+   "speed": 103,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "mother-superior",
@@ -1752,7 +2359,15 @@
   "kitSummary": "Senkt Angriff, heilt dauerhaft, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16350,
+   "attack": 991,
+   "defense": 947,
+   "speed": 103,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "mountain-king",
@@ -1769,7 +2384,15 @@
   "kitSummary": "Blockt Schaden, schildet, ignoriert Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 31050,
+   "attack": 1432,
+   "defense": 1112,
+   "speed": 85,
+   "resistance": 63,
+   "accuracy": 90
+  }
  },
  {
   "id": "mystic-hand",
@@ -1786,7 +2409,15 @@
   "kitSummary": "Heilt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16615,
+   "attack": 804,
+   "defense": 1123,
+   "speed": 88,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "narma-the-returned",
@@ -1805,7 +2436,15 @@
   "kitSummary": "Senkt Angriff, heilt, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19815,
+   "attack": 1002,
+   "defense": 1255,
+   "speed": 100,
+   "resistance": 30,
+   "accuracy": 20
+  }
  },
  {
   "id": "nekhret-the-great",
@@ -1818,7 +2457,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "nogdar-the-headhunter",
@@ -1831,7 +2471,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "occult-brawler",
@@ -1849,7 +2490,15 @@
   "kitSummary": "Reinigt Debuffs, vergiftet, ignoriert Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20640,
+   "attack": 1101,
+   "defense": 826,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "ogryn-jailer",
@@ -1864,7 +2513,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 11235,
+   "attack": 1299,
+   "defense": 980,
+   "speed": 99,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "old-hermit-jorrg",
@@ -1877,7 +2534,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "outlaw-monk",
@@ -1893,7 +2551,15 @@
   "kitSummary": "Vergiftet, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": true,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12225,
+   "attack": 1244,
+   "defense": 694,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "pain-keeper",
@@ -1909,7 +2575,15 @@
   "kitSummary": "Heilt, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19320,
+   "attack": 969,
+   "defense": 771,
+   "speed": 102,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "pit-cur",
@@ -1926,7 +2600,15 @@
   "kitSummary": "Trifft alle Gegner, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15690,
+   "attack": 826,
+   "defense": 881,
+   "speed": 91,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "pit-fighter",
@@ -1941,7 +2623,15 @@
   "kitSummary": "Leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16185,
+   "attack": 892,
+   "defense": 782,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "pitiless-one",
@@ -1957,7 +2647,15 @@
   "kitSummary": "Heilt, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16350,
+   "attack": 1443,
+   "defense": 771,
+   "speed": 94,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "prince-kymar",
@@ -1976,7 +2674,15 @@
   "kitSummary": "Füllt die Zugleiste, trifft alle Gegner, schläfert ein.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18990,
+   "attack": 1046,
+   "defense": 1266,
+   "speed": 103,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "quargan-the-crowned",
@@ -1989,7 +2695,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "queen-eva",
@@ -2006,7 +2713,15 @@
   "kitSummary": "Leert die Zugleiste, trifft alle Gegner, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15690,
+   "attack": 1696,
+   "defense": 837,
+   "speed": 101,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "rearguard-sergeant",
@@ -2026,7 +2741,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, heilt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18945,
+   "attack": 859,
+   "defense": 1211,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "rector-drath",
@@ -2039,7 +2762,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "reliquary-tender",
@@ -2056,7 +2780,15 @@
   "kitSummary": "Senkt Angriff, heilt dauerhaft, reinigt Debuffs.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18165,
+   "attack": 859,
+   "defense": 958,
+   "speed": 103,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "rhazin-scarhide",
@@ -2075,7 +2807,15 @@
   "kitSummary": "Senkt Verteidigung, schwächt, leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18330,
+   "attack": 1046,
+   "defense": 1310,
+   "speed": 91,
+   "resistance": 50,
+   "accuracy": 50
+  }
  },
  {
   "id": "rian-the-conjurer",
@@ -2088,7 +2828,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "richtoff-the-bold",
@@ -2105,7 +2846,15 @@
   "kitSummary": "Trifft alle Gegner, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18825,
+   "attack": 1398,
+   "defense": 925,
+   "speed": 95,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "rock-breaker",
@@ -2121,7 +2870,15 @@
   "kitSummary": "Provoziert, kontert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18495,
+   "attack": 716,
+   "defense": 1354,
+   "speed": 91,
+   "resistance": 50,
+   "accuracy": 75
+  }
  },
  {
   "id": "roshcard-the-tower",
@@ -2139,7 +2896,15 @@
   "kitSummary": "Blockt Schaden.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 24870,
+   "attack": 969,
+   "defense": 1002,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "rotos-the-lost-groom",
@@ -2157,7 +2922,15 @@
   "kitSummary": "Senkt Verteidigung, macht unbesiegbar, blockt Schaden.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 11895,
+   "attack": 1520,
+   "defense": 1266,
+   "speed": 90,
+   "resistance": 63,
+   "accuracy": 40
+  }
  },
  {
   "id": "rotting-mage",
@@ -2174,7 +2947,15 @@
   "kitSummary": "Erhöht Angriff, erhöht Verteidigung, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16350,
+   "attack": 1068,
+   "defense": 870,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "royal-guard",
@@ -2191,7 +2972,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15030,
+   "attack": 1531,
+   "defense": 771,
+   "speed": 93,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "royal-huntsman",
@@ -2208,7 +2997,15 @@
   "kitSummary": "Senkt Verteidigung, erhöht Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16350,
+   "attack": 1533,
+   "defense": 936,
+   "speed": 105,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "rugnor-goldgleam",
@@ -2221,7 +3018,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "runekeeper-dazdurk",
@@ -2234,7 +3032,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "runic-warder",
@@ -2251,7 +3050,15 @@
   "kitSummary": "Senkt Angriff, heilt dauerhaft.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19155,
+   "attack": 848,
+   "defense": 903,
+   "speed": 103,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "samar-gemcursed",
@@ -2264,7 +3071,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "sanctum-protector",
@@ -2282,7 +3090,15 @@
   "kitSummary": "Erhöht Verteidigung, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15360,
+   "attack": 804,
+   "defense": 1200,
+   "speed": 97,
+   "resistance": 40,
+   "accuracy": 0
+  }
  },
  {
   "id": "sandlashed-survivor",
@@ -2300,7 +3116,15 @@
   "kitSummary": "Blockt Schaden, trifft alle Gegner, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15030,
+   "attack": 936,
+   "defense": 1365,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "scyl-of-the-drakes",
@@ -2320,7 +3144,15 @@
   "kitSummary": "Heilt, erhöht Tempo, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19980,
+   "attack": 859,
+   "defense": 1387,
+   "speed": 95,
+   "resistance": 63,
+   "accuracy": 40
+  }
  },
  {
   "id": "sepulcher-sentinel",
@@ -2337,7 +3169,15 @@
   "kitSummary": "Senkt Angriff, blockt Debuffs, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16185,
+   "attack": 903,
+   "defense": 1321,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "sicia-flametongue",
@@ -2350,7 +3190,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "siphi-the-lost-bride",
@@ -2374,7 +3215,15 @@
   "kitSummary": "Heilt, reinigt Debuffs, blockt Debuffs.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 21480,
+   "attack": 859,
+   "defense": 1288,
+   "speed": 114,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "sir-nicholas",
@@ -2393,7 +3242,15 @@
   "kitSummary": "Heilt dauerhaft, macht unbesiegbar, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 22800,
+   "attack": 936,
+   "defense": 1123,
+   "speed": 105,
+   "resistance": 50,
+   "accuracy": 50
+  }
  },
  {
   "id": "sister-militant",
@@ -2408,7 +3265,15 @@
   "kitSummary": "Trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 10140,
+   "attack": 870,
+   "defense": 639,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "skull-lord-var-gall",
@@ -2421,7 +3286,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "skytouched-shaman",
@@ -2442,7 +3308,15 @@
   "kitSummary": "Heilt, belebt wieder, reinigt Debuffs.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18330,
+   "attack": 958,
+   "defense": 1123,
+   "speed": 102,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "snorting-thug",
@@ -2457,7 +3331,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20640,
+   "attack": 870,
+   "defense": 1057,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "soulbond-bowyer",
@@ -2472,7 +3354,15 @@
   "kitSummary": "Trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13545,
+   "attack": 1255,
+   "defense": 870,
+   "speed": 96,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "stag-knight",
@@ -2490,7 +3380,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20970,
+   "attack": 859,
+   "defense": 1046,
+   "speed": 107,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "steadfast-marshal",
@@ -2508,7 +3406,15 @@
   "kitSummary": "Erhöht Verteidigung, provoziert, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20640,
+   "attack": 870,
+   "defense": 782,
+   "speed": 90,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "steel-bowyer",
@@ -2525,7 +3431,15 @@
   "kitSummary": "Heilt, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12720,
+   "attack": 1365,
+   "defense": 815,
+   "speed": 100,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "stitched-beast",
@@ -2540,7 +3454,15 @@
   "kitSummary": "Schwächt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13545,
+   "attack": 1343,
+   "defense": 782,
+   "speed": 101,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "stout-axeman",
@@ -2557,7 +3479,15 @@
   "kitSummary": "Heilt, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19155,
+   "attack": 859,
+   "defense": 892,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "suwai-firstborn",
@@ -2576,7 +3506,15 @@
   "kitSummary": "Schwächt, erhöht Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14040,
+   "attack": 1343,
+   "defense": 1024,
+   "speed": 96,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "suzerain-katonn",
@@ -2598,7 +3536,15 @@
   "kitSummary": "Senkt Verteidigung, schwächt, macht unbesiegbar.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15030,
+   "attack": 1564,
+   "defense": 1013,
+   "speed": 98,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "tainix-hateflower",
@@ -2614,7 +3560,15 @@
   "kitSummary": "Heilt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17010,
+   "attack": 1189,
+   "defense": 980,
+   "speed": 100,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "teela-goremane",
@@ -2634,7 +3588,15 @@
   "kitSummary": "Heilt dauerhaft, trifft alle Gegner, entzündet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 21975,
+   "attack": 892,
+   "defense": 1222,
+   "speed": 92,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "thea-the-tomb-angel",
@@ -2647,7 +3609,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "tomb-lord",
@@ -2666,7 +3629,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18165,
+   "attack": 1387,
+   "defense": 980,
+   "speed": 99,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "toragi-the-frog",
@@ -2679,7 +3650,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "tormin-the-cold",
@@ -2700,7 +3672,15 @@
   "kitSummary": "Trifft alle Gegner, betäubt, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20145,
+   "attack": 815,
+   "defense": 1421,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 70
+  }
  },
  {
   "id": "towering-titan",
@@ -2719,7 +3699,15 @@
   "kitSummary": "Senkt Verteidigung, heilt dauerhaft, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 23790,
+   "attack": 760,
+   "defense": 958,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "trunda-giltmallet",
@@ -2736,7 +3724,15 @@
   "kitSummary": "Trifft alle Gegner, betäubt, entzündet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 22800,
+   "attack": 1608,
+   "defense": 980,
+   "speed": 100,
+   "resistance": 63,
+   "accuracy": 80
+  }
  },
  {
   "id": "tuhak-the-wanderer",
@@ -2755,7 +3751,15 @@
   "kitSummary": "Heilt, erhöht Tempo, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16020,
+   "attack": 1365,
+   "defense": 870,
+   "speed": 97,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "tunnel-steward",
@@ -2770,7 +3774,15 @@
   "kitSummary": "Vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 8925,
+   "attack": 1255,
+   "defense": 903,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "twinclaw-disciple",
@@ -2787,7 +3799,15 @@
   "kitSummary": "Schwächt, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 11565,
+   "attack": 1365,
+   "defense": 892,
+   "speed": 85,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "tyrant-ixlimor",
@@ -2806,7 +3826,15 @@
   "kitSummary": "Heilt, erhöht Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 21975,
+   "attack": 771,
+   "defense": 1343,
+   "speed": 103,
+   "resistance": 50,
+   "accuracy": 50
+  }
  },
  {
   "id": "ultimate-galek",
@@ -2826,7 +3854,15 @@
   "kitSummary": "Heilt, leert die Zugleiste, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15195,
+   "attack": 1332,
+   "defense": 958,
+   "speed": 98,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "umbral-enchantress",
@@ -2845,7 +3881,15 @@
   "kitSummary": "Macht unbesiegbar, trifft alle Gegner, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15360,
+   "attack": 925,
+   "defense": 1354,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "urost-the-soulcage",
@@ -2858,7 +3902,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "ursala-the-mourner",
@@ -2871,7 +3916,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "ursine-icecrusher",
@@ -2888,7 +3934,15 @@
   "kitSummary": "Trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17340,
+   "attack": 738,
+   "defense": 1409,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "ursine-ironhide",
@@ -2906,7 +3960,15 @@
   "kitSummary": "Senkt Angriff, leert die Zugleiste, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19320,
+   "attack": 793,
+   "defense": 1222,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "ursuga-warcaller",
@@ -2928,7 +3990,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 23460,
+   "attack": 485,
+   "defense": 1531,
+   "speed": 108,
+   "resistance": 50,
+   "accuracy": 0
+  }
  },
  {
   "id": "visix-the-unbowed",
@@ -2947,7 +4017,15 @@
   "kitSummary": "Schildet, trifft alle Gegner, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17175,
+   "attack": 958,
+   "defense": 1476,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 0
+  }
  },
  {
   "id": "vizier-ovelis",
@@ -2965,7 +4043,15 @@
   "kitSummary": "Senkt Angriff, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16350,
+   "attack": 1476,
+   "defense": 1013,
+   "speed": 101,
+   "resistance": 63,
+   "accuracy": 40
+  }
  },
  {
   "id": "wandering-priest",
@@ -2978,7 +4064,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "war-mother",
@@ -2995,7 +4082,15 @@
   "kitSummary": "Senkt Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18495,
+   "attack": 1387,
+   "defense": 958,
+   "speed": 99,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "word-bearer",
@@ -3011,7 +4106,15 @@
   "kitSummary": "Erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14535,
+   "attack": 958,
+   "defense": 826,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "wurlim-frostking",
@@ -3032,7 +4135,15 @@
   "kitSummary": "Erhöht Verteidigung, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19650,
+   "attack": 1035,
+   "defense": 1233,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "yaga-the-insatiable",
@@ -3047,7 +4158,15 @@
   "kitSummary": "Vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15195,
+   "attack": 1365,
+   "defense": 925,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "yakarl-the-scourge",
@@ -3060,7 +4179,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "yoshi-the-drunkard",
@@ -3073,7 +4193,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "zephyr-sniper",
@@ -3089,7 +4210,15 @@
   "kitSummary": "Heilt dauerhaft, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13380,
+   "attack": 617,
+   "defense": 1244,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "abbess",
@@ -3105,7 +4234,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14040,
+   "attack": 1564,
+   "defense": 1079,
+   "speed": 96,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "abyssal",
@@ -3118,7 +4255,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "acolyte",
@@ -3133,7 +4271,15 @@
   "kitSummary": "Reinigt Debuffs.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15195,
+   "attack": 749,
+   "defense": 1266,
+   "speed": 104,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "adjudicator",
@@ -3148,7 +4294,15 @@
   "kitSummary": "Mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13545,
+   "attack": 1255,
+   "defense": 870,
+   "speed": 94,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "admonitor",
@@ -3164,7 +4318,15 @@
   "kitSummary": "Schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18990,
+   "attack": 617,
+   "defense": 870,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "adriel",
@@ -3183,7 +4345,15 @@
   "kitSummary": "Senkt Angriff, heilt, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18330,
+   "attack": 1101,
+   "defense": 980,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "aina",
@@ -3201,7 +4371,15 @@
   "kitSummary": "Senkt Verteidigung, schwächt, heilt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15855,
+   "attack": 1487,
+   "defense": 760,
+   "speed": 105,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "alika",
@@ -3217,7 +4395,15 @@
   "kitSummary": "Trifft alle Gegner, ignoriert Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15855,
+   "attack": 1354,
+   "defense": 892,
+   "speed": 101,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "altan",
@@ -3234,7 +4420,15 @@
   "kitSummary": "Senkt Angriff, schildet, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20145,
+   "attack": 837,
+   "defense": 1398,
+   "speed": 102,
+   "resistance": 57,
+   "accuracy": 50
+  }
  },
  {
   "id": "alure",
@@ -3252,7 +4446,15 @@
   "kitSummary": "Senkt Verteidigung, leert die Zugleiste, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14040,
+   "attack": 1575,
+   "defense": 793,
+   "speed": 96,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "anax",
@@ -3265,7 +4467,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "angar",
@@ -3283,7 +4486,15 @@
   "kitSummary": "Trifft alle Gegner, provoziert, kontert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 21975,
+   "attack": 826,
+   "defense": 1288,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "anointed",
@@ -3301,7 +4512,15 @@
   "kitSummary": "Füllt die Zugleiste, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15855,
+   "attack": 793,
+   "defense": 1178,
+   "speed": 91,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "aothar",
@@ -3318,7 +4537,15 @@
   "kitSummary": "Vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14535,
+   "attack": 1509,
+   "defense": 826,
+   "speed": 92,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "apothecary",
@@ -3335,7 +4562,15 @@
   "kitSummary": "Heilt, füllt die Zugleiste, erhöht Tempo.",
   "earlyGameCarry": true,
   "campaignFarmable": true,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17175,
+   "attack": 881,
+   "defense": 1002,
+   "speed": 106,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "arbalester",
@@ -3348,7 +4583,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14205,
+   "attack": 1421,
+   "defense": 661,
+   "speed": 96,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "arbiter",
@@ -3368,7 +4611,15 @@
   "kitSummary": "Schwächt, heilt, belebt wieder.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 21135,
+   "attack": 1068,
+   "defense": 1101,
+   "speed": 110,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "arcanist",
@@ -3386,7 +4637,15 @@
   "kitSummary": "Heilt dauerhaft, erhöht Angriff, schläfert ein.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17835,
+   "attack": 991,
+   "defense": 848,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "archer",
@@ -3402,7 +4661,15 @@
   "kitSummary": "Trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13050,
+   "attack": 1156,
+   "defense": 727,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "aristocrat",
@@ -3418,7 +4685,15 @@
   "kitSummary": "Schwächt, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 11070,
+   "attack": 1211,
+   "defense": 804,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "armiger",
@@ -3433,7 +4708,15 @@
   "kitSummary": "Leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": true,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15195,
+   "attack": 793,
+   "defense": 947,
+   "speed": 92,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "armina",
@@ -3446,7 +4729,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "astralith",
@@ -3463,7 +4747,15 @@
   "kitSummary": "Füllt die Zugleiste, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17175,
+   "attack": 1487,
+   "defense": 947,
+   "speed": 102,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "astralon",
@@ -3476,7 +4768,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "athel",
@@ -3495,7 +4788,15 @@
   "kitSummary": "Schwächt, erhöht Angriff, erhöht Verteidigung.",
   "earlyGameCarry": true,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13545,
+   "attack": 1189,
+   "defense": 936,
+   "speed": 104,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "atur",
@@ -3514,7 +4815,15 @@
   "kitSummary": "Heilt, betäubt, schläfert ein.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19980,
+   "attack": 826,
+   "defense": 1145,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "avenger",
@@ -3529,7 +4838,15 @@
   "kitSummary": "Senkt Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12225,
+   "attack": 1398,
+   "defense": 815,
+   "speed": 104,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "axeman",
@@ -3544,7 +4861,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15030,
+   "attack": 507,
+   "defense": 694,
+   "speed": 92,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "azure",
@@ -3562,7 +4887,15 @@
   "kitSummary": "Schildet, erhöht Tempo, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19320,
+   "attack": 958,
+   "defense": 1057,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "bad-el-kazar",
@@ -3575,7 +4908,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "bandit",
@@ -3590,7 +4924,15 @@
   "kitSummary": "Senkt Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 8595,
+   "attack": 980,
+   "defense": 650,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "banshee",
@@ -3608,7 +4950,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16514,
+   "attack": 980,
+   "defense": 947,
+   "speed": 92,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "baron",
@@ -3626,7 +4976,15 @@
   "kitSummary": "Senkt Verteidigung, blockt Schaden, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15030,
+   "attack": 1575,
+   "defense": 1002,
+   "speed": 90,
+   "resistance": 63,
+   "accuracy": 40
+  }
  },
  {
   "id": "basher",
@@ -3643,7 +5001,15 @@
   "kitSummary": "Schwächt, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13545,
+   "attack": 1498,
+   "defense": 903,
+   "speed": 95,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "basilisk",
@@ -3661,7 +5027,15 @@
   "kitSummary": "Blockt Schaden, erhöht Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15525,
+   "attack": 1365,
+   "defense": 903,
+   "speed": 99,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "battlesage",
@@ -3679,7 +5053,15 @@
   "kitSummary": "Belebt wieder, reinigt Debuffs, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18000,
+   "attack": 980,
+   "defense": 1123,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "belanor",
@@ -3702,7 +5084,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, schwächt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15195,
+   "attack": 1520,
+   "defense": 1046,
+   "speed": 105,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "bellower",
@@ -3721,7 +5111,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16515,
+   "attack": 1013,
+   "defense": 914,
+   "speed": 99,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "berserker",
@@ -3737,7 +5135,15 @@
   "kitSummary": "Trifft alle Gegner, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14535,
+   "attack": 1266,
+   "defense": 793,
+   "speed": 98,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "bloodbraid",
@@ -3755,7 +5161,15 @@
   "kitSummary": "Heilt, provoziert, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19650,
+   "attack": 892,
+   "defense": 826,
+   "speed": 89,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "bloodfeather",
@@ -3772,7 +5186,15 @@
   "kitSummary": "Senkt Verteidigung, leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13875,
+   "attack": 1542,
+   "defense": 837,
+   "speed": 102,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "bloodgorged",
@@ -3788,7 +5210,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18990,
+   "attack": 1465,
+   "defense": 848,
+   "speed": 90,
+   "resistance": 63,
+   "accuracy": 40
+  }
  },
  {
   "id": "bloodhorn",
@@ -3805,7 +5235,15 @@
   "kitSummary": "Heilt dauerhaft.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17505,
+   "attack": 870,
+   "defense": 991,
+   "speed": 89,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "bloodmask",
@@ -3818,7 +5256,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "bloodpainter",
@@ -3836,7 +5275,15 @@
   "kitSummary": "Erhöht Angriff, trifft alle Gegner, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15855,
+   "attack": 1134,
+   "defense": 837,
+   "speed": 102,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "bogwalker",
@@ -3854,7 +5301,15 @@
   "kitSummary": "Senkt Angriff, erhöht Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16020,
+   "attack": 848,
+   "defense": 1112,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "boltsmith",
@@ -3867,7 +5322,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "bombardier",
@@ -3883,7 +5339,15 @@
   "kitSummary": "Erhöht Tempo, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12555,
+   "attack": 1310,
+   "defense": 881,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "bonekeeper",
@@ -3898,7 +5362,15 @@
   "kitSummary": "Senkt Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13545,
+   "attack": 1531,
+   "defense": 870,
+   "speed": 98,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "broadmaw",
@@ -3916,7 +5388,15 @@
   "kitSummary": "Blockt Schaden, erhöht Tempo, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18660,
+   "attack": 1101,
+   "defense": 958,
+   "speed": 104,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "brute",
@@ -3931,7 +5411,15 @@
   "kitSummary": "Vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14535,
+   "attack": 1079,
+   "defense": 705,
+   "speed": 92,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "bully",
@@ -3944,7 +5432,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 11565,
+   "attack": 462,
+   "defense": 969,
+   "speed": 91,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "bulwark",
@@ -3960,7 +5456,15 @@
   "kitSummary": "Schwächt, entzündet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13875,
+   "attack": 837,
+   "defense": 1266,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "bushi",
@@ -3975,7 +5479,15 @@
   "kitSummary": "Macht unbesiegbar.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15690,
+   "attack": 1476,
+   "defense": 782,
+   "speed": 90,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "bystophus",
@@ -3992,7 +5504,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14700,
+   "attack": 1795,
+   "defense": 804,
+   "speed": 94,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "cagebreaker",
@@ -4010,7 +5530,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner, schläfert ein.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16020,
+   "attack": 1409,
+   "defense": 826,
+   "speed": 98,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "candraphon",
@@ -4028,7 +5556,15 @@
   "kitSummary": "Erhöht Angriff, trifft alle Gegner, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17505,
+   "attack": 1509,
+   "defense": 903,
+   "speed": 96,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "canoness",
@@ -4047,7 +5583,15 @@
   "kitSummary": "Heilt dauerhaft, erhöht Angriff, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17670,
+   "attack": 804,
+   "defense": 1321,
+   "speed": 89,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "cardiel",
@@ -4060,7 +5604,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "cardinal",
@@ -4078,7 +5623,15 @@
   "kitSummary": "Heilt, belebt wieder, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17340,
+   "attack": 1002,
+   "defense": 1145,
+   "speed": 104,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "cataphract",
@@ -4095,7 +5648,15 @@
   "kitSummary": "Blockt Debuffs, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18330,
+   "attack": 991,
+   "defense": 815,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "centurion",
@@ -4111,7 +5672,15 @@
   "kitSummary": "Heilt, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15690,
+   "attack": 793,
+   "defense": 1189,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "channeler",
@@ -4129,7 +5698,15 @@
   "kitSummary": "Füllt die Zugleiste, erhöht Tempo, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17175,
+   "attack": 881,
+   "defense": 1002,
+   "speed": 103,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "chaplain",
@@ -4146,7 +5723,15 @@
   "kitSummary": "Heilt, reinigt Debuffs, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": true,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15855,
+   "attack": 1079,
+   "defense": 892,
+   "speed": 102,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "chemist",
@@ -4161,7 +5746,15 @@
   "kitSummary": "Betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12555,
+   "attack": 1046,
+   "defense": 870,
+   "speed": 104,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "chevalier",
@@ -4180,7 +5773,15 @@
   "kitSummary": "Heilt dauerhaft, blockt Schaden, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16680,
+   "attack": 804,
+   "defense": 1112,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "chonoru",
@@ -4193,7 +5794,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "chopper",
@@ -4210,7 +5812,15 @@
   "kitSummary": "Senkt Verteidigung, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15855,
+   "attack": 1046,
+   "defense": 925,
+   "speed": 99,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "coldheart",
@@ -4229,7 +5839,15 @@
   "kitSummary": "Leert die Zugleiste, trifft alle Gegner, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13710,
+   "attack": 1376,
+   "defense": 738,
+   "speed": 94,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "commander",
@@ -4245,7 +5863,15 @@
   "kitSummary": "Heilt, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15690,
+   "attack": 936,
+   "defense": 771,
+   "speed": 101,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "confessor",
@@ -4262,7 +5888,15 @@
   "kitSummary": "Trifft alle Gegner, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12060,
+   "attack": 1409,
+   "defense": 815,
+   "speed": 98,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "conquerer",
@@ -4277,7 +5911,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12225,
+   "attack": 1421,
+   "defense": 793,
+   "speed": 99,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "conscript",
@@ -4290,7 +5932,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "courtier",
@@ -4308,7 +5951,15 @@
   "kitSummary": "Trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12720,
+   "attack": 1277,
+   "defense": 903,
+   "speed": 92,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "crossbowman",
@@ -4326,7 +5977,15 @@
   "kitSummary": "Betäubt, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13875,
+   "attack": 1167,
+   "defense": 936,
+   "speed": 95,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "cruetraxa",
@@ -4345,7 +6004,15 @@
   "kitSummary": "Schwächt, belebt wieder, ignoriert Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18330,
+   "attack": 1498,
+   "defense": 859,
+   "speed": 99,
+   "resistance": 63,
+   "accuracy": 40
+  }
  },
  {
   "id": "crusader",
@@ -4358,7 +6025,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12390,
+   "attack": 1123,
+   "defense": 804,
+   "speed": 92,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "crusher",
@@ -4374,7 +6049,15 @@
   "kitSummary": "Senkt Angriff, kontert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14370,
+   "attack": 870,
+   "defense": 925,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "cudgeler",
@@ -4392,7 +6075,15 @@
   "kitSummary": "Senkt Verteidigung, erhöht Angriff, kontert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14205,
+   "attack": 1178,
+   "defense": 903,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "cultist",
@@ -4408,7 +6099,15 @@
   "kitSummary": "Trifft alle Gegner, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12390,
+   "attack": 1167,
+   "defense": 760,
+   "speed": 84,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "cupidus",
@@ -4425,7 +6124,15 @@
   "kitSummary": "Erhöht Angriff, trifft alle Gegner, entzündet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18825,
+   "attack": 1520,
+   "defense": 804,
+   "speed": 107,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "dagger",
@@ -4438,7 +6145,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "daywalker",
@@ -4456,7 +6164,15 @@
   "kitSummary": "Reinigt Debuffs, blockt Debuffs, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16515,
+   "attack": 925,
+   "defense": 1002,
+   "speed": 91,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "deathchanter",
@@ -4472,7 +6188,15 @@
   "kitSummary": "Schildet, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19650,
+   "attack": 815,
+   "defense": 903,
+   "speed": 89,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "deathknight",
@@ -4487,7 +6211,15 @@
   "kitSummary": "Schläfert ein.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13545,
+   "attack": 551,
+   "defense": 749,
+   "speed": 99,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "deathless",
@@ -4507,7 +6239,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18990,
+   "attack": 881,
+   "defense": 1156,
+   "speed": 92,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "delver",
@@ -4526,7 +6266,15 @@
   "kitSummary": "Senkt Verteidigung, schwächt, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16350,
+   "attack": 1299,
+   "defense": 914,
+   "speed": 91,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "dervish",
@@ -4542,7 +6290,15 @@
   "kitSummary": "Senkt Verteidigung, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 10080,
+   "attack": 1112,
+   "defense": 969,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "dhampir",
@@ -4558,7 +6314,15 @@
   "kitSummary": "Trifft alle Gegner, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 10410,
+   "attack": 1068,
+   "defense": 991,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "diabolist",
@@ -4577,7 +6341,15 @@
   "kitSummary": "Füllt die Zugleiste, leert die Zugleiste, erhöht Tempo.",
   "earlyGameCarry": true,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18660,
+   "attack": 1002,
+   "defense": 782,
+   "speed": 110,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "dilgol",
@@ -4595,7 +6367,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15525,
+   "attack": 1046,
+   "defense": 947,
+   "speed": 96,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "doompriest",
@@ -4612,7 +6392,15 @@
   "kitSummary": "Heilt, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19320,
+   "attack": 980,
+   "defense": 1035,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "doomscreech",
@@ -4631,7 +6419,15 @@
   "kitSummary": "Schildet, füllt die Zugleiste, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20310,
+   "attack": 925,
+   "defense": 749,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "dracomorph",
@@ -4649,7 +6445,15 @@
   "kitSummary": "Senkt Verteidigung, schwächt, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15195,
+   "attack": 1520,
+   "defense": 1046,
+   "speed": 98,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "draconis",
@@ -4666,7 +6470,15 @@
   "kitSummary": "Heilt, reinigt Debuffs, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17835,
+   "attack": 914,
+   "defense": 925,
+   "speed": 100,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "drake",
@@ -4683,7 +6495,15 @@
   "kitSummary": "Nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14040,
+   "attack": 1487,
+   "defense": 881,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "duelist",
@@ -4698,7 +6518,15 @@
   "kitSummary": "Betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 11400,
+   "attack": 1200,
+   "defense": 793,
+   "speed": 101,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "dunestrider",
@@ -4716,7 +6544,15 @@
   "kitSummary": "Senkt Verteidigung, leert die Zugleiste, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14865,
+   "attack": 1354,
+   "defense": 683,
+   "speed": 97,
+   "resistance": 30,
+   "accuracy": 10
+  }
  },
  {
   "id": "elder",
@@ -4735,7 +6571,15 @@
   "kitSummary": "Heilt, provoziert, kontert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14865,
+   "attack": 914,
+   "defense": 1123,
+   "speed": 92,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "elegaius",
@@ -4754,7 +6598,15 @@
   "kitSummary": "Schildet, trifft alle Gegner, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 22305,
+   "attack": 881,
+   "defense": 1211,
+   "speed": 106,
+   "resistance": 30,
+   "accuracy": 20
+  }
  },
  {
   "id": "elenaril",
@@ -4771,7 +6623,15 @@
   "kitSummary": "Trifft alle Gegner, vergiftet, entzündet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14535,
+   "attack": 1387,
+   "defense": 1222,
+   "speed": 96,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "elfguard",
@@ -4787,7 +6647,15 @@
   "kitSummary": "Senkt Angriff, leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13215,
+   "attack": 1156,
+   "defense": 716,
+   "speed": 92,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "elhain",
@@ -4803,7 +6671,15 @@
   "kitSummary": "Trifft alle Gegner.",
   "earlyGameCarry": true,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14370,
+   "attack": 1233,
+   "defense": 837,
+   "speed": 107,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "erinyes",
@@ -4820,7 +6696,15 @@
   "kitSummary": "Trifft alle Gegner, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13050,
+   "attack": 1553,
+   "defense": 881,
+   "speed": 103,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "errol",
@@ -4835,7 +6719,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16020,
+   "attack": 1674,
+   "defense": 837,
+   "speed": 104,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "eviscerator",
@@ -4852,7 +6744,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12060,
+   "attack": 1409,
+   "defense": 815,
+   "speed": 95,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "excruciator",
@@ -4869,7 +6769,15 @@
   "kitSummary": "Heilt, leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12720,
+   "attack": 1597,
+   "defense": 859,
+   "speed": 96,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "executioner",
@@ -4889,7 +6797,15 @@
   "kitSummary": "Leert die Zugleiste, erhöht Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": true,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14865,
+   "attack": 782,
+   "defense": 1255,
+   "speed": 89,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "exemplar",
@@ -4906,7 +6822,15 @@
   "kitSummary": "Schwächt, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18000,
+   "attack": 1509,
+   "defense": 892,
+   "speed": 94,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "faceless",
@@ -4923,7 +6847,15 @@
   "kitSummary": "Blockt Schaden, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17705,
+   "attack": 1398,
+   "defense": 738,
+   "speed": 101,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "fanatic",
@@ -4936,7 +6868,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "fayne",
@@ -4955,7 +6888,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, schwächt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13710,
+   "attack": 1663,
+   "defense": 727,
+   "speed": 99,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "fellhound",
@@ -4974,7 +6915,15 @@
   "kitSummary": "Heilt dauerhaft, blockt Schaden, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14865,
+   "attack": 958,
+   "defense": 1079,
+   "speed": 92,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "fenax",
@@ -4994,7 +6943,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13875,
+   "attack": 1454,
+   "defense": 925,
+   "speed": 96,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "fencer",
@@ -5012,7 +6969,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15360,
+   "attack": 1211,
+   "defense": 793,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "fireblade",
@@ -5028,7 +6993,15 @@
   "kitSummary": "Senkt Angriff, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 10800,
+   "attack": 1178,
+   "defense": 903,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "flailer",
@@ -5041,7 +7014,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "flesh-tearer",
@@ -5054,7 +7028,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "flesheater",
@@ -5071,7 +7046,15 @@
   "kitSummary": "Leert die Zugleiste, erhöht Angriff, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14535,
+   "attack": 1024,
+   "defense": 1035,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "fleshmonger",
@@ -5090,7 +7073,15 @@
   "kitSummary": "Senkt Verteidigung, erhöht Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13050,
+   "attack": 1288,
+   "defense": 870,
+   "speed": 92,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "flinger",
@@ -5106,7 +7097,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13050,
+   "attack": 1266,
+   "defense": 892,
+   "speed": 104,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "foli",
@@ -5127,7 +7126,15 @@
   "kitSummary": "Senkt Verteidigung, heilt, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15030,
+   "attack": 1476,
+   "defense": 1101,
+   "speed": 105,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "frostbringer",
@@ -5145,7 +7152,15 @@
   "kitSummary": "Senkt Verteidigung, erhöht Tempo, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20310,
+   "attack": 870,
+   "defense": 1079,
+   "speed": 110,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "frostskin",
@@ -5160,7 +7175,15 @@
   "kitSummary": "Betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14865,
+   "attack": 1046,
+   "defense": 716,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "fu-shan",
@@ -5173,7 +7196,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "furystoker",
@@ -5189,7 +7213,15 @@
   "kitSummary": "Heilt, reinigt Debuffs.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14865,
+   "attack": 1024,
+   "defense": 1013,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "galek",
@@ -5206,7 +7238,15 @@
   "kitSummary": "Senkt Verteidigung, erhöht Tempo, trifft alle Gegner.",
   "earlyGameCarry": true,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13710,
+   "attack": 1200,
+   "defense": 914,
+   "speed": 103,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "galkut",
@@ -5223,7 +7263,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 11400,
+   "attack": 1321,
+   "defense": 1222,
+   "speed": 91,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "gator",
@@ -5240,7 +7288,15 @@
   "kitSummary": "Reinigt Debuffs, erhöht Angriff, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16515,
+   "attack": 881,
+   "defense": 1046,
+   "speed": 99,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "geargrinder",
@@ -5253,7 +7309,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "genzin",
@@ -5266,7 +7323,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "ghostborn",
@@ -5284,7 +7342,15 @@
   "kitSummary": "Senkt Verteidigung, erhöht Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18825,
+   "attack": 1211,
+   "defense": 1112,
+   "speed": 101,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "gladiator",
@@ -5302,7 +7368,15 @@
   "kitSummary": "Senkt Angriff, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14040,
+   "attack": 1156,
+   "defense": 936,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "gnarlhorn",
@@ -5319,7 +7393,15 @@
   "kitSummary": "Macht unbesiegbar, erhöht Verteidigung, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17010,
+   "attack": 958,
+   "defense": 936,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "goremask",
@@ -5335,7 +7417,15 @@
   "kitSummary": "Blockt Schaden, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12225,
+   "attack": 1509,
+   "defense": 705,
+   "speed": 98,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "gorgorab",
@@ -5353,7 +7443,15 @@
   "kitSummary": "Heilt, füllt die Zugleiste, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17670,
+   "attack": 1057,
+   "defense": 1068,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "grandmaster",
@@ -5369,7 +7467,15 @@
   "kitSummary": "Senkt Angriff, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16185,
+   "attack": 892,
+   "defense": 1057,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "grappler",
@@ -5387,7 +7493,15 @@
   "kitSummary": "Schwächt, schildet, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14700,
+   "attack": 859,
+   "defense": 1189,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "graybeard",
@@ -5406,7 +7520,15 @@
   "kitSummary": "Schildet, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14700,
+   "attack": 936,
+   "defense": 1112,
+   "speed": 92,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "grimskin",
@@ -5424,7 +7546,15 @@
   "kitSummary": "Trifft alle Gegner, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16350,
+   "attack": 793,
+   "defense": 1421,
+   "speed": 99,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "grinner",
@@ -5442,7 +7572,15 @@
   "kitSummary": "Schildet, erhöht Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14370,
+   "attack": 936,
+   "defense": 1134,
+   "speed": 110,
+   "resistance": 30,
+   "accuracy": 30
+  }
  },
  {
   "id": "grumbler",
@@ -5460,7 +7598,15 @@
   "kitSummary": "Schildet, erhöht Verteidigung, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19485,
+   "attack": 804,
+   "defense": 925,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 55
+  }
  },
  {
   "id": "guardian",
@@ -5478,7 +7624,15 @@
   "kitSummary": "Heilt dauerhaft, blockt Debuffs, kontert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19155,
+   "attack": 826,
+   "defense": 925,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "halberdier",
@@ -5495,7 +7649,15 @@
   "kitSummary": "Schwächt, blockt Schaden, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12060,
+   "attack": 1178,
+   "defense": 1046,
+   "speed": 97,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "hardscale",
@@ -5511,7 +7673,15 @@
   "kitSummary": "Betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13050,
+   "attack": 716,
+   "defense": 1167,
+   "speed": 99,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "harrier",
@@ -5526,7 +7696,15 @@
   "kitSummary": "Senkt Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13545,
+   "attack": 1376,
+   "defense": 749,
+   "speed": 96,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "haruspex",
@@ -5543,7 +7721,15 @@
   "kitSummary": "Belebt wieder, erhöht Tempo, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18165,
+   "attack": 859,
+   "defense": 958,
+   "speed": 105,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "harvester",
@@ -5559,7 +7745,15 @@
   "kitSummary": "Schwächt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13710,
+   "attack": 1156,
+   "defense": 958,
+   "speed": 100,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "headsman",
@@ -5576,7 +7770,15 @@
   "kitSummary": "Trifft alle Gegner, verängstigt, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 10740,
+   "attack": 1354,
+   "defense": 958,
+   "speed": 100,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "heartpiercer",
@@ -5591,7 +7793,15 @@
   "kitSummary": "Erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12555,
+   "attack": 1057,
+   "defense": 859,
+   "speed": 89,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "hegemon",
@@ -5609,7 +7819,15 @@
   "kitSummary": "Senkt Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19155,
+   "attack": 1487,
+   "defense": 815,
+   "speed": 96,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "heiress",
@@ -5625,7 +7843,15 @@
   "kitSummary": "Erhöht Tempo, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12390,
+   "attack": 1167,
+   "defense": 1035,
+   "speed": 94,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "hellfang",
@@ -5642,7 +7868,15 @@
   "kitSummary": "Schwächt, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14370,
+   "attack": 1233,
+   "defense": 837,
+   "speed": 99,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "hellgazer",
@@ -5661,7 +7895,15 @@
   "kitSummary": "Senkt Verteidigung, reinigt Debuffs, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17670,
+   "attack": 1476,
+   "defense": 650,
+   "speed": 97,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "hellhound",
@@ -5676,7 +7918,15 @@
   "kitSummary": "Schläfert ein.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 10245,
+   "attack": 760,
+   "defense": 760,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "herald",
@@ -5692,7 +7942,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": true,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16845,
+   "attack": 782,
+   "defense": 848,
+   "speed": 99,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "hexia",
@@ -5712,7 +7970,15 @@
   "kitSummary": "Senkt Verteidigung, heilt, erhöht Tempo.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14205,
+   "attack": 1564,
+   "defense": 793,
+   "speed": 97,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "hexweaver",
@@ -5730,7 +7996,15 @@
   "kitSummary": "Heilt, erhöht Tempo.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16515,
+   "attack": 914,
+   "defense": 1013,
+   "speed": 101,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "hollow",
@@ -5746,7 +8020,15 @@
   "kitSummary": "Leert die Zugleiste, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13050,
+   "attack": 1299,
+   "defense": 859,
+   "speed": 89,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "hope",
@@ -5764,7 +8046,15 @@
   "kitSummary": "Schildet, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 21315,
+   "attack": 1079,
+   "defense": 804,
+   "speed": 104,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "hordin",
@@ -5784,7 +8074,15 @@
   "kitSummary": "Senkt Angriff, heilt, erhöht Tempo.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16845,
+   "attack": 1321,
+   "defense": 859,
+   "speed": 95,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "hospitaller",
@@ -5803,7 +8101,15 @@
   "kitSummary": "Blockt Schaden, erhöht Tempo, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17175,
+   "attack": 1035,
+   "defense": 848,
+   "speed": 101,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "hungerer",
@@ -5819,7 +8125,15 @@
   "kitSummary": "Schildet, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18000,
+   "attack": 683,
+   "defense": 870,
+   "speed": 92,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "huntress",
@@ -5837,7 +8151,15 @@
   "kitSummary": "Schwächt, erhöht Angriff, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 11895,
+   "attack": 1310,
+   "defense": 925,
+   "speed": 94,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "hurler",
@@ -5852,7 +8174,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14700,
+   "attack": 1432,
+   "defense": 617,
+   "speed": 96,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "husk",
@@ -5869,7 +8199,15 @@
   "kitSummary": "Trifft alle Gegner, betäubt, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20970,
+   "attack": 969,
+   "defense": 936,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "hyria",
@@ -5884,7 +8222,15 @@
   "kitSummary": "Vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12060,
+   "attack": 1476,
+   "defense": 749,
+   "speed": 101,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "ifrit",
@@ -5901,7 +8247,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, schwächt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18825,
+   "attack": 815,
+   "defense": 958,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "ignatius",
@@ -5919,7 +8273,15 @@
   "kitSummary": "Trifft alle Gegner, betäubt, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18825,
+   "attack": 1057,
+   "defense": 1266,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "incubus",
@@ -5932,7 +8294,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 11235,
+   "attack": 1145,
+   "defense": 859,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "infiltrator",
@@ -5945,7 +8315,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "interceptor",
@@ -5963,7 +8334,15 @@
   "kitSummary": "Schwächt, leert die Zugleiste, schläfert ein.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15360,
+   "attack": 881,
+   "defense": 1123,
+   "speed": 84,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "intercessor",
@@ -5979,7 +8358,15 @@
   "kitSummary": "Senkt Angriff, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13380,
+   "attack": 947,
+   "defense": 914,
+   "speed": 102,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "ironclad",
@@ -5996,7 +8383,15 @@
   "kitSummary": "Erhöht Angriff, trifft alle Gegner, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18825,
+   "attack": 947,
+   "defense": 826,
+   "speed": 104,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "ithos",
@@ -6013,7 +8408,15 @@
   "kitSummary": "Schwächt, trifft alle Gegner, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18825,
+   "attack": 1608,
+   "defense": 716,
+   "speed": 99,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "jaeger",
@@ -6029,7 +8432,15 @@
   "kitSummary": "Betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14370,
+   "attack": 1200,
+   "defense": 595,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "jarang",
@@ -6046,7 +8457,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12885,
+   "attack": 1608,
+   "defense": 837,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "jareg",
@@ -6064,7 +8483,15 @@
   "kitSummary": "Senkt Angriff, heilt dauerhaft, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 23460,
+   "attack": 683,
+   "defense": 1057,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "jinglehunter",
@@ -6082,7 +8509,15 @@
   "kitSummary": "Leert die Zugleiste, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14700,
+   "attack": 1498,
+   "defense": 826,
+   "speed": 101,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "jintoro",
@@ -6095,7 +8530,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "jizoh",
@@ -6114,7 +8550,15 @@
   "kitSummary": "Heilt dauerhaft, schildet, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16515,
+   "attack": 815,
+   "defense": 1387,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "jotun",
@@ -6130,7 +8574,15 @@
   "kitSummary": "Senkt Verteidigung, entzündet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16680,
+   "attack": 991,
+   "defense": 1200,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "judge",
@@ -6151,7 +8603,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, füllt die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12225,
+   "attack": 1476,
+   "defense": 738,
+   "speed": 103,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "judicator",
@@ -6167,7 +8627,15 @@
   "kitSummary": "Senkt Verteidigung, leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 11895,
+   "attack": 1398,
+   "defense": 837,
+   "speed": 104,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "juliana",
@@ -6185,7 +8653,15 @@
   "kitSummary": "Vergiftet, entzündet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15360,
+   "attack": 1398,
+   "defense": 881,
+   "speed": 103,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "justiciar",
@@ -6200,7 +8676,15 @@
   "kitSummary": "Provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14700,
+   "attack": 914,
+   "defense": 1134,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "kael",
@@ -6217,7 +8701,15 @@
   "kitSummary": "Füllt die Zugleiste, trifft alle Gegner, vergiftet.",
   "earlyGameCarry": true,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13710,
+   "attack": 1200,
+   "defense": 914,
+   "speed": 103,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "kaiden",
@@ -6235,7 +8727,15 @@
   "kitSummary": "Senkt Angriff, erhöht Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16350,
+   "attack": 837,
+   "defense": 1376,
+   "speed": 95,
+   "resistance": 30,
+   "accuracy": 15
+  }
  },
  {
   "id": "kallia",
@@ -6253,7 +8753,15 @@
   "kitSummary": "Heilt, trifft alle Gegner, entzündet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12885,
+   "attack": 1597,
+   "defense": 848,
+   "speed": 106,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "karam",
@@ -6268,7 +8776,15 @@
   "kitSummary": "Vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13215,
+   "attack": 1354,
+   "defense": 1068,
+   "speed": 100,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "khoronar",
@@ -6290,7 +8806,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, reinigt Debuffs.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 27090,
+   "attack": 815,
+   "defense": 958,
+   "speed": 99,
+   "resistance": 57,
+   "accuracy": 50
+  }
  },
  {
   "id": "knecht",
@@ -6303,7 +8827,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12225,
+   "attack": 650,
+   "defense": 738,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "knight-errant",
@@ -6316,7 +8848,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "kytis",
@@ -6333,7 +8866,15 @@
   "kitSummary": "Erhöht Angriff, trifft alle Gegner, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14865,
+   "attack": 1222,
+   "defense": 1090,
+   "speed": 95,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "lamellar",
@@ -6350,7 +8891,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19650,
+   "attack": 837,
+   "defense": 881,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "lemure",
@@ -6365,7 +8914,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18165,
+   "attack": 639,
+   "defense": 903,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "lich",
@@ -6383,7 +8940,15 @@
   "kitSummary": "Heilt, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18495,
+   "attack": 694,
+   "defense": 1376,
+   "speed": 99,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "lifetaker",
@@ -6396,7 +8961,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "lightsworn",
@@ -6415,7 +8981,15 @@
   "kitSummary": "Senkt Angriff, belebt wieder, leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16350,
+   "attack": 738,
+   "defense": 1476,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "longbeard",
@@ -6432,7 +9006,15 @@
   "kitSummary": "Schwächt, blockt Schaden, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17835,
+   "attack": 1409,
+   "defense": 980,
+   "speed": 97,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "lua",
@@ -6451,7 +9033,15 @@
   "kitSummary": "Heilt, blockt Schaden, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14535,
+   "attack": 1564,
+   "defense": 771,
+   "speed": 97,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "luria",
@@ -6472,7 +9062,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13050,
+   "attack": 1487,
+   "defense": 947,
+   "speed": 104,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "lurker",
@@ -6487,7 +9085,15 @@
   "kitSummary": "Vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 10740,
+   "attack": 815,
+   "defense": 672,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "luthiea",
@@ -6505,7 +9111,15 @@
   "kitSummary": "Trifft alle Gegner, betäubt, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14370,
+   "attack": 1277,
+   "defense": 1068,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "lyssandra",
@@ -6523,7 +9137,15 @@
   "kitSummary": "Reinigt Debuffs, füllt die Zugleiste, leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 21480,
+   "attack": 969,
+   "defense": 1178,
+   "speed": 110,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "madman",
@@ -6541,7 +9163,15 @@
   "kitSummary": "Heilt, blockt Schaden, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14040,
+   "attack": 1343,
+   "defense": 749,
+   "speed": 99,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "maeve",
@@ -6558,7 +9188,15 @@
   "kitSummary": "Betäubt, schläfert ein, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15195,
+   "attack": 1354,
+   "defense": 936,
+   "speed": 100,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "magekiller",
@@ -6571,7 +9209,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 8265,
+   "attack": 881,
+   "defense": 771,
+   "speed": 102,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "magister",
@@ -6590,7 +9236,15 @@
   "kitSummary": "Belebt wieder, erhöht Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18000,
+   "attack": 892,
+   "defense": 936,
+   "speed": 101,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "magmablood",
@@ -6608,7 +9262,15 @@
   "kitSummary": "Trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13710,
+   "attack": 1387,
+   "defense": 727,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "magus",
@@ -6626,7 +9288,15 @@
   "kitSummary": "Heilt, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13875,
+   "attack": 1299,
+   "defense": 804,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "maiden",
@@ -6642,7 +9312,15 @@
   "kitSummary": "Senkt Verteidigung, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 11730,
+   "attack": 1343,
+   "defense": 903,
+   "speed": 87,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "malbranche",
@@ -6658,7 +9336,15 @@
   "kitSummary": "Kontert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14865,
+   "attack": 1321,
+   "defense": 716,
+   "speed": 111,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "maneater",
@@ -6675,7 +9361,15 @@
   "kitSummary": "Senkt Angriff, blockt Debuffs, macht unbesiegbar.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20310,
+   "attack": 837,
+   "defense": 1112,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "marked",
@@ -6694,7 +9388,15 @@
   "kitSummary": "Senkt Verteidigung, blockt Debuffs, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19320,
+   "attack": 892,
+   "defense": 848,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "marksman",
@@ -6711,7 +9413,15 @@
   "kitSummary": "Füllt die Zugleiste, vergiftet, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14700,
+   "attack": 1432,
+   "defense": 892,
+   "speed": 92,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "marquess",
@@ -6729,7 +9439,15 @@
   "kitSummary": "Senkt Angriff, schwächt, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17175,
+   "attack": 870,
+   "defense": 1013,
+   "speed": 89,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "marquis",
@@ -6748,7 +9466,15 @@
   "kitSummary": "Heilt dauerhaft, trifft alle Gegner, schläfert ein.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16845,
+   "attack": 892,
+   "defense": 1013,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "martyr",
@@ -6768,7 +9494,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20145,
+   "attack": 826,
+   "defense": 1409,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 50
+  }
  },
  {
   "id": "mashalled",
@@ -6781,7 +9515,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "metalshaper",
@@ -6799,7 +9534,15 @@
   "kitSummary": "Reinigt Debuffs, schildet, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16350,
+   "attack": 859,
+   "defense": 1079,
+   "speed": 90,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "militia",
@@ -6814,7 +9557,15 @@
   "kitSummary": "Senkt Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13215,
+   "attack": 1178,
+   "defense": 694,
+   "speed": 102,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "minaya",
@@ -6834,7 +9585,15 @@
   "kitSummary": "Heilt, heilt dauerhaft, blockt Debuffs.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 21135,
+   "attack": 1068,
+   "defense": 1101,
+   "speed": 110,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "missionary",
@@ -6852,7 +9611,15 @@
   "kitSummary": "Betäubt, provoziert, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19485,
+   "attack": 969,
+   "defense": 1035,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "mortu-macaab",
@@ -6865,7 +9632,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "muckstalker",
@@ -6882,7 +9650,15 @@
   "kitSummary": "Heilt dauerhaft, schläfert ein.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20475,
+   "attack": 903,
+   "defense": 760,
+   "speed": 101,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "myrmidon",
@@ -6901,7 +9677,15 @@
   "kitSummary": "Senkt Angriff, heilt dauerhaft, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15030,
+   "attack": 804,
+   "defense": 1222,
+   "speed": 99,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "nazana",
@@ -6919,7 +9703,15 @@
   "kitSummary": "Senkt Angriff, schildet, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 21480,
+   "attack": 859,
+   "defense": 1013,
+   "speed": 103,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "necrohunter",
@@ -6935,7 +9727,15 @@
   "kitSummary": "Senkt Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12555,
+   "attack": 1398,
+   "defense": 1068,
+   "speed": 98,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "nethril",
@@ -6954,7 +9754,15 @@
   "kitSummary": "Leert die Zugleiste, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17010,
+   "attack": 1454,
+   "defense": 991,
+   "speed": 94,
+   "resistance": 63,
+   "accuracy": 40
+  }
  },
  {
   "id": "norog",
@@ -6973,7 +9781,15 @@
   "kitSummary": "Trifft alle Gegner, betäubt, schläfert ein.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16845,
+   "attack": 1156,
+   "defense": 1299,
+   "speed": 106,
+   "resistance": 50,
+   "accuracy": 50
+  }
  },
  {
   "id": "novitiate",
@@ -6988,7 +9804,15 @@
   "kitSummary": "Senkt Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 10245,
+   "attack": 892,
+   "defense": 628,
+   "speed": 83,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "oathbound",
@@ -7006,7 +9830,15 @@
   "kitSummary": "Senkt Angriff, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18330,
+   "attack": 782,
+   "defense": 1299,
+   "speed": 88,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "oboro",
@@ -7019,7 +9851,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "oldbeard",
@@ -7035,7 +9868,15 @@
   "kitSummary": "Senkt Angriff, entzieht Leben.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14040,
+   "attack": 716,
+   "defense": 1101,
+   "speed": 91,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "outlander",
@@ -7050,7 +9891,15 @@
   "kitSummary": "Trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 9255,
+   "attack": 1299,
+   "defense": 837,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "outrider",
@@ -7066,7 +9915,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12390,
+   "attack": 1112,
+   "defense": 815,
+   "speed": 99,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "ox",
@@ -7082,7 +9939,15 @@
   "kitSummary": "Senkt Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12225,
+   "attack": 1167,
+   "defense": 1046,
+   "speed": 98,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "painsmith",
@@ -7097,7 +9962,15 @@
   "kitSummary": "Blockt Debuffs.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14040,
+   "attack": 1277,
+   "defense": 815,
+   "speed": 100,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "panthera",
@@ -7110,7 +9983,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "paragon",
@@ -7128,7 +10002,15 @@
   "kitSummary": "Senkt Angriff, macht unbesiegbar, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14370,
+   "attack": 958,
+   "defense": 1112,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "penitent",
@@ -7146,7 +10028,15 @@
   "kitSummary": "Senkt Angriff, reinigt Debuffs, blockt Debuffs.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14865,
+   "attack": 793,
+   "defense": 1244,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "perforator",
@@ -7164,7 +10054,15 @@
   "kitSummary": "Verängstigt, vergiftet, ignoriert Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18165,
+   "attack": 1432,
+   "defense": 661,
+   "speed": 97,
+   "resistance": 60,
+   "accuracy": 60
+  }
  },
  {
   "id": "pestilus",
@@ -7177,7 +10075,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "peydma",
@@ -7195,7 +10094,15 @@
   "kitSummary": "Senkt Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17670,
+   "attack": 826,
+   "defense": 1299,
+   "speed": 101,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "pigsticker",
@@ -7208,7 +10115,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "pikeman",
@@ -7223,7 +10131,15 @@
   "kitSummary": "Betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 11235,
+   "attack": 595,
+   "defense": 859,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "pilgrim",
@@ -7239,7 +10155,15 @@
   "kitSummary": "Leert die Zugleiste, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14865,
+   "attack": 793,
+   "defense": 969,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "pitspawn",
@@ -7255,7 +10179,15 @@
   "kitSummary": "Senkt Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13545,
+   "attack": 881,
+   "defense": 969,
+   "speed": 86,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "pounder",
@@ -7271,7 +10203,15 @@
   "kitSummary": "Senkt Angriff, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14535,
+   "attack": 859,
+   "defense": 1200,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "preacher",
@@ -7286,7 +10226,15 @@
   "kitSummary": "Senkt Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 10080,
+   "attack": 837,
+   "defense": 694,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "preserver",
@@ -7304,7 +10252,15 @@
   "kitSummary": "Heilt dauerhaft, schildet, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16350,
+   "attack": 771,
+   "defense": 1167,
+   "speed": 102,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "prundar",
@@ -7317,7 +10273,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "psylar",
@@ -7335,7 +10292,15 @@
   "kitSummary": "Leert die Zugleiste, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18165,
+   "attack": 1123,
+   "defense": 969,
+   "speed": 105,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "purgator",
@@ -7351,7 +10316,15 @@
   "kitSummary": "Schildet, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13380,
+   "attack": 1409,
+   "defense": 727,
+   "speed": 94,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "pyxniel",
@@ -7364,7 +10337,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "quaestor",
@@ -7380,7 +10354,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13215,
+   "attack": 1288,
+   "defense": 859,
+   "speed": 95,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "rae",
@@ -7398,7 +10380,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15195,
+   "attack": 1343,
+   "defense": 1222,
+   "speed": 98,
+   "resistance": 63,
+   "accuracy": 40
+  }
  },
  {
   "id": "ragemonger",
@@ -7416,7 +10406,15 @@
   "kitSummary": "Heilt dauerhaft, trifft alle Gegner, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12720,
+   "attack": 1211,
+   "defense": 969,
+   "speed": 98,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "raglin",
@@ -7432,7 +10430,15 @@
   "kitSummary": "Reinigt Debuffs, füllt die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20310,
+   "attack": 1156,
+   "defense": 1068,
+   "speed": 104,
+   "resistance": 50,
+   "accuracy": 50
+  }
  },
  {
   "id": "raider",
@@ -7450,7 +10456,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14205,
+   "attack": 1156,
+   "defense": 925,
+   "speed": 92,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "ranger",
@@ -7466,7 +10480,15 @@
   "kitSummary": "Trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12720,
+   "attack": 815,
+   "defense": 540,
+   "speed": 92,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "redeemer",
@@ -7482,7 +10504,15 @@
   "kitSummary": "Erhöht Angriff, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12225,
+   "attack": 1123,
+   "defense": 815,
+   "speed": 92,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "reinbeast",
@@ -7498,7 +10528,15 @@
   "kitSummary": "Heilt dauerhaft, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18660,
+   "attack": 826,
+   "defense": 1233,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "relickeeper",
@@ -7515,7 +10553,15 @@
   "kitSummary": "Heilt dauerhaft, erhöht Angriff, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14370,
+   "attack": 1365,
+   "defense": 980,
+   "speed": 90,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "renegade",
@@ -7532,7 +10578,15 @@
   "kitSummary": "Mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18495,
+   "attack": 1046,
+   "defense": 749,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "renouncer",
@@ -7548,7 +10602,15 @@
   "kitSummary": "Heilt, erhöht Tempo.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12855,
+   "attack": 1255,
+   "defense": 914,
+   "speed": 97,
+   "resistance": 30,
+   "accuracy": 10
+  }
  },
  {
   "id": "retainer",
@@ -7567,7 +10629,15 @@
   "kitSummary": "Senkt Verteidigung, heilt, leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14370,
+   "attack": 958,
+   "defense": 1112,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "ripper",
@@ -7580,7 +10650,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16020,
+   "attack": 1299,
+   "defense": 936,
+   "speed": 96,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "ripperfist",
@@ -7596,7 +10674,15 @@
   "kitSummary": "Senkt Angriff, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13380,
+   "attack": 1398,
+   "defense": 738,
+   "speed": 94,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "ritualist",
@@ -7611,7 +10697,15 @@
   "kitSummary": "Senkt Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13545,
+   "attack": 1068,
+   "defense": 782,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "robar",
@@ -7630,7 +10724,15 @@
   "kitSummary": "Senkt Verteidigung, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18990,
+   "attack": 1619,
+   "defense": 694,
+   "speed": 87,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "rocktooth",
@@ -7647,7 +10749,15 @@
   "kitSummary": "Trifft alle Gegner, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15525,
+   "attack": 1211,
+   "defense": 782,
+   "speed": 101,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "romero",
@@ -7666,7 +10776,15 @@
   "kitSummary": "Heilt dauerhaft, schildet, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18000,
+   "attack": 804,
+   "defense": 1299,
+   "speed": 99,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "rowan",
@@ -7683,7 +10801,15 @@
   "kitSummary": "Betäubt, vergiftet, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16845,
+   "attack": 1487,
+   "defense": 694,
+   "speed": 108,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "roxam",
@@ -7696,7 +10822,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "ruffstone",
@@ -7709,7 +10836,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "sachi",
@@ -7722,7 +10850,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "saito",
@@ -7740,7 +10869,15 @@
   "kitSummary": "Senkt Verteidigung, erhöht Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16185,
+   "attack": 1321,
+   "defense": 1178,
+   "speed": 102,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "sandbow",
@@ -7753,7 +10890,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "sanguinia",
@@ -7766,7 +10904,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "satyr",
@@ -7782,7 +10921,15 @@
   "kitSummary": "Leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15195,
+   "attack": 892,
+   "defense": 848,
+   "speed": 83,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "saurus",
@@ -7798,7 +10945,15 @@
   "kitSummary": "Trifft alle Gegner, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12720,
+   "attack": 1244,
+   "defense": 661,
+   "speed": 83,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "scrapper",
@@ -7811,7 +10966,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "seducer",
@@ -7832,7 +10988,15 @@
   "kitSummary": "Senkt Angriff, blockt Debuffs, blockt Schaden.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16185,
+   "attack": 628,
+   "defense": 1321,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "seeker",
@@ -7852,7 +11016,15 @@
   "kitSummary": "Heilt, füllt die Zugleiste, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16845,
+   "attack": 1002,
+   "defense": 1178,
+   "speed": 103,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "seer",
@@ -7872,7 +11044,15 @@
   "kitSummary": "Schwächt, trifft alle Gegner, schläfert ein.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19320,
+   "attack": 1145,
+   "defense": 870,
+   "speed": 104,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "seneschal",
@@ -7891,7 +11071,15 @@
   "kitSummary": "Heilt dauerhaft, provoziert, kontert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19980,
+   "attack": 705,
+   "defense": 1266,
+   "speed": 105,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "sentinel",
@@ -7910,7 +11098,15 @@
   "kitSummary": "Senkt Angriff, heilt, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18825,
+   "attack": 914,
+   "defense": 859,
+   "speed": 86,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "septimus",
@@ -7927,7 +11123,15 @@
   "kitSummary": "Blockt Schaden, schildet, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13710,
+   "attack": 1674,
+   "defense": 991,
+   "speed": 102,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "sergeant",
@@ -7940,7 +11144,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12555,
+   "attack": 1112,
+   "defense": 804,
+   "speed": 92,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "sethallia",
@@ -7958,7 +11170,15 @@
   "kitSummary": "Reinigt Debuffs, blockt Debuffs, entzündet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18000,
+   "attack": 1024,
+   "defense": 1354,
+   "speed": 108,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "shaman",
@@ -7975,7 +11195,15 @@
   "kitSummary": "Schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17505,
+   "attack": 1112,
+   "defense": 1024,
+   "speed": 106,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "shamrock",
@@ -7995,7 +11223,15 @@
   "kitSummary": "Leert die Zugleiste, erhöht Tempo, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20805,
+   "attack": 1002,
+   "defense": 1189,
+   "speed": 111,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "sharpshooter",
@@ -8010,7 +11246,15 @@
   "kitSummary": "Erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 10575,
+   "attack": 1255,
+   "defense": 793,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "shatterbones",
@@ -8029,7 +11273,15 @@
   "kitSummary": "Füllt die Zugleiste, leert die Zugleiste, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13875,
+   "attack": 1498,
+   "defense": 881,
+   "speed": 97,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "shieldguard",
@@ -8045,7 +11297,15 @@
   "kitSummary": "Trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15360,
+   "attack": 705,
+   "defense": 1024,
+   "speed": 89,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "shirimani",
@@ -8062,7 +11322,15 @@
   "kitSummary": "Heilt dauerhaft, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19980,
+   "attack": 1167,
+   "defense": 1079,
+   "speed": 104,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "siegebreaker",
@@ -8079,7 +11347,15 @@
   "kitSummary": "Trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14040,
+   "attack": 1211,
+   "defense": 881,
+   "speed": 90,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "sikara",
@@ -8096,7 +11372,15 @@
   "kitSummary": "Schwächt, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19485,
+   "attack": 804,
+   "defense": 1200,
+   "speed": 101,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "sinesha",
@@ -8112,7 +11396,15 @@
   "kitSummary": "Heilt, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17340,
+   "attack": 892,
+   "defense": 1255,
+   "speed": 101,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "skartorsis",
@@ -8132,7 +11424,15 @@
   "kitSummary": "Heilt, reinigt Debuffs, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20145,
+   "attack": 859,
+   "defense": 1376,
+   "speed": 109,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "skellag",
@@ -8149,7 +11449,15 @@
   "kitSummary": "Trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12555,
+   "attack": 859,
+   "defense": 1057,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "skink",
@@ -8167,7 +11475,15 @@
   "kitSummary": "Senkt Verteidigung, blockt Schaden, schildet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13380,
+   "attack": 1310,
+   "defense": 826,
+   "speed": 93,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "skinner",
@@ -8182,7 +11498,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12885,
+   "attack": 1255,
+   "defense": 639,
+   "speed": 89,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "skirmisher",
@@ -8199,7 +11523,15 @@
   "kitSummary": "Leert die Zugleiste, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15360,
+   "attack": 1211,
+   "defense": 793,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "skullcrown",
@@ -8216,7 +11548,15 @@
   "kitSummary": "Schwächt, macht unbesiegbar, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": true,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14535,
+   "attack": 1509,
+   "defense": 826,
+   "speed": 96,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "skullcrusher",
@@ -8234,7 +11574,15 @@
   "kitSummary": "Macht unbesiegbar, kontert, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19320,
+   "attack": 826,
+   "defense": 1189,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "skullsquire",
@@ -8251,7 +11599,15 @@
   "kitSummary": "Senkt Verteidigung, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12885,
+   "attack": 1178,
+   "defense": 716,
+   "speed": 107,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "skullsworn",
@@ -8267,7 +11623,15 @@
   "kitSummary": "Erhöht Tempo, kontert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12720,
+   "attack": 1365,
+   "defense": 815,
+   "speed": 87,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "slasher",
@@ -8285,7 +11649,15 @@
   "kitSummary": "Senkt Verteidigung, schildet, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13050,
+   "attack": 1332,
+   "defense": 892,
+   "speed": 104,
+   "resistance": 37,
+   "accuracy": 30
+  }
  },
  {
   "id": "slayer",
@@ -8303,7 +11675,15 @@
   "kitSummary": "Senkt Angriff, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15690,
+   "attack": 1233,
+   "defense": 749,
+   "speed": 90,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "slicer",
@@ -8318,7 +11698,15 @@
   "kitSummary": "Senkt Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14370,
+   "attack": 1090,
+   "defense": 705,
+   "speed": 90,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "slitherbrute",
@@ -8335,7 +11723,15 @@
   "kitSummary": "Leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12885,
+   "attack": 1310,
+   "defense": 859,
+   "speed": 98,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "sniper",
@@ -8351,7 +11747,15 @@
   "kitSummary": "Trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12555,
+   "attack": 1211,
+   "defense": 705,
+   "speed": 97,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "solaris",
@@ -8366,7 +11770,15 @@
   "kitSummary": "Betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13545,
+   "attack": 1244,
+   "defense": 881,
+   "speed": 92,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "sorceress",
@@ -8382,7 +11794,15 @@
   "kitSummary": "Senkt Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12555,
+   "attack": 1321,
+   "defense": 870,
+   "speed": 101,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "souldrinker",
@@ -8398,7 +11818,15 @@
   "kitSummary": "Trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17340,
+   "attack": 1299,
+   "defense": 848,
+   "speed": 97,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "soulless",
@@ -8416,7 +11844,15 @@
   "kitSummary": "Schildet, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19650,
+   "attack": 1013,
+   "defense": 1255,
+   "speed": 87,
+   "resistance": 50,
+   "accuracy": 50
+  }
  },
  {
   "id": "spider",
@@ -8435,7 +11871,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, schwächt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18330,
+   "attack": 1211,
+   "defense": 870,
+   "speed": 91,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "spikehead",
@@ -8451,7 +11895,15 @@
   "kitSummary": "Erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 11895,
+   "attack": 1465,
+   "defense": 771,
+   "speed": 102,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "spirithost",
@@ -8468,7 +11920,15 @@
   "kitSummary": "Reinigt Debuffs, blockt Debuffs, erhöht Angriff.",
   "earlyGameCarry": true,
   "campaignFarmable": true,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15360,
+   "attack": 1046,
+   "defense": 958,
+   "speed": 103,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "spiritwalker",
@@ -8485,7 +11945,15 @@
   "kitSummary": "Senkt Angriff, reinigt Debuffs, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 10740,
+   "attack": 1288,
+   "defense": 749,
+   "speed": 90,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "squire",
@@ -8501,7 +11969,15 @@
   "kitSummary": "Senkt Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15690,
+   "attack": 760,
+   "defense": 947,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "stalker",
@@ -8517,7 +11993,15 @@
   "kitSummary": "Senkt Angriff, heilt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16185,
+   "attack": 749,
+   "defense": 925,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "stalwart",
@@ -8533,7 +12017,15 @@
   "kitSummary": "Betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18000,
+   "attack": 738,
+   "defense": 815,
+   "speed": 87,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "steelskull",
@@ -8551,7 +12043,15 @@
   "kitSummary": "Heilt, reinigt Debuffs, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16020,
+   "attack": 1277,
+   "defense": 958,
+   "speed": 111,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "stoneskin",
@@ -8570,7 +12070,15 @@
   "kitSummary": "Füllt die Zugleiste, erhöht Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19485,
+   "attack": 892,
+   "defense": 837,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "suntribe",
@@ -8583,7 +12091,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "swordsman",
@@ -8598,7 +12107,15 @@
   "kitSummary": "Senkt Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 8100,
+   "attack": 958,
+   "defense": 705,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "tallia",
@@ -8617,7 +12134,15 @@
   "kitSummary": "Schwächt, erhöht Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12390,
+   "attack": 1343,
+   "defense": 1134,
+   "speed": 98,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "tarshon",
@@ -8630,7 +12155,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "taurus",
@@ -8647,7 +12173,15 @@
   "kitSummary": "Schwächt, macht unbesiegbar, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17010,
+   "attack": 1310,
+   "defense": 859,
+   "speed": 101,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "tayrel",
@@ -8667,7 +12201,15 @@
   "kitSummary": "Senkt Verteidigung, senkt Angriff, leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16185,
+   "attack": 881,
+   "defense": 1343,
+   "speed": 95,
+   "resistance": 60,
+   "accuracy": 45
+  }
  },
  {
   "id": "templar",
@@ -8684,7 +12226,15 @@
   "kitSummary": "Blockt Schaden, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15855,
+   "attack": 881,
+   "defense": 1090,
+   "speed": 92,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "temptress",
@@ -8703,7 +12253,15 @@
   "kitSummary": "Erhöht Angriff, nimmt Extra-Züge, entzieht Leben.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 11565,
+   "attack": 1343,
+   "defense": 914,
+   "speed": 99,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "terrorbeast",
@@ -8720,7 +12278,15 @@
   "kitSummary": "Heilt, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20970,
+   "attack": 1057,
+   "defense": 848,
+   "speed": 93,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "teshada",
@@ -8736,7 +12302,15 @@
   "kitSummary": "Schwächt, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16350,
+   "attack": 826,
+   "defense": 1387,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "thenasil",
@@ -8754,7 +12328,15 @@
   "kitSummary": "Heilt, erhöht Verteidigung, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17835,
+   "attack": 991,
+   "defense": 1123,
+   "speed": 105,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "theurgist",
@@ -8772,7 +12354,15 @@
   "kitSummary": "Füllt die Zugleiste, erhöht Angriff, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18495,
+   "attack": 947,
+   "defense": 848,
+   "speed": 103,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "thrall",
@@ -8785,7 +12375,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 9915,
+   "attack": 958,
+   "defense": 584,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "thrasher",
@@ -8800,7 +12398,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 11400,
+   "attack": 1156,
+   "defense": 837,
+   "speed": 93,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "throatcutter",
@@ -8815,7 +12421,15 @@
   "kitSummary": "Nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12225,
+   "attack": 1189,
+   "defense": 749,
+   "speed": 88,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "tigersoul",
@@ -8828,7 +12442,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "tormentor",
@@ -8845,7 +12460,15 @@
   "kitSummary": "Betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13875,
+   "attack": 1156,
+   "defense": 947,
+   "speed": 96,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "torturehelm",
@@ -8861,7 +12484,15 @@
   "kitSummary": "Kein Effekt erkannt, der für Teams gebraucht wird — Aufwertungsfutter.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 19980,
+   "attack": 881,
+   "defense": 1090,
+   "speed": 96,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "totem",
@@ -8880,7 +12511,15 @@
   "kitSummary": "Senkt Verteidigung, heilt dauerhaft, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14700,
+   "attack": 1002,
+   "defense": 1046,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "tracker",
@@ -8896,7 +12535,15 @@
   "kitSummary": "Senkt Verteidigung, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14700,
+   "attack": 1134,
+   "defense": 639,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "treefeller",
@@ -8914,7 +12561,15 @@
   "kitSummary": "Vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13215,
+   "attack": 1277,
+   "defense": 870,
+   "speed": 95,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "troglodyte",
@@ -8929,7 +12584,15 @@
   "kitSummary": "Senkt Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12885,
+   "attack": 1255,
+   "defense": 639,
+   "speed": 89,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "turvold",
@@ -8948,7 +12611,15 @@
   "kitSummary": "Schwächt, erhöht Tempo, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17505,
+   "attack": 1498,
+   "defense": 914,
+   "speed": 93,
+   "resistance": 63,
+   "accuracy": 40
+  }
  },
  {
   "id": "uugo",
@@ -8961,7 +12632,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "valerie",
@@ -8977,7 +12649,15 @@
   "kitSummary": "Schildet, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15585,
+   "attack": 969,
+   "defense": 1002,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "valkyrie",
@@ -8995,7 +12675,15 @@
   "kitSummary": "Schildet, leert die Zugleiste, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17835,
+   "attack": 793,
+   "defense": 1597,
+   "speed": 104,
+   "resistance": 50,
+   "accuracy": 50
+  }
  },
  {
   "id": "valla",
@@ -9013,7 +12701,15 @@
   "kitSummary": "Senkt Verteidigung, schildet, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16845,
+   "attack": 771,
+   "defense": 1409,
+   "speed": 99,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "vanguard",
@@ -9029,7 +12725,15 @@
   "kitSummary": "Senkt Verteidigung, provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14700,
+   "attack": 958,
+   "defense": 1090,
+   "speed": 96,
+   "resistance": 50,
+   "accuracy": 40
+  }
  },
  {
   "id": "venus",
@@ -9050,7 +12754,15 @@
   "kitSummary": "Senkt Verteidigung, schwächt, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 22635,
+   "attack": 1090,
+   "defense": 980,
+   "speed": 112,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "vergis",
@@ -9070,7 +12782,15 @@
   "kitSummary": "Heilt dauerhaft, schildet, erhöht Tempo.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16020,
+   "attack": 925,
+   "defense": 1310,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "vergumkaar",
@@ -9093,7 +12813,15 @@
   "kitSummary": "Senkt Verteidigung, schildet, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 22140,
+   "attack": 914,
+   "defense": 1189,
+   "speed": 99,
+   "resistance": 50,
+   "accuracy": 10
+  }
  },
  {
   "id": "veteran",
@@ -9111,7 +12839,15 @@
   "kitSummary": "Senkt Angriff, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15360,
+   "attack": 683,
+   "defense": 1321,
+   "speed": 97,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "vigilante",
@@ -9126,7 +12862,15 @@
   "kitSummary": "Schwächt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17505,
+   "attack": 760,
+   "defense": 826,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "vilespawn",
@@ -9141,7 +12885,15 @@
   "kitSummary": "Senkt Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13875,
+   "attack": 925,
+   "defense": 903,
+   "speed": 91,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "vogoth",
@@ -9154,7 +12906,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "vrask",
@@ -9169,7 +12922,15 @@
   "kitSummary": "Heilt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 23460,
+   "attack": 870,
+   "defense": 870,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "vulpine",
@@ -9187,7 +12948,15 @@
   "kitSummary": "Senkt Angriff, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 11070,
+   "attack": 1189,
+   "defense": 826,
+   "speed": 87,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "wagonbane",
@@ -9206,7 +12975,15 @@
   "kitSummary": "Senkt Angriff, heilt, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16680,
+   "attack": 881,
+   "defense": 1035,
+   "speed": 102,
+   "resistance": 30,
+   "accuracy": 10
+  }
  },
  {
   "id": "wanderer",
@@ -9222,7 +12999,15 @@
   "kitSummary": "Schwächt, leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13050,
+   "attack": 1443,
+   "defense": 716,
+   "speed": 96,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "warboy",
@@ -9237,7 +13022,15 @@
   "kitSummary": "Provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13215,
+   "attack": 584,
+   "defense": 738,
+   "speed": 91,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "warcaster",
@@ -9255,7 +13048,15 @@
   "kitSummary": "Blockt Schaden, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20145,
+   "attack": 1013,
+   "defense": 947,
+   "speed": 106,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "warchanter",
@@ -9273,7 +13074,15 @@
   "kitSummary": "Senkt Angriff, trifft alle Gegner, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18990,
+   "attack": 716,
+   "defense": 771,
+   "speed": 94,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "warchief",
@@ -9290,7 +13099,15 @@
   "kitSummary": "Provoziert.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18990,
+   "attack": 848,
+   "defense": 1465,
+   "speed": 102,
+   "resistance": 50,
+   "accuracy": 50
+  }
  },
  {
   "id": "warden",
@@ -9309,7 +13126,15 @@
   "kitSummary": "Senkt Angriff, schwächt, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 17340,
+   "attack": 870,
+   "defense": 1277,
+   "speed": 98,
+   "resistance": 50,
+   "accuracy": 45
+  }
  },
  {
   "id": "warlord",
@@ -9326,7 +13151,15 @@
   "kitSummary": "Blockt Debuffs, schildet, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 22305,
+   "attack": 914,
+   "defense": 1178,
+   "speed": 100,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "warmaiden",
@@ -9344,7 +13177,15 @@
   "kitSummary": "Senkt Verteidigung, erhöht Angriff, trifft alle Gegner.",
   "earlyGameCarry": true,
   "campaignFarmable": true,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14700,
+   "attack": 1321,
+   "defense": 727,
+   "speed": 97,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "warpriest",
@@ -9361,7 +13202,15 @@
   "kitSummary": "Heilt, erhöht Angriff, betäubt.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18165,
+   "attack": 683,
+   "defense": 1134,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "whisper",
@@ -9379,7 +13228,15 @@
   "kitSummary": "Senkt Verteidigung, schwächt, erhöht Angriff.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16020,
+   "attack": 1443,
+   "defense": 793,
+   "speed": 95,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "windtalker",
@@ -9395,7 +13252,15 @@
   "kitSummary": "Erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13710,
+   "attack": 903,
+   "defense": 936,
+   "speed": 87,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "witness",
@@ -9412,7 +13277,15 @@
   "kitSummary": "Blockt Debuffs, schildet, erhöht Verteidigung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 14865,
+   "attack": 1134,
+   "defense": 903,
+   "speed": 103,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "woad-painted",
@@ -9425,7 +13298,8 @@
   "kitSummary": "Für diese Legende liegen noch keine Fähigkeiten vor.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": false
+  "dataComplete": false,
+  "stats": null
  },
  {
   "id": "wretch",
@@ -9442,7 +13316,15 @@
   "kitSummary": "Heilt, entzündet, mindert Heilung.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 13215,
+   "attack": 1432,
+   "defense": 716,
+   "speed": 97,
+   "resistance": 57,
+   "accuracy": 30
+  }
  },
  {
   "id": "wyvernbane",
@@ -9458,7 +13340,15 @@
   "kitSummary": "Entzündet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 12555,
+   "attack": 1288,
+   "defense": 903,
+   "speed": 94,
+   "resistance": 30,
+   "accuracy": 0
+  }
  },
  {
   "id": "yannica",
@@ -9477,7 +13367,15 @@
   "kitSummary": "Schildet, trifft alle Gegner, nimmt Extra-Züge.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 15525,
+   "attack": 1487,
+   "defense": 1057,
+   "speed": 100,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "yeoman",
@@ -9492,7 +13390,15 @@
   "kitSummary": "Leert die Zugleiste.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 9090,
+   "attack": 903,
+   "defense": 694,
+   "speed": 97,
+   "resistance": 50,
+   "accuracy": 30
+  }
  },
  {
   "id": "zargala",
@@ -9509,7 +13415,15 @@
   "kitSummary": "Senkt Verteidigung, schwächt, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 16680,
+   "attack": 1398,
+   "defense": 793,
+   "speed": 103,
+   "resistance": 60,
+   "accuracy": 30
+  }
  },
  {
   "id": "zavia",
@@ -9525,7 +13439,15 @@
   "kitSummary": "Trifft alle Gegner, vergiftet.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 18660,
+   "attack": 1586,
+   "defense": 749,
+   "speed": 105,
+   "resistance": 63,
+   "accuracy": 30
+  }
  },
  {
   "id": "zelotah",
@@ -9543,6 +13465,14 @@
   "kitSummary": "Heilt dauerhaft, schildet, trifft alle Gegner.",
   "earlyGameCarry": false,
   "campaignFarmable": false,
-  "dataComplete": true
+  "dataComplete": true,
+  "stats": {
+   "hp": 20640,
+   "attack": 826,
+   "defense": 1101,
+   "speed": 95,
+   "resistance": 50,
+   "accuracy": 30
+  }
  }
 ]

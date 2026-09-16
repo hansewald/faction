@@ -94,6 +94,25 @@ enum class Area(val label: String) {
     CAMPAIGN("Kampagne / Farmen");
 }
 
+/**
+ * Die sechs verlässlichen Basiswerte bei Rang 6, Stufe 60, ohne Ausrüstung — die in
+ * der Community übliche Vergleichsbasis. Krit-Rate und Krit-Schaden fehlen bewusst:
+ * in der Rohdatenquelle ist das Feld für die Kritquote bei praktisch jedem Champion
+ * der Platzhaltertext „RATE“ statt einer Zahl, und der Krit-Schaden trägt bei den
+ * meisten Champions denselben Wert 15 — kein gemessener Wert, sondern ein
+ * Formularfeld, das beim Auslesen nicht befüllt wurde. Lieber ganz weglassen als
+ * eine erfundene Zahl anzeigen.
+ */
+@Serializable
+data class ChampionStats(
+    val hp: Int,
+    val attack: Int,
+    val defense: Int,
+    val speed: Int,
+    val resistance: Int,
+    val accuracy: Int,
+)
+
 /** Stammdaten eines Champions — unabhängig davon, ob der Spieler ihn besitzt. */
 @Serializable
 data class Champion(
@@ -115,6 +134,8 @@ data class Champion(
      * nichts bewerten — solche Einträge dürfen nie als Futter empfohlen werden.
      */
     val dataComplete: Boolean = true,
+    /** `null`, wenn die Quelle für diese Legende keine verlässlichen Werte lieferte. */
+    val stats: ChampionStats? = null,
 ) {
     /**
      * Adresse der Legende im RaidWiki, zum Nachschlagen von Werten und Fähigkeiten.

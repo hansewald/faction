@@ -130,6 +130,13 @@ python tools/generate_champions.py <pfad-zum-datenrepo>
 
 Die 47 Wirkungen im Modell decken 3,5 Tags je Legende ab.
 
+**Basiswerte** (LP, Angriff, Verteidigung, Tempo, Widerstand, Genauigkeit) stehen für
+480 der 570 Legenden im Katalog — bei Rang 6, Stufe 60, ohne Ausrüstung, der in der
+Community üblichen Vergleichsbasis. Bewusst **nicht** übernommen sind Krit-Rate und
+Krit-Schaden: In der Rohquelle trägt das Feld für die Kritquote bei fast jeder Legende
+den Platzhaltertext „RATE“ statt einer Zahl, und der Krit-Schaden denselben Wert 15 —
+kein gemessener Wert. Für diese beiden bleibt der Link ins RaidWiki.
+
 ## Bildmaterial
 
 **FACTION zeigt die offiziellen Champion-Portraits mit Genehmigung von Plarium.**
@@ -184,7 +191,6 @@ sie muss auf einen Bestand zeigen, über den du verfügen darfst.
 - **Fähigkeiten im Detail**: Multiplikatoren und Abklingzeiten fehlen im Startdatensatz;
   der Reiter zeigt bisher nur die Wirkungen des Kits. Bis dahin verlinkt die Detailseite
   ins RaidWiki, statt fremde Inhalte selbst auszuliefern.
-- **Basiswerte** (LP, Angriff, Verteidigung, Tempo, Krit) stehen nicht im Katalog.
 - **Feed-Adresse eintragen**: `CatalogUpdater.DEFAULT_FEED_URL` ist leer. Sie muss auf
   einen Bestand zeigen, über den du verfügen darfst — etwa eine mit
   `tools/generate_champions.py` erzeugte Datei in deinem eigenen Speicher.

@@ -243,7 +243,6 @@ private fun LazyListScope.overviewContent(champion: Champion) {
         }
     }
     item {
-        val uriHandler = LocalUriHandler.current
         Column(Modifier.padding(horizontal = 16.dp)) {
             TraitStrip(
                 listOf(
@@ -253,12 +252,53 @@ private fun LazyListScope.overviewContent(champion: Champion) {
                     "Rolle" to champion.role.label,
                 ),
             )
-            Spacer(Modifier.height(8.dp))
-            // Basiswerte und Faehigkeiten im Wortlaut liegen nicht in unserem Katalog.
-            // Statt sie zu kopieren, fuehrt die App dorthin, wo sie gepflegt werden.
+            Spacer(Modifier.height(12.dp))
+        }
+    }
+    champion.stats?.let { stats ->
+        item {
+            Column(Modifier.padding(horizontal = 16.dp)) {
+                FactionCard(Modifier.fillMaxWidth()) {
+                    Column(Modifier.padding(16.dp)) {
+                        SectionTitle("Basiswerte")
+                        Spacer(Modifier.height(4.dp))
+                        Text(
+                            "Bei Rang 6, Stufe 60, ohne Ausrüstung.",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = FactionColors.TextSecondary,
+                        )
+                        Spacer(Modifier.height(12.dp))
+                        TraitStrip(
+                            listOf(
+                                "LP" to stats.hp.toString(),
+                                "Angriff" to stats.attack.toString(),
+                                "Verteidigung" to stats.defense.toString(),
+                            ),
+                        )
+                        Spacer(Modifier.height(8.dp))
+                        TraitStrip(
+                            listOf(
+                                "Tempo" to stats.speed.toString(),
+                                "Widerstand" to "${stats.resistance} %",
+                                "Genauigkeit" to "${stats.accuracy} %",
+                            ),
+                        )
+                    }
+                }
+                Spacer(Modifier.height(12.dp))
+            }
+        }
+    }
+    item {
+        val uriHandler = LocalUriHandler.current
+        Column(Modifier.padding(horizontal = 16.dp)) {
+            // Skilltexte im Wortlaut und Krit-Werte liegen nicht in unserem Katalog —
+            // Krit-Rate und Krit-Schaden sind in der Rohquelle nicht verlässlich (siehe
+            // ChampionStats). Statt sie zu erfinden, führt die App dorthin, wo sie
+            // gepflegt werden.
             TextButton(onClick = { uriHandler.openUri(champion.wikiUrl) }) {
                 Text(
-                    "Werte und Fähigkeiten im RaidWiki nachschlagen",
+                    "Fähigkeiten und Krit-Werte im RaidWiki nachschlagen",
                     style = MaterialTheme.typography.bodySmall,
                     color = FactionColors.Teal,
                 )

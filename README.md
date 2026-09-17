@@ -7,23 +7,28 @@ ist, und in welcher Reihenfolge du vorgehst.
 
 ## Projekt öffnen
 
-Das Projekt enthält keine `gradle-wrapper.jar` (Binärdatei). Einmalig erzeugen:
-
 ```bash
-cd raidcompanion && gradle wrapper
+git clone https://github.com/hansewald/faction.git
+cd faction
 ```
 
-Alternativ in Android Studio öffnen — es legt den Wrapper selbst an. Danach:
+Der Gradle-Wrapper ist mit committet, kein separater Bootstrap-Schritt nötig. Fehlt
+`local.properties` (absichtlich nicht im Repository, siehe `.gitignore`), einmalig
+anlegen und auf ein lokales Android SDK mit API 35 zeigen:
+
+```bash
+echo "sdk.dir=/pfad/zu/deinem/Android/Sdk" > local.properties
+```
+
+Getestet mit **JDK 21** (Gradle 8.13 verweigert sich unter JDK 25) — Android Studio
+bringt ein passendes JDK mit (`Einstellungen → Build Tools → Gradle → Gradle JDK`).
+`sourceCompatibility`/`jvmTarget` im Projekt selbst stehen auf Java 17; das betrifft nur
+das erzeugte Bytecode-Ziel, nicht das JDK, mit dem gebaut wird.
 
 ```bash
 ./gradlew :app:testDebugUnitTest
-```
-
-```bash
 ./gradlew :app:assembleDebug
 ```
-
-Benötigt JDK 17 und Android SDK 35.
 
 ## Aufbau
 
@@ -32,7 +37,7 @@ Benötigt JDK 17 und Android SDK 35.
 | `data.model` | Champion, Kader, Wirkungen (`Utility`), Bereiche (`Area`), Artefakt-Sets (`ArtifactSet`) |
 | `data.source` | Importquellen hinter dem Interface `AccountSource` |
 | `data.local` | Room-Datenbank für den erfassten Kader |
-| `data.repo` | Champion-Katalog und Kader-Repository |
+| `data.repo` | Champion-Katalog, Kader-Repository, `CatalogUpdater` (Feed-Sync) |
 | `domain` | `ScoreEngine` (Kit-Bewertung), `BuildPlanner` (Aufbauplan), `BuildAdvisor` (Empfehlungen) |
 | `ui.components` | Wiederverwendete Bausteine: Goldrahmen-Karte, Tags, Schrittmarken |
 | `ui.screens` | Start, Legenden, Helden-Details, Artefakte, Quests, Anleitung, News |
@@ -113,7 +118,9 @@ nicht mitgeliefert — sie gehören Plarium. Der Generator liest sie nur, um dar
 `Utility`-Tags abzuleiten, mit denen die `ScoreEngine` arbeitet. Neu erzeugen:
 
 ```bash
-python tools/generate_champions.py <pfad-zum-datenrepo>
+python tools/generate_champions.py <pfad-zum-datenrepo> \
+    app/src/main/assets/champions.json \
+    --feed-out=feed/champions-feed.json --feed-version=2 --released="2026-…"
 ```
 
 **Datenqualität, ehrlich benannt:**
@@ -199,7 +206,9 @@ Feed-Datei; die Versionsnummer von Hand erhöhen, sonst übernimmt `CatalogUpdat
 den neuen Stand nicht):
 
 ```bash
-python tools/generate_champions.py <pfad-zum-datenrepo> app/src/main/assets/champions.json     --feed-out=feed/champions-feed.json --feed-version=2 --released="2026-…"
+python tools/generate_champions.py <pfad-zum-datenrepo> \
+    app/src/main/assets/champions.json \
+    --feed-out=feed/champions-feed.json --feed-version=2 --released="2026-…"
 ```
 
 ## Artefakte
@@ -225,9 +234,6 @@ Namen anzuzeigen. `ArtifactSetContentTest` sichert das zusätzlich ab.
 - **Fähigkeiten im Detail**: Multiplikatoren und Abklingzeiten fehlen im Startdatensatz;
   der Reiter zeigt bisher nur die Wirkungen des Kits. Bis dahin verlinkt die Detailseite
   ins RaidWiki, statt fremde Inhalte selbst auszuliefern.
-- **Feed-Adresse eintragen**: `CatalogUpdater.DEFAULT_FEED_URL` ist leer. Sie muss auf
-  einen Bestand zeigen, über den du verfügen darfst — etwa eine mit
-  `tools/generate_champions.py` erzeugte Datei in deinem eigenen Speicher.
 - iOS-Portierung — bewusst nicht umgesetzt, auf dieser Maschine mangels Xcode/macOS
   auch nicht überprüfbar. Optionen und Aufwandsschätzung in
   [`docs/ios-portierung.md`](docs/ios-portierung.md).

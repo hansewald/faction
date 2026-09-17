@@ -101,10 +101,15 @@ class CatalogUpdater(
 
     companion object {
         /**
-         * Adresse des Katalog-Feeds. Leer, solange keine eingetragen ist — dann meldet
-         * der Sync das offen, statt im Hintergrund nichts zu tun.
+         * Adresse des Katalog-Feeds: die champions.json aus dem eigenen, öffentlichen
+         * GitHub-Repository (siehe README, Abschnitt "Katalog aktuell halten"). Bewusst
+         * öffentlich, nicht privat — der Sync lädt mit einem einfachen, unauthentifizierten
+         * GET; ein privates Repo würde hier grundsätzlich 404 liefern, und ein eingebettetes
+         * Zugriffstoken wäre aus jeder APK auslesbar. Das Repo enthält ohnehin nichts
+         * Geheimes: keine Zugangsdaten, `local.properties` bleibt lokal ignoriert.
          */
-        const val DEFAULT_FEED_URL = ""
+        const val DEFAULT_FEED_URL =
+            "https://raw.githubusercontent.com/hansewald/faction/main/feed/champions-feed.json"
 
         const val FILE_NAME = "champions.json"
         private const val PREFS = "catalog"

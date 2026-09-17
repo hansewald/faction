@@ -183,8 +183,24 @@ aktualisiert; neue Legenden werden namentlich gemeldet. Eine leere, unlesbare od
 danach den heruntergeladenen Stand und fällt auf die mitgelieferte Datei zurück, wenn
 dieser unlesbar ist — lieber ein älterer Katalog als gar keiner.
 
-Die Feed-Adresse steht in `CatalogUpdater.DEFAULT_FEED_URL` und ist bewusst leer:
-sie muss auf einen Bestand zeigen, über den du verfügen darfst.
+Der Feed liegt öffentlich unter
+[`feed/champions-feed.json`](https://github.com/hansewald/faction/blob/main/feed/champions-feed.json)
+in diesem Repository — bewusst außerhalb von `app/src/main/assets/`, damit die Datei
+nicht ungenutzt mit ins APK gebündelt wird. `CatalogUpdater.DEFAULT_FEED_URL` zeigt auf
+die rohe GitHub-Adresse dieser Datei.
+
+**Warum das Repository öffentlich ist:** `CatalogUpdater` lädt mit einem einfachen,
+unauthentifizierten GET — ein privates Repository liefert dafür grundsätzlich `404`,
+und ein eingebettetes Zugriffstoken wäre aus jeder APK auslesbar. Nichts im Repository
+ist geheim: keine Zugangsdaten, `local.properties` bleibt lokal ignoriert.
+
+Neu erzeugen (schreibt zusätzlich zur flachen `champions.json` die versionierte
+Feed-Datei; die Versionsnummer von Hand erhöhen, sonst übernimmt `CatalogUpdater`
+den neuen Stand nicht):
+
+```bash
+python tools/generate_champions.py <pfad-zum-datenrepo> app/src/main/assets/champions.json     --feed-out=feed/champions-feed.json --feed-version=2 --released="2026-…"
+```
 
 ## Artefakte
 

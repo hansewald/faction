@@ -19,6 +19,15 @@ nicht uebernommen.
 
 Aufruf:
     python tools/generate_champions.py <pfad-zum-datenrepo> [ziel.json]
+        [--feed-out=pfad.json] [--feed-version=N] [--released="Text"]
+
+Ohne --feed-out entsteht nur die flache Liste fuer assets/champions.json (das Format,
+das ChampionCatalog aus den Assets laedt). Mit --feed-out entsteht zusaetzlich eine
+versionierte Kopie im Objekt-Format {"version", "released", "champions"}, das Format,
+das CatalogUpdater von der Feed-Adresse erwartet - beide Formen tragen dieselben
+Champions, nur unterschiedlich verpackt. Wer --feed-out nutzt, muss --feed-version bei
+jeder inhaltlichen Aenderung von Hand erhoehen: CatalogUpdater uebernimmt einen Feed nur,
+wenn seine Version hoeher ist als die zuletzt gespeicherte.
 """
 
 from __future__ import annotations
@@ -251,11 +260,18 @@ def summarise(utilities: set[str], role: str) -> str:
 
 
 def main() -> int:
-    if len(sys.argv) < 2:
+    positional = [a for a in sys.argv[1:] if not a.startswith("--")]
+    options = dict(
+        a[2:].split("=", 1) for a in sys.argv[1:] if a.startswith("--") and "=" in a
+    )
+    if not positional:
         print(__doc__)
         return 2
-    root = sys.argv[1]
-    target = sys.argv[2] if len(sys.argv) > 2 else "app/src/main/assets/champions.json"
+    root = positional[0]
+    target = positional[1] if len(positional) > 1 else "app/src/main/assets/champions.json"
+    feed_out = options.get("feed-out")
+    feed_version = int(options.get("feed-version", "1"))
+    released = options.get("released", "")
 
     base = load_lenient(os.path.join(root, "champions-base-info.json"))
     details_dir = os.path.join(root, "champion-details")
@@ -336,6 +352,14 @@ def main() -> int:
     with open(target, "w", encoding="utf-8", newline="\n") as fh:
         json.dump(champions, fh, ensure_ascii=False, indent=1)
         fh.write("\n")
+
+    if feed_out:
+        feed = {"version": feed_version, "released": released, "champions": champions}
+        os.makedirs(os.path.dirname(feed_out) or ".", exist_ok=True)
+        with open(feed_out, "w", encoding="utf-8", newline=chr(10)) as fh:
+            json.dump(feed, fh, ensure_ascii=False, indent=1)
+            fh.write(chr(10))
+        print(f"Feed Version {feed_version} geschrieben nach {feed_out}")
 
     no_utilities = sum(1 for c in champions if not c["utilities"] and c["dataComplete"])
     with_stats = sum(1 for c in champions if c["stats"] is not None)

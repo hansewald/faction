@@ -157,10 +157,20 @@ private fun FactionApp(app: FactionApplication) {
 
 /** Wechselt den Reiter, ohne den Zurück-Stapel wachsen zu lassen. */
 private fun NavHostController.switchTab(tab: Tab) {
-    navigate(tab.route) {
-        popUpTo(Tab.START.route) { saveState = true }
-        launchSingleTop = true
-        restoreState = true
+    // popBackStack(route) zuerst: legt einen bereits besuchten Tab direkt frei, ohne
+    // ihn neu zu erzeugen. Notwendig, weil navigate(tab.route) { popUpTo(...);
+    // launchSingleTop = true } zum kompletten No-op wird, sobald das Navigationsziel
+    // mit dem popUpTo-Ziel identisch ist: Start ist beides zugleich, und
+    // launchSingleTop unterdrueckt dann auch das Aufdecken des Eintrags, der durch
+    // popUpTo eigentlich freigelegt wurde - auf einem echten Geraet reproduziert
+    // (Artefakte -> Start blieb wirkungslos, Artefakte -> Legenden funktionierte).
+    val revealed = popBackStack(tab.route, inclusive = false)
+    if (!revealed) {
+        navigate(tab.route) {
+            popUpTo(Tab.START.route) { saveState = true }
+            launchSingleTop = true
+            restoreState = true
+        }
     }
 }
 
